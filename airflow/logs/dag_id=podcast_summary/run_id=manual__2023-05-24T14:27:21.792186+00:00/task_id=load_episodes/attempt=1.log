@@ -1,0 +1,16 @@
+[2023-05-24T18:27:47.355+0400] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: podcast_summary.load_episodes manual__2023-05-24T14:27:21.792186+00:00 [queued]>
+[2023-05-24T18:27:47.368+0400] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: podcast_summary.load_episodes manual__2023-05-24T14:27:21.792186+00:00 [queued]>
+[2023-05-24T18:27:47.369+0400] {taskinstance.py:1308} INFO - Starting attempt 1 of 1
+[2023-05-24T18:27:47.394+0400] {taskinstance.py:1327} INFO - Executing <Task(_PythonDecoratedOperator): load_episodes> on 2023-05-24 14:27:21.792186+00:00
+[2023-05-24T18:27:47.435+0400] {standard_task_runner.py:57} INFO - Started process 722 to run task
+[2023-05-24T18:27:47.449+0400] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'podcast_summary', 'load_episodes', 'manual__2023-05-24T14:27:21.792186+00:00', '--job-id', '48', '--raw', '--subdir', 'DAGS_FOLDER/podcast_summary.py', '--cfg-path', '/tmp/tmpmb0siv7r']
+[2023-05-24T18:27:47.457+0400] {standard_task_runner.py:85} INFO - Job 48: Subtask load_episodes
+[2023-05-24T18:27:47.557+0400] {task_command.py:410} INFO - Running <TaskInstance: podcast_summary.load_episodes manual__2023-05-24T14:27:21.792186+00:00 [running]> on host DESKTOP-V010GL9.localdomain
+[2023-05-24T18:27:47.756+0400] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='podcast_summary' AIRFLOW_CTX_TASK_ID='load_episodes' AIRFLOW_CTX_EXECUTION_DATE='2023-05-24T14:27:21.792186+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-05-24T14:27:21.792186+00:00'
+[2023-05-24T18:27:47.766+0400] {base.py:73} INFO - Using connection ID 'podcasts' for task execution.
+[2023-05-24T18:27:47.777+0400] {base.py:73} INFO - Using connection ID 'podcasts' for task execution.
+[2023-05-24T18:27:47.777+0400] {sql.py:473} INFO - Done loading. Loaded a total of 0 rows into episodes
+[2023-05-24T18:27:47.779+0400] {python.py:183} INFO - Done. Returned value was: None
+[2023-05-24T18:27:47.784+0400] {taskinstance.py:1345} INFO - Marking task as SUCCESS. dag_id=podcast_summary, task_id=load_episodes, execution_date=20230524T142721, start_date=20230524T142747, end_date=20230524T142747
+[2023-05-24T18:27:47.822+0400] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2023-05-24T18:27:47.842+0400] {taskinstance.py:2651} INFO - 0 downstream tasks scheduled from follow-on schedule check
