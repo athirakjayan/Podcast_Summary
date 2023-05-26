@@ -1,0 +1,110 @@
+[2023-05-25T19:34:32.172+0400] {processor.py:157} INFO - Started process (PID=155) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py
+[2023-05-25T19:34:32.181+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py for tasks to queue
+[2023-05-25T19:34:32.184+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:34:32.183+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py
+[2023-05-25T19:34:32.211+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:34:32.210+0400] {tutorial_taskflow_api_virtualenv.py:29} WARNING - The tutorial_taskflow_api_virtualenv example DAG requires virtualenv, please install it.
+[2023-05-25T19:34:32.213+0400] {processor.py:838} WARNING - No viable dags retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py
+[2023-05-25T19:34:32.318+0400] {processor.py:182} ERROR - Got an exception! Propagating...
+Traceback (most recent call last):
+  File "/home/chinnu/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1905, in _execute_context
+    self.dialect.do_execute(
+  File "/home/chinnu/.local/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 736, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.OperationalError: disk I/O error
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/chinnu/.local/lib/python3.10/site-packages/airflow/dag_processing/processor.py", line 178, in _run_file_processor
+    _handle_dag_file_processing()
+  File "/home/chinnu/.local/lib/python3.10/site-packages/airflow/dag_processing/processor.py", line 159, in _handle_dag_file_processing
+    result: tuple[int, int] = dag_file_processor.process_file(
+  File "/home/chinnu/.local/lib/python3.10/site-packages/airflow/utils/session.py", line 76, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/chinnu/.local/lib/python3.10/site-packages/airflow/dag_processing/processor.py", line 839, in process_file
+    DagFileProcessor.update_import_errors(
+  File "/home/chinnu/.local/lib/python3.10/site-packages/airflow/api_internal/internal_api_call.py", line 112, in wrapper
+    return func(*args, **kwargs)
+  File "/home/chinnu/.local/lib/python3.10/site-packages/airflow/utils/session.py", line 73, in wrapper
+    return func(*args, **kwargs)
+  File "/home/chinnu/.local/lib/python3.10/site-packages/airflow/dag_processing/processor.py", line 615, in update_import_errors
+    session.query(errors.ImportError).filter(
+  File "/home/chinnu/.local/lib/python3.10/site-packages/sqlalchemy/orm/query.py", line 3222, in delete
+    result = self.session.execute(
+  File "/home/chinnu/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 1665, in execute
+    ) = compile_state_cls.orm_pre_session_exec(
+  File "/home/chinnu/.local/lib/python3.10/site-packages/sqlalchemy/orm/persistence.py", line 1852, in orm_pre_session_exec
+    update_options = cls._do_pre_synchronize_fetch(
+  File "/home/chinnu/.local/lib/python3.10/site-packages/sqlalchemy/orm/persistence.py", line 2088, in _do_pre_synchronize_fetch
+    result = session.execute(
+  File "/home/chinnu/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 1717, in execute
+    result = conn._execute_20(statement, params or {}, execution_options)
+  File "/home/chinnu/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1710, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "/home/chinnu/.local/lib/python3.10/site-packages/sqlalchemy/sql/elements.py", line 334, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "/home/chinnu/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1577, in _execute_clauseelement
+    ret = self._execute_context(
+  File "/home/chinnu/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1948, in _execute_context
+    self._handle_dbapi_exception(
+  File "/home/chinnu/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 2129, in _handle_dbapi_exception
+    util.raise_(
+  File "/home/chinnu/.local/lib/python3.10/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/chinnu/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1905, in _execute_context
+    self.dialect.do_execute(
+  File "/home/chinnu/.local/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 736, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) disk I/O error
+[SQL: SELECT import_error.id 
+FROM import_error 
+WHERE (import_error.filename LIKE ? || '%')]
+[parameters: ('/home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py',)]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2023-05-25T19:36:05.885+0400] {processor.py:157} INFO - Started process (PID=266) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py
+[2023-05-25T19:36:05.888+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py for tasks to queue
+[2023-05-25T19:36:05.890+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:36:05.889+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py
+[2023-05-25T19:36:05.915+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:36:05.915+0400] {tutorial_taskflow_api_virtualenv.py:29} WARNING - The tutorial_taskflow_api_virtualenv example DAG requires virtualenv, please install it.
+[2023-05-25T19:36:05.916+0400] {processor.py:838} WARNING - No viable dags retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py
+[2023-05-25T19:36:06.004+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py took 0.139 seconds
+[2023-05-25T19:37:33.224+0400] {processor.py:157} INFO - Started process (PID=340) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py
+[2023-05-25T19:37:33.229+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py for tasks to queue
+[2023-05-25T19:37:33.230+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:37:33.230+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py
+[2023-05-25T19:37:33.239+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:37:33.239+0400] {tutorial_taskflow_api_virtualenv.py:29} WARNING - The tutorial_taskflow_api_virtualenv example DAG requires virtualenv, please install it.
+[2023-05-25T19:37:33.240+0400] {processor.py:838} WARNING - No viable dags retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py
+[2023-05-25T19:37:33.272+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py took 0.064 seconds
+[2023-05-25T19:38:10.891+0400] {processor.py:157} INFO - Started process (PID=391) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py
+[2023-05-25T19:38:10.893+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py for tasks to queue
+[2023-05-25T19:38:10.894+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:38:10.894+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py
+[2023-05-25T19:38:10.901+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:38:10.900+0400] {tutorial_taskflow_api_virtualenv.py:29} WARNING - The tutorial_taskflow_api_virtualenv example DAG requires virtualenv, please install it.
+[2023-05-25T19:38:10.901+0400] {processor.py:838} WARNING - No viable dags retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py
+[2023-05-25T19:38:10.919+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py took 0.034 seconds
+[2023-05-25T19:38:56.332+0400] {processor.py:157} INFO - Started process (PID=423) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py
+[2023-05-25T19:38:56.334+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py for tasks to queue
+[2023-05-25T19:38:56.336+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:38:56.336+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py
+[2023-05-25T19:38:56.352+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:38:56.352+0400] {tutorial_taskflow_api_virtualenv.py:29} WARNING - The tutorial_taskflow_api_virtualenv example DAG requires virtualenv, please install it.
+[2023-05-25T19:38:56.353+0400] {processor.py:838} WARNING - No viable dags retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py
+[2023-05-25T19:38:56.411+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py took 0.092 seconds
+[2023-05-25T19:39:33.364+0400] {processor.py:157} INFO - Started process (PID=455) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py
+[2023-05-25T19:39:33.370+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py for tasks to queue
+[2023-05-25T19:39:33.373+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:39:33.373+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py
+[2023-05-25T19:39:33.399+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:39:33.398+0400] {tutorial_taskflow_api_virtualenv.py:29} WARNING - The tutorial_taskflow_api_virtualenv example DAG requires virtualenv, please install it.
+[2023-05-25T19:39:33.400+0400] {processor.py:838} WARNING - No viable dags retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py
+[2023-05-25T19:39:33.445+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py took 0.104 seconds
+[2023-05-25T19:40:35.616+0400] {processor.py:157} INFO - Started process (PID=506) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py
+[2023-05-25T19:40:35.618+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py for tasks to queue
+[2023-05-25T19:40:35.619+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:40:35.619+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py
+[2023-05-25T19:40:35.629+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:40:35.629+0400] {tutorial_taskflow_api_virtualenv.py:29} WARNING - The tutorial_taskflow_api_virtualenv example DAG requires virtualenv, please install it.
+[2023-05-25T19:40:35.629+0400] {processor.py:838} WARNING - No viable dags retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py
+[2023-05-25T19:40:35.653+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py took 0.045 seconds
+[2023-05-25T19:41:36.069+0400] {processor.py:157} INFO - Started process (PID=556) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py
+[2023-05-25T19:41:36.075+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py for tasks to queue
+[2023-05-25T19:41:36.077+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:41:36.077+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py
+[2023-05-25T19:41:36.098+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:41:36.097+0400] {tutorial_taskflow_api_virtualenv.py:29} WARNING - The tutorial_taskflow_api_virtualenv example DAG requires virtualenv, please install it.
+[2023-05-25T19:41:36.099+0400] {processor.py:838} WARNING - No viable dags retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py
+[2023-05-25T19:41:36.179+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py took 0.128 seconds
+[2023-05-25T19:42:38.064+0400] {processor.py:157} INFO - Started process (PID=607) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py
+[2023-05-25T19:42:38.067+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py for tasks to queue
+[2023-05-25T19:42:38.068+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:42:38.068+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py
+[2023-05-25T19:42:38.077+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:42:38.077+0400] {tutorial_taskflow_api_virtualenv.py:29} WARNING - The tutorial_taskflow_api_virtualenv example DAG requires virtualenv, please install it.
+[2023-05-25T19:42:38.078+0400] {processor.py:838} WARNING - No viable dags retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py
+[2023-05-25T19:42:38.108+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py took 0.058 seconds

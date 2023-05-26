@@ -1,0 +1,46 @@
+[2023-05-26T22:11:05.909+0400] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: podcast_summary.speech_to_text manual__2023-05-26T18:08:52.801438+00:00 [queued]>
+[2023-05-26T22:11:05.921+0400] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: podcast_summary.speech_to_text manual__2023-05-26T18:08:52.801438+00:00 [queued]>
+[2023-05-26T22:11:05.921+0400] {taskinstance.py:1308} INFO - Starting attempt 2 of 1
+[2023-05-26T22:11:05.945+0400] {taskinstance.py:1327} INFO - Executing <Task(_PythonDecoratedOperator): speech_to_text> on 2023-05-26 18:08:52.801438+00:00
+[2023-05-26T22:11:05.981+0400] {standard_task_runner.py:57} INFO - Started process 3203 to run task
+[2023-05-26T22:11:05.990+0400] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'podcast_summary', 'speech_to_text', 'manual__2023-05-26T18:08:52.801438+00:00', '--job-id', '149', '--raw', '--subdir', 'DAGS_FOLDER/podcast_summary.py', '--cfg-path', '/tmp/tmpeechetad']
+[2023-05-26T22:11:05.994+0400] {standard_task_runner.py:85} INFO - Job 149: Subtask speech_to_text
+[2023-05-26T22:11:06.063+0400] {task_command.py:410} INFO - Running <TaskInstance: podcast_summary.speech_to_text manual__2023-05-26T18:08:52.801438+00:00 [running]> on host DESKTOP-V010GL9.localdomain
+[2023-05-26T22:11:06.147+0400] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='podcast_summary' AIRFLOW_CTX_TASK_ID='speech_to_text' AIRFLOW_CTX_EXECUTION_DATE='2023-05-26T18:08:52.801438+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-05-26T18:08:52.801438+00:00'
+[2023-05-26T22:11:06.154+0400] {base.py:73} INFO - Using connection ID 'podcasts' for task execution.
+[2023-05-26T22:11:08.578+0400] {logging_mixin.py:149} INFO - Transcribing what-you-miss-when-you-miss-watercooler-conversations.mp3
+[2023-05-26T22:11:56.428+0400] {job.py:216} ERROR - Job heartbeat got an exception
+Traceback (most recent call last):
+  File "/home/chinnu/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1094, in _commit_impl
+    self.engine.dialect.do_commit(self.connection)
+  File "/home/chinnu/.local/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 686, in do_commit
+    dbapi_connection.commit()
+sqlite3.OperationalError: disk I/O error
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/chinnu/.local/lib/python3.10/site-packages/airflow/jobs/job.py", line 208, in heartbeat
+    session.commit()
+  File "/home/chinnu/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 1454, in commit
+    self._transaction.commit(_to_root=self.future)
+  File "/home/chinnu/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 839, in commit
+    trans.commit()
+  File "/home/chinnu/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 2464, in commit
+    self._do_commit()
+  File "/home/chinnu/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 2654, in _do_commit
+    self._connection_commit_impl()
+  File "/home/chinnu/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 2625, in _connection_commit_impl
+    self.connection._commit_impl()
+  File "/home/chinnu/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1096, in _commit_impl
+    self._handle_dbapi_exception(e, None, None, None, None)
+  File "/home/chinnu/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 2129, in _handle_dbapi_exception
+    util.raise_(
+  File "/home/chinnu/.local/lib/python3.10/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/chinnu/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1094, in _commit_impl
+    self.engine.dialect.do_commit(self.connection)
+  File "/home/chinnu/.local/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 686, in do_commit
+    dbapi_connection.commit()
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) disk I/O error
+(Background on this error at: https://sqlalche.me/e/14/e3q8)

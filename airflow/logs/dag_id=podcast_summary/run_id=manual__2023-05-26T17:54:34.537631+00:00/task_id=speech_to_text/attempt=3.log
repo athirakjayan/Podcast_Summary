@@ -1,0 +1,44 @@
+[2023-05-26T22:01:10.787+0400] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: podcast_summary.speech_to_text manual__2023-05-26T17:54:34.537631+00:00 [queued]>
+[2023-05-26T22:01:10.794+0400] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: podcast_summary.speech_to_text manual__2023-05-26T17:54:34.537631+00:00 [queued]>
+[2023-05-26T22:01:10.794+0400] {taskinstance.py:1308} INFO - Starting attempt 3 of 1
+[2023-05-26T22:01:10.810+0400] {taskinstance.py:1327} INFO - Executing <Task(_PythonDecoratedOperator): speech_to_text> on 2023-05-26 17:54:34.537631+00:00
+[2023-05-26T22:01:10.851+0400] {standard_task_runner.py:57} INFO - Started process 1365 to run task
+[2023-05-26T22:01:10.863+0400] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'podcast_summary', 'speech_to_text', 'manual__2023-05-26T17:54:34.537631+00:00', '--job-id', '136', '--raw', '--subdir', 'DAGS_FOLDER/podcast_summary.py', '--cfg-path', '/tmp/tmp_9bk__7v']
+[2023-05-26T22:01:10.868+0400] {standard_task_runner.py:85} INFO - Job 136: Subtask speech_to_text
+[2023-05-26T22:01:10.943+0400] {task_command.py:410} INFO - Running <TaskInstance: podcast_summary.speech_to_text manual__2023-05-26T17:54:34.537631+00:00 [running]> on host DESKTOP-V010GL9.localdomain
+[2023-05-26T22:01:11.024+0400] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='podcast_summary' AIRFLOW_CTX_TASK_ID='speech_to_text' AIRFLOW_CTX_EXECUTION_DATE='2023-05-26T17:54:34.537631+00:00' AIRFLOW_CTX_TRY_NUMBER='3' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-05-26T17:54:34.537631+00:00'
+[2023-05-26T22:01:11.033+0400] {base.py:73} INFO - Using connection ID 'podcasts' for task execution.
+[2023-05-26T22:01:13.093+0400] {logging_mixin.py:149} INFO - Transcribing what-you-miss-when-you-miss-watercooler-conversations.mp3
+[2023-05-26T22:03:37.465+0400] {local_task_job_runner.py:115} ERROR - Received SIGTERM. Terminating subprocesses
+[2023-05-26T22:03:37.473+0400] {process_utils.py:131} INFO - Sending Signals.SIGTERM to group 1365. PIDs of all processes in the group: [1879, 1365]
+[2023-05-26T22:03:37.473+0400] {process_utils.py:86} INFO - Sending the signal Signals.SIGTERM to group 1365
+[2023-05-26T22:03:37.507+0400] {taskinstance.py:1517} ERROR - Received SIGTERM. Terminating subprocesses.
+[2023-05-26T22:03:37.517+0400] {taskinstance.py:1824} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/chinnu/.local/lib/python3.10/site-packages/airflow/decorators/base.py", line 220, in execute
+    return_value = super().execute(context)
+  File "/home/chinnu/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 181, in execute
+    return_value = self.execute_callable()
+  File "/home/chinnu/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 198, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/home/chinnu/airflow/dags/podcast_summary.py", line 103, in speech_to_text
+    mp3 = AudioSegment.from_mp3(filepath)
+  File "/home/chinnu/.local/lib/python3.10/site-packages/pydub/audio_segment.py", line 796, in from_mp3
+    return cls.from_file(file, 'mp3', parameters=parameters)
+  File "/home/chinnu/.local/lib/python3.10/site-packages/pydub/audio_segment.py", line 768, in from_file
+    p_out, p_err = p.communicate(input=stdin_data)
+  File "/usr/lib/python3.10/subprocess.py", line 1152, in communicate
+    stdout, stderr = self._communicate(input, endtime, timeout)
+  File "/usr/lib/python3.10/subprocess.py", line 2003, in _communicate
+    ready = selector.select(timeout)
+  File "/usr/lib/python3.10/selectors.py", line 416, in select
+    fd_event_list = self._selector.poll(timeout)
+  File "/home/chinnu/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 1519, in signal_handler
+    raise AirflowException("Task received SIGTERM signal")
+airflow.exceptions.AirflowException: Task received SIGTERM signal
+[2023-05-26T22:03:37.744+0400] {taskinstance.py:1345} INFO - Marking task as FAILED. dag_id=podcast_summary, task_id=speech_to_text, execution_date=20230526T175434, start_date=20230526T180214, end_date=20230526T180337
+[2023-05-26T22:03:37.782+0400] {standard_task_runner.py:104} ERROR - Failed to execute job 136 for task speech_to_text (Task received SIGTERM signal; 1365)
+[2023-05-26T22:03:37.788+0400] {process_utils.py:79} INFO - Process psutil.Process(pid=1879, status='terminated', started='22:01:12') (1879) terminated with exit code None
+[2023-05-26T22:03:37.791+0400] {process_utils.py:79} INFO - Process psutil.Process(pid=1365, status='terminated', exitcode=1, started='22:01:09') (1365) terminated with exit code 1
+[2023-05-26T22:03:37.792+0400] {local_task_job_runner.py:225} INFO - Task exited with return code 143
+[2023-05-26T22:03:37.826+0400] {taskinstance.py:2651} INFO - 0 downstream tasks scheduled from follow-on schedule check

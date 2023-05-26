@@ -1,0 +1,18 @@
+[2023-05-26T21:20:25.714+0400] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: podcast_summary.speech_to_text manual__2023-05-26T17:19:57.216571+00:00 [queued]>
+[2023-05-26T21:20:25.722+0400] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: podcast_summary.speech_to_text manual__2023-05-26T17:19:57.216571+00:00 [queued]>
+[2023-05-26T21:20:25.722+0400] {taskinstance.py:1308} INFO - Starting attempt 1 of 1
+[2023-05-26T21:20:25.737+0400] {taskinstance.py:1327} INFO - Executing <Task(_PythonDecoratedOperator): speech_to_text> on 2023-05-26 17:19:57.216571+00:00
+[2023-05-26T21:20:25.765+0400] {standard_task_runner.py:57} INFO - Started process 16947 to run task
+[2023-05-26T21:20:25.774+0400] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'podcast_summary', 'speech_to_text', 'manual__2023-05-26T17:19:57.216571+00:00', '--job-id', '124', '--raw', '--subdir', 'DAGS_FOLDER/podcast_summary.py', '--cfg-path', '/tmp/tmp18wr0bza']
+[2023-05-26T21:20:25.779+0400] {standard_task_runner.py:85} INFO - Job 124: Subtask speech_to_text
+[2023-05-26T21:20:25.845+0400] {task_command.py:410} INFO - Running <TaskInstance: podcast_summary.speech_to_text manual__2023-05-26T17:19:57.216571+00:00 [running]> on host DESKTOP-V010GL9.localdomain
+[2023-05-26T21:20:25.929+0400] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='podcast_summary' AIRFLOW_CTX_TASK_ID='speech_to_text' AIRFLOW_CTX_EXECUTION_DATE='2023-05-26T17:19:57.216571+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-05-26T17:19:57.216571+00:00'
+[2023-05-26T21:20:25.936+0400] {base.py:73} INFO - Using connection ID 'podcasts' for task execution.
+[2023-05-26T21:20:27.020+0400] {logging_mixin.py:149} INFO - model name ./models/vosk-model-en-us-0.22-lgraph does not exist
+[2023-05-26T21:20:27.027+0400] {logging_mixin.py:149} WARNING - Exception ignored in: <function Model.__del__ at 0x7f06b9034a60>
+[2023-05-26T21:20:27.029+0400] {logging_mixin.py:149} WARNING - Traceback (most recent call last):
+[2023-05-26T21:20:27.030+0400] {logging_mixin.py:149} WARNING -   File "/home/chinnu/.local/lib/python3.10/site-packages/vosk/__init__.py", line 60, in __del__
+[2023-05-26T21:20:27.031+0400] {logging_mixin.py:149} WARNING -     _c.vosk_model_free(self._handle)
+[2023-05-26T21:20:27.031+0400] {logging_mixin.py:149} WARNING - AttributeError: 'Model' object has no attribute '_handle'
+[2023-05-26T21:20:27.054+0400] {local_task_job_runner.py:225} INFO - Task exited with return code 1
+[2023-05-26T21:20:27.098+0400] {taskinstance.py:2651} INFO - 0 downstream tasks scheduled from follow-on schedule check

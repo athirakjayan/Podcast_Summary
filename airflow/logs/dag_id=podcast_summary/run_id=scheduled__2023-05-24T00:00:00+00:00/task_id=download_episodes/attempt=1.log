@@ -1,0 +1,12 @@
+[2023-05-25T19:33:23.243+0400] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: podcast_summary.download_episodes scheduled__2023-05-24T00:00:00+00:00 [queued]>
+[2023-05-25T19:33:23.255+0400] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: podcast_summary.download_episodes scheduled__2023-05-24T00:00:00+00:00 [queued]>
+[2023-05-25T19:33:23.256+0400] {taskinstance.py:1308} INFO - Starting attempt 1 of 1
+[2023-05-25T19:33:23.274+0400] {taskinstance.py:1327} INFO - Executing <Task(_PythonDecoratedOperator): download_episodes> on 2023-05-24 00:00:00+00:00
+[2023-05-25T19:33:23.305+0400] {standard_task_runner.py:57} INFO - Started process 113 to run task
+[2023-05-25T19:33:23.316+0400] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'podcast_summary', 'download_episodes', 'scheduled__2023-05-24T00:00:00+00:00', '--job-id', '71', '--raw', '--subdir', 'DAGS_FOLDER/podcast_summary.py', '--cfg-path', '/tmp/tmpq47jfm27']
+[2023-05-25T19:33:23.321+0400] {standard_task_runner.py:85} INFO - Job 71: Subtask download_episodes
+[2023-05-25T19:33:23.384+0400] {task_command.py:410} INFO - Running <TaskInstance: podcast_summary.download_episodes scheduled__2023-05-24T00:00:00+00:00 [running]> on host DESKTOP-V010GL9.localdomain
+[2023-05-25T19:33:23.494+0400] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='podcast_summary' AIRFLOW_CTX_TASK_ID='download_episodes' AIRFLOW_CTX_EXECUTION_DATE='2023-05-24T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-05-24T00:00:00+00:00'
+[2023-05-25T19:33:23.497+0400] {logging_mixin.py:149} INFO - Downloading atlanta-fed-ceo-on-the-debt-limit-debacle-and-curbing-inflation.mp3
+[2023-05-25T19:33:51.129+0400] {python.py:183} INFO - Done. Returned value was: None
+[2023-05-25T19:33:51.135+0400] {taskinstance.py:1345} INFO - Marking task as SUCCESS. dag_id=podcast_summary, task_id=download_episodes, execution_date=20230524T000000, start_date=20230525T153323, end_date=20230525T153351

@@ -1,0 +1,42 @@
+[2023-05-25T19:37:10.569+0400] {processor.py:157} INFO - Started process (PID=320) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_dynamic_task_mapping.py
+[2023-05-25T19:37:10.575+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_dynamic_task_mapping.py for tasks to queue
+[2023-05-25T19:37:10.578+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:37:10.578+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_dynamic_task_mapping.py
+[2023-05-25T19:37:10.608+0400] {processor.py:836} INFO - DAG(s) dict_keys(['example_dynamic_task_mapping']) retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_dynamic_task_mapping.py
+[2023-05-25T19:37:10.655+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:37:10.655+0400] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-25T19:37:10.691+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:37:10.691+0400] {dag.py:3486} INFO - Setting next_dagrun for example_dynamic_task_mapping to 2022-03-04T00:00:00+00:00, run_after=2022-03-05T00:00:00+00:00
+[2023-05-25T19:37:10.737+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_dynamic_task_mapping.py took 0.191 seconds
+[2023-05-25T19:38:26.021+0400] {processor.py:157} INFO - Started process (PID=403) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_dynamic_task_mapping.py
+[2023-05-25T19:38:26.025+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_dynamic_task_mapping.py for tasks to queue
+[2023-05-25T19:38:26.027+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:38:26.027+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_dynamic_task_mapping.py
+[2023-05-25T19:38:26.058+0400] {processor.py:836} INFO - DAG(s) dict_keys(['example_dynamic_task_mapping']) retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_dynamic_task_mapping.py
+[2023-05-25T19:38:26.423+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:38:26.422+0400] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-25T19:38:26.519+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:38:26.519+0400] {dag.py:3486} INFO - Setting next_dagrun for example_dynamic_task_mapping to 2022-03-04T00:00:00+00:00, run_after=2022-03-05T00:00:00+00:00
+[2023-05-25T19:38:26.600+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_dynamic_task_mapping.py took 0.596 seconds
+[2023-05-25T19:39:44.988+0400] {processor.py:157} INFO - Started process (PID=463) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_dynamic_task_mapping.py
+[2023-05-25T19:39:44.992+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_dynamic_task_mapping.py for tasks to queue
+[2023-05-25T19:39:44.998+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:39:44.996+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_dynamic_task_mapping.py
+[2023-05-25T19:39:45.088+0400] {processor.py:836} INFO - DAG(s) dict_keys(['example_dynamic_task_mapping']) retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_dynamic_task_mapping.py
+[2023-05-25T19:39:45.238+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:39:45.237+0400] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-25T19:39:45.320+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:39:45.320+0400] {dag.py:3486} INFO - Setting next_dagrun for example_dynamic_task_mapping to 2022-03-04T00:00:00+00:00, run_after=2022-03-05T00:00:00+00:00
+[2023-05-25T19:39:45.367+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_dynamic_task_mapping.py took 0.414 seconds
+[2023-05-25T19:40:45.544+0400] {processor.py:157} INFO - Started process (PID=514) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_dynamic_task_mapping.py
+[2023-05-25T19:40:45.550+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_dynamic_task_mapping.py for tasks to queue
+[2023-05-25T19:40:45.553+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:40:45.553+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_dynamic_task_mapping.py
+[2023-05-25T19:40:45.613+0400] {processor.py:836} INFO - DAG(s) dict_keys(['example_dynamic_task_mapping']) retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_dynamic_task_mapping.py
+[2023-05-25T19:40:45.665+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:40:45.665+0400] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-25T19:40:45.695+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:40:45.694+0400] {dag.py:3486} INFO - Setting next_dagrun for example_dynamic_task_mapping to 2022-03-04T00:00:00+00:00, run_after=2022-03-05T00:00:00+00:00
+[2023-05-25T19:40:45.732+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_dynamic_task_mapping.py took 0.218 seconds
+[2023-05-25T19:41:45.793+0400] {processor.py:157} INFO - Started process (PID=564) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_dynamic_task_mapping.py
+[2023-05-25T19:41:45.795+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_dynamic_task_mapping.py for tasks to queue
+[2023-05-25T19:41:45.797+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:41:45.797+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_dynamic_task_mapping.py
+[2023-05-25T19:41:45.830+0400] {processor.py:836} INFO - DAG(s) dict_keys(['example_dynamic_task_mapping']) retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_dynamic_task_mapping.py
+[2023-05-25T19:41:45.902+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:41:45.902+0400] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-25T19:41:45.958+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:41:45.957+0400] {dag.py:3486} INFO - Setting next_dagrun for example_dynamic_task_mapping to 2022-03-04T00:00:00+00:00, run_after=2022-03-05T00:00:00+00:00
+[2023-05-25T19:41:46.026+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_dynamic_task_mapping.py took 0.250 seconds
+[2023-05-25T19:42:47.035+0400] {processor.py:157} INFO - Started process (PID=615) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_dynamic_task_mapping.py
+[2023-05-25T19:42:47.039+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_dynamic_task_mapping.py for tasks to queue
+[2023-05-25T19:42:47.042+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:42:47.041+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_dynamic_task_mapping.py
+[2023-05-25T19:42:47.087+0400] {processor.py:836} INFO - DAG(s) dict_keys(['example_dynamic_task_mapping']) retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_dynamic_task_mapping.py
+[2023-05-25T19:42:47.200+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:42:47.199+0400] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-25T19:42:47.348+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:42:47.347+0400] {dag.py:3486} INFO - Setting next_dagrun for example_dynamic_task_mapping to 2022-03-04T00:00:00+00:00, run_after=2022-03-05T00:00:00+00:00
+[2023-05-25T19:42:47.432+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_dynamic_task_mapping.py took 0.416 seconds

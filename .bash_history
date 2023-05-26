@@ -70,3 +70,44 @@ git config --global user.name "Athira"
 git config --global user.email "athirakj15@gmail.com"
 git init
 git add .
+ls
+ls Project/
+git config --global user.name "Athira"
+git config --global user.email "athirakj15@gmail.com"
+git init
+git add .
+git commit -m "Initial commit"
+git remote add origin https://github.com/athirakjayan/Download_Podcast
+git push -u origin master
+cd Project/
+git push -u origin master
+git remote add origin https://github.com/athirakjayan/Download_Podcast
+git push -u origin master
+cd Project/
+git push -u origin master
+cd Project/
+git push -u origin master
+airflow webserver --port 8080
+airflow scheduler
+airflow webserver --port 8080
+kill PID 133
+airflow webserver --port 8080
+pip install vosk
+pip install pydub
+cd Project/
+cd ..
+airflow scheduler
+airflow webserver --port 8080
+sudo apt-get install ffmpeg
+airflow webserver --port 8080
+airflow scheduler
+airflow webserver --port 8080
+kill PID 45
+airflow webserver --port 8080
+airflow sheduler
+airflow scheduler
+airflow webserver --port 8080
+airflow scheduler
+airflow webserver --port 8080
+git config --global user.name athirakj15@gmail.com
+git config --global user.email athirakj15@gmail.com

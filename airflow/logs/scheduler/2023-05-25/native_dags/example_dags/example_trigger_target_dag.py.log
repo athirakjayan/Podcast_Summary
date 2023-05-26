@@ -1,0 +1,49 @@
+[2023-05-25T19:34:39.563+0400] {processor.py:157} INFO - Started process (PID=161) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_trigger_target_dag.py
+[2023-05-25T19:34:39.567+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_trigger_target_dag.py for tasks to queue
+[2023-05-25T19:34:39.568+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:34:39.568+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_trigger_target_dag.py
+[2023-05-25T19:34:39.595+0400] {processor.py:836} INFO - DAG(s) dict_keys(['example_trigger_target_dag']) retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_trigger_target_dag.py
+[2023-05-25T19:34:39.673+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:34:39.673+0400] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-25T19:34:39.728+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:34:39.727+0400] {dag.py:3486} INFO - Setting next_dagrun for example_trigger_target_dag to None, run_after=None
+[2023-05-25T19:34:39.775+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_trigger_target_dag.py took 0.232 seconds
+[2023-05-25T19:36:15.770+0400] {processor.py:157} INFO - Started process (PID=272) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_trigger_target_dag.py
+[2023-05-25T19:36:15.772+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_trigger_target_dag.py for tasks to queue
+[2023-05-25T19:36:15.773+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:36:15.773+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_trigger_target_dag.py
+[2023-05-25T19:36:15.800+0400] {processor.py:836} INFO - DAG(s) dict_keys(['example_trigger_target_dag']) retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_trigger_target_dag.py
+[2023-05-25T19:36:15.857+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:36:15.856+0400] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-25T19:36:15.896+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:36:15.896+0400] {dag.py:3486} INFO - Setting next_dagrun for example_trigger_target_dag to None, run_after=None
+[2023-05-25T19:36:15.934+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_trigger_target_dag.py took 0.170 seconds
+[2023-05-25T19:37:41.188+0400] {processor.py:157} INFO - Started process (PID=346) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_trigger_target_dag.py
+[2023-05-25T19:37:41.191+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_trigger_target_dag.py for tasks to queue
+[2023-05-25T19:37:41.192+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:37:41.192+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_trigger_target_dag.py
+[2023-05-25T19:37:41.208+0400] {processor.py:836} INFO - DAG(s) dict_keys(['example_trigger_target_dag']) retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_trigger_target_dag.py
+[2023-05-25T19:37:41.269+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:37:41.269+0400] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-25T19:37:41.686+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:37:41.686+0400] {dag.py:3486} INFO - Setting next_dagrun for example_trigger_target_dag to None, run_after=None
+[2023-05-25T19:37:41.756+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_trigger_target_dag.py took 0.581 seconds
+[2023-05-25T19:39:04.410+0400] {processor.py:157} INFO - Started process (PID=429) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_trigger_target_dag.py
+[2023-05-25T19:39:04.416+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_trigger_target_dag.py for tasks to queue
+[2023-05-25T19:39:04.420+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:39:04.420+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_trigger_target_dag.py
+[2023-05-25T19:39:04.450+0400] {processor.py:836} INFO - DAG(s) dict_keys(['example_trigger_target_dag']) retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_trigger_target_dag.py
+[2023-05-25T19:39:04.523+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:39:04.522+0400] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-25T19:39:04.575+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:39:04.575+0400] {dag.py:3486} INFO - Setting next_dagrun for example_trigger_target_dag to None, run_after=None
+[2023-05-25T19:39:04.643+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_trigger_target_dag.py took 0.244 seconds
+[2023-05-25T19:40:07.000+0400] {processor.py:157} INFO - Started process (PID=480) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_trigger_target_dag.py
+[2023-05-25T19:40:07.005+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_trigger_target_dag.py for tasks to queue
+[2023-05-25T19:40:07.008+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:40:07.007+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_trigger_target_dag.py
+[2023-05-25T19:40:07.035+0400] {processor.py:836} INFO - DAG(s) dict_keys(['example_trigger_target_dag']) retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_trigger_target_dag.py
+[2023-05-25T19:40:07.111+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:40:07.111+0400] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-25T19:40:07.150+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:40:07.149+0400] {dag.py:3486} INFO - Setting next_dagrun for example_trigger_target_dag to None, run_after=None
+[2023-05-25T19:40:07.186+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_trigger_target_dag.py took 0.199 seconds
+[2023-05-25T19:41:08.456+0400] {processor.py:157} INFO - Started process (PID=531) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_trigger_target_dag.py
+[2023-05-25T19:41:08.459+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_trigger_target_dag.py for tasks to queue
+[2023-05-25T19:41:08.460+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:41:08.460+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_trigger_target_dag.py
+[2023-05-25T19:41:08.479+0400] {processor.py:836} INFO - DAG(s) dict_keys(['example_trigger_target_dag']) retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_trigger_target_dag.py
+[2023-05-25T19:41:08.537+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:41:08.537+0400] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-25T19:41:08.576+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:41:08.576+0400] {dag.py:3486} INFO - Setting next_dagrun for example_trigger_target_dag to None, run_after=None
+[2023-05-25T19:41:08.616+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_trigger_target_dag.py took 0.178 seconds
+[2023-05-25T19:42:09.108+0400] {processor.py:157} INFO - Started process (PID=581) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_trigger_target_dag.py
+[2023-05-25T19:42:09.112+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_trigger_target_dag.py for tasks to queue
+[2023-05-25T19:42:09.114+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:42:09.113+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_trigger_target_dag.py
+[2023-05-25T19:42:09.141+0400] {processor.py:836} INFO - DAG(s) dict_keys(['example_trigger_target_dag']) retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_trigger_target_dag.py
+[2023-05-25T19:42:09.206+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:42:09.206+0400] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-25T19:42:09.245+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:42:09.244+0400] {dag.py:3486} INFO - Setting next_dagrun for example_trigger_target_dag to None, run_after=None
+[2023-05-25T19:42:09.294+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_trigger_target_dag.py took 0.201 seconds

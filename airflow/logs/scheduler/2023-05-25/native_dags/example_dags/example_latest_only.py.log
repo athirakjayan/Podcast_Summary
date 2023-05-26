@@ -1,0 +1,42 @@
+[2023-05-25T19:37:05.870+0400] {processor.py:157} INFO - Started process (PID=317) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_latest_only.py
+[2023-05-25T19:37:05.872+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_latest_only.py for tasks to queue
+[2023-05-25T19:37:05.874+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:37:05.874+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_latest_only.py
+[2023-05-25T19:37:05.895+0400] {processor.py:836} INFO - DAG(s) dict_keys(['latest_only']) retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_latest_only.py
+[2023-05-25T19:37:05.969+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:37:05.969+0400] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-25T19:37:06.005+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:37:06.004+0400] {dag.py:3486} INFO - Setting next_dagrun for latest_only to 2023-05-25T11:37:06.004231+00:00, run_after=2023-05-25T15:37:06.004231+00:00
+[2023-05-25T19:37:06.056+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_latest_only.py took 0.199 seconds
+[2023-05-25T19:38:21.604+0400] {processor.py:157} INFO - Started process (PID=400) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_latest_only.py
+[2023-05-25T19:38:21.608+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_latest_only.py for tasks to queue
+[2023-05-25T19:38:21.610+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:38:21.609+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_latest_only.py
+[2023-05-25T19:38:21.630+0400] {processor.py:836} INFO - DAG(s) dict_keys(['latest_only']) retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_latest_only.py
+[2023-05-25T19:38:21.913+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:38:21.913+0400] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-25T19:38:21.940+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:38:21.940+0400] {dag.py:3486} INFO - Setting next_dagrun for latest_only to 2023-05-25T11:38:21.940004+00:00, run_after=2023-05-25T15:38:21.940004+00:00
+[2023-05-25T19:38:21.983+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_latest_only.py took 0.391 seconds
+[2023-05-25T19:39:40.379+0400] {processor.py:157} INFO - Started process (PID=460) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_latest_only.py
+[2023-05-25T19:39:40.382+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_latest_only.py for tasks to queue
+[2023-05-25T19:39:40.383+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:39:40.383+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_latest_only.py
+[2023-05-25T19:39:40.402+0400] {processor.py:836} INFO - DAG(s) dict_keys(['latest_only']) retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_latest_only.py
+[2023-05-25T19:39:40.472+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:39:40.471+0400] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-25T19:39:40.530+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:39:40.529+0400] {dag.py:3486} INFO - Setting next_dagrun for latest_only to 2023-05-25T11:39:40.527613+00:00, run_after=2023-05-25T15:39:40.527613+00:00
+[2023-05-25T19:39:40.583+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_latest_only.py took 0.214 seconds
+[2023-05-25T19:40:41.549+0400] {processor.py:157} INFO - Started process (PID=511) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_latest_only.py
+[2023-05-25T19:40:41.553+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_latest_only.py for tasks to queue
+[2023-05-25T19:40:41.555+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:40:41.554+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_latest_only.py
+[2023-05-25T19:40:41.582+0400] {processor.py:836} INFO - DAG(s) dict_keys(['latest_only']) retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_latest_only.py
+[2023-05-25T19:40:41.652+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:40:41.652+0400] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-25T19:40:41.690+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:40:41.689+0400] {dag.py:3486} INFO - Setting next_dagrun for latest_only to 2023-05-25T11:40:41.689348+00:00, run_after=2023-05-25T15:40:41.689348+00:00
+[2023-05-25T19:40:41.736+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_latest_only.py took 0.205 seconds
+[2023-05-25T19:41:41.810+0400] {processor.py:157} INFO - Started process (PID=561) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_latest_only.py
+[2023-05-25T19:41:41.818+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_latest_only.py for tasks to queue
+[2023-05-25T19:41:41.823+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:41:41.821+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_latest_only.py
+[2023-05-25T19:41:41.866+0400] {processor.py:836} INFO - DAG(s) dict_keys(['latest_only']) retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_latest_only.py
+[2023-05-25T19:41:42.060+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:41:42.059+0400] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-25T19:41:42.129+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:41:42.128+0400] {dag.py:3486} INFO - Setting next_dagrun for latest_only to 2023-05-25T11:41:42.128501+00:00, run_after=2023-05-25T15:41:42.128501+00:00
+[2023-05-25T19:41:42.192+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_latest_only.py took 0.403 seconds
+[2023-05-25T19:42:43.170+0400] {processor.py:157} INFO - Started process (PID=612) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_latest_only.py
+[2023-05-25T19:42:43.174+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_latest_only.py for tasks to queue
+[2023-05-25T19:42:43.176+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:42:43.176+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_latest_only.py
+[2023-05-25T19:42:43.208+0400] {processor.py:836} INFO - DAG(s) dict_keys(['latest_only']) retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_latest_only.py
+[2023-05-25T19:42:43.294+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:42:43.293+0400] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-25T19:42:43.341+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:42:43.340+0400] {dag.py:3486} INFO - Setting next_dagrun for latest_only to 2023-05-25T11:42:43.340441+00:00, run_after=2023-05-25T15:42:43.340441+00:00
+[2023-05-25T19:42:43.384+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_latest_only.py took 0.232 seconds

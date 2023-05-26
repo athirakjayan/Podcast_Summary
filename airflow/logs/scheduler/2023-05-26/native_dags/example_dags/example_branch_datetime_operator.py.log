@@ -1,0 +1,335 @@
+[2023-05-26T19:39:16.956+0400] {processor.py:157} INFO - Started process (PID=240) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py
+[2023-05-26T19:39:16.958+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py for tasks to queue
+[2023-05-26T19:39:16.959+0400] {logging_mixin.py:149} INFO - [2023-05-26T19:39:16.959+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py
+[2023-05-26T19:39:16.993+0400] {processor.py:836} INFO - DAG(s) dict_keys(['example_branch_datetime_operator_2', 'example_branch_datetime_operator_3', 'example_branch_datetime_operator']) retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py
+[2023-05-26T19:39:17.059+0400] {logging_mixin.py:149} INFO - [2023-05-26T19:39:17.059+0400] {dag.py:2726} INFO - Sync 3 DAGs
+[2023-05-26T19:39:17.081+0400] {logging_mixin.py:149} INFO - [2023-05-26T19:39:17.081+0400] {dag.py:3486} INFO - Setting next_dagrun for example_branch_datetime_operator to 2023-05-25T00:00:00+00:00, run_after=2023-05-26T00:00:00+00:00
+[2023-05-26T19:39:17.085+0400] {logging_mixin.py:149} INFO - [2023-05-26T19:39:17.085+0400] {dag.py:3486} INFO - Setting next_dagrun for example_branch_datetime_operator_2 to 2023-05-25T00:00:00+00:00, run_after=2023-05-26T00:00:00+00:00
+[2023-05-26T19:39:17.087+0400] {logging_mixin.py:149} INFO - [2023-05-26T19:39:17.087+0400] {dag.py:3486} INFO - Setting next_dagrun for example_branch_datetime_operator_3 to 2023-05-25T00:00:00+00:00, run_after=2023-05-26T00:00:00+00:00
+[2023-05-26T19:39:17.120+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py took 0.172 seconds
+[2023-05-26T19:40:32.000+0400] {processor.py:157} INFO - Started process (PID=824) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py
+[2023-05-26T19:40:32.002+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py for tasks to queue
+[2023-05-26T19:40:32.003+0400] {logging_mixin.py:149} INFO - [2023-05-26T19:40:32.003+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py
+[2023-05-26T19:40:32.022+0400] {processor.py:836} INFO - DAG(s) dict_keys(['example_branch_datetime_operator_3', 'example_branch_datetime_operator', 'example_branch_datetime_operator_2']) retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py
+[2023-05-26T19:40:32.060+0400] {logging_mixin.py:149} INFO - [2023-05-26T19:40:32.060+0400] {dag.py:2726} INFO - Sync 3 DAGs
+[2023-05-26T19:40:32.082+0400] {logging_mixin.py:149} INFO - [2023-05-26T19:40:32.082+0400] {dag.py:3486} INFO - Setting next_dagrun for example_branch_datetime_operator to 2023-05-25T00:00:00+00:00, run_after=2023-05-26T00:00:00+00:00
+[2023-05-26T19:40:32.087+0400] {logging_mixin.py:149} INFO - [2023-05-26T19:40:32.086+0400] {dag.py:3486} INFO - Setting next_dagrun for example_branch_datetime_operator_2 to 2023-05-25T00:00:00+00:00, run_after=2023-05-26T00:00:00+00:00
+[2023-05-26T19:40:32.089+0400] {logging_mixin.py:149} INFO - [2023-05-26T19:40:32.089+0400] {dag.py:3486} INFO - Setting next_dagrun for example_branch_datetime_operator_3 to 2023-05-25T00:00:00+00:00, run_after=2023-05-26T00:00:00+00:00
+[2023-05-26T19:40:32.119+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py took 0.133 seconds
+[2023-05-26T19:42:43.160+0400] {processor.py:157} INFO - Started process (PID=1455) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py
+[2023-05-26T19:42:43.163+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py for tasks to queue
+[2023-05-26T19:42:43.165+0400] {logging_mixin.py:149} INFO - [2023-05-26T19:42:43.165+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py
+[2023-05-26T19:42:43.201+0400] {processor.py:836} INFO - DAG(s) dict_keys(['example_branch_datetime_operator_2', 'example_branch_datetime_operator_3', 'example_branch_datetime_operator']) retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py
+[2023-05-26T19:42:43.344+0400] {logging_mixin.py:149} INFO - [2023-05-26T19:42:43.344+0400] {dag.py:2726} INFO - Sync 3 DAGs
+[2023-05-26T19:42:43.559+0400] {logging_mixin.py:149} INFO - [2023-05-26T19:42:43.559+0400] {dag.py:3486} INFO - Setting next_dagrun for example_branch_datetime_operator to 2023-05-25T00:00:00+00:00, run_after=2023-05-26T00:00:00+00:00
+[2023-05-26T19:42:43.563+0400] {logging_mixin.py:149} INFO - [2023-05-26T19:42:43.563+0400] {dag.py:3486} INFO - Setting next_dagrun for example_branch_datetime_operator_2 to 2023-05-25T00:00:00+00:00, run_after=2023-05-26T00:00:00+00:00
+[2023-05-26T19:42:43.565+0400] {logging_mixin.py:149} INFO - [2023-05-26T19:42:43.565+0400] {dag.py:3486} INFO - Setting next_dagrun for example_branch_datetime_operator_3 to 2023-05-25T00:00:00+00:00, run_after=2023-05-26T00:00:00+00:00
+[2023-05-26T19:42:43.594+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py took 0.450 seconds
+[2023-05-26T19:43:57.644+0400] {processor.py:157} INFO - Started process (PID=1515) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py
+[2023-05-26T19:43:57.651+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py for tasks to queue
+[2023-05-26T19:43:57.654+0400] {logging_mixin.py:149} INFO - [2023-05-26T19:43:57.654+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py
+[2023-05-26T19:43:57.711+0400] {processor.py:836} INFO - DAG(s) dict_keys(['example_branch_datetime_operator_3', 'example_branch_datetime_operator', 'example_branch_datetime_operator_2']) retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py
+[2023-05-26T19:43:57.810+0400] {logging_mixin.py:149} INFO - [2023-05-26T19:43:57.810+0400] {dag.py:2726} INFO - Sync 3 DAGs
+[2023-05-26T19:43:57.875+0400] {logging_mixin.py:149} INFO - [2023-05-26T19:43:57.875+0400] {dag.py:3486} INFO - Setting next_dagrun for example_branch_datetime_operator to 2023-05-25T00:00:00+00:00, run_after=2023-05-26T00:00:00+00:00
+[2023-05-26T19:43:57.887+0400] {logging_mixin.py:149} INFO - [2023-05-26T19:43:57.886+0400] {dag.py:3486} INFO - Setting next_dagrun for example_branch_datetime_operator_2 to 2023-05-25T00:00:00+00:00, run_after=2023-05-26T00:00:00+00:00
+[2023-05-26T19:43:57.892+0400] {logging_mixin.py:149} INFO - [2023-05-26T19:43:57.891+0400] {dag.py:3486} INFO - Setting next_dagrun for example_branch_datetime_operator_3 to 2023-05-25T00:00:00+00:00, run_after=2023-05-26T00:00:00+00:00
+[2023-05-26T19:43:57.951+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py took 0.330 seconds
+[2023-05-26T19:45:05.171+0400] {processor.py:157} INFO - Started process (PID=1572) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py
+[2023-05-26T19:45:05.178+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py for tasks to queue
+[2023-05-26T19:45:05.181+0400] {logging_mixin.py:149} INFO - [2023-05-26T19:45:05.181+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py
+[2023-05-26T19:45:05.245+0400] {processor.py:836} INFO - DAG(s) dict_keys(['example_branch_datetime_operator', 'example_branch_datetime_operator_3', 'example_branch_datetime_operator_2']) retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py
+[2023-05-26T19:45:05.351+0400] {logging_mixin.py:149} INFO - [2023-05-26T19:45:05.351+0400] {dag.py:2726} INFO - Sync 3 DAGs
+[2023-05-26T19:45:05.402+0400] {logging_mixin.py:149} INFO - [2023-05-26T19:45:05.402+0400] {dag.py:3486} INFO - Setting next_dagrun for example_branch_datetime_operator to 2023-05-25T00:00:00+00:00, run_after=2023-05-26T00:00:00+00:00
+[2023-05-26T19:45:05.408+0400] {logging_mixin.py:149} INFO - [2023-05-26T19:45:05.408+0400] {dag.py:3486} INFO - Setting next_dagrun for example_branch_datetime_operator_2 to 2023-05-25T00:00:00+00:00, run_after=2023-05-26T00:00:00+00:00
+[2023-05-26T19:45:05.411+0400] {logging_mixin.py:149} INFO - [2023-05-26T19:45:05.411+0400] {dag.py:3486} INFO - Setting next_dagrun for example_branch_datetime_operator_3 to 2023-05-25T00:00:00+00:00, run_after=2023-05-26T00:00:00+00:00
+[2023-05-26T19:45:05.443+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py took 0.296 seconds
+[2023-05-26T19:46:04.447+0400] {processor.py:157} INFO - Started process (PID=1624) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py
+[2023-05-26T19:46:04.458+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py for tasks to queue
+[2023-05-26T19:46:04.460+0400] {logging_mixin.py:149} INFO - [2023-05-26T19:46:04.459+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py
+[2023-05-26T19:46:04.485+0400] {processor.py:836} INFO - DAG(s) dict_keys(['example_branch_datetime_operator_3', 'example_branch_datetime_operator', 'example_branch_datetime_operator_2']) retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py
+[2023-05-26T19:46:04.553+0400] {logging_mixin.py:149} INFO - [2023-05-26T19:46:04.552+0400] {dag.py:2726} INFO - Sync 3 DAGs
+[2023-05-26T19:46:04.600+0400] {logging_mixin.py:149} INFO - [2023-05-26T19:46:04.600+0400] {dag.py:3486} INFO - Setting next_dagrun for example_branch_datetime_operator to 2023-05-25T00:00:00+00:00, run_after=2023-05-26T00:00:00+00:00
+[2023-05-26T19:46:04.606+0400] {logging_mixin.py:149} INFO - [2023-05-26T19:46:04.606+0400] {dag.py:3486} INFO - Setting next_dagrun for example_branch_datetime_operator_2 to 2023-05-25T00:00:00+00:00, run_after=2023-05-26T00:00:00+00:00
+[2023-05-26T19:46:04.614+0400] {logging_mixin.py:149} INFO - [2023-05-26T19:46:04.613+0400] {dag.py:3486} INFO - Setting next_dagrun for example_branch_datetime_operator_3 to 2023-05-25T00:00:00+00:00, run_after=2023-05-26T00:00:00+00:00
+[2023-05-26T19:46:04.654+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py took 0.222 seconds
+[2023-05-26T21:06:09.301+0400] {processor.py:157} INFO - Started process (PID=103) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py
+[2023-05-26T21:06:09.311+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py for tasks to queue
+[2023-05-26T21:06:09.314+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:06:09.313+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py
+[2023-05-26T21:06:09.362+0400] {processor.py:836} INFO - DAG(s) dict_keys(['example_branch_datetime_operator_3', 'example_branch_datetime_operator', 'example_branch_datetime_operator_2']) retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py
+[2023-05-26T21:06:09.421+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:06:09.421+0400] {dag.py:2726} INFO - Sync 3 DAGs
+[2023-05-26T21:06:09.653+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:06:09.652+0400] {dag.py:3486} INFO - Setting next_dagrun for example_branch_datetime_operator to 2023-05-25T00:00:00+00:00, run_after=2023-05-26T00:00:00+00:00
+[2023-05-26T21:06:09.660+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:06:09.660+0400] {dag.py:3486} INFO - Setting next_dagrun for example_branch_datetime_operator_2 to 2023-05-25T00:00:00+00:00, run_after=2023-05-26T00:00:00+00:00
+[2023-05-26T21:06:09.664+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:06:09.664+0400] {dag.py:3486} INFO - Setting next_dagrun for example_branch_datetime_operator_3 to 2023-05-25T00:00:00+00:00, run_after=2023-05-26T00:00:00+00:00
+[2023-05-26T21:06:09.709+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py took 0.425 seconds
+[2023-05-26T21:07:16.636+0400] {processor.py:157} INFO - Started process (PID=186) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py
+[2023-05-26T21:07:16.639+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py for tasks to queue
+[2023-05-26T21:07:16.640+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:07:16.640+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py
+[2023-05-26T21:07:16.670+0400] {processor.py:836} INFO - DAG(s) dict_keys(['example_branch_datetime_operator_3', 'example_branch_datetime_operator', 'example_branch_datetime_operator_2']) retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py
+[2023-05-26T21:07:16.731+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:07:16.731+0400] {dag.py:2726} INFO - Sync 3 DAGs
+[2023-05-26T21:07:16.771+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:07:16.770+0400] {dag.py:3486} INFO - Setting next_dagrun for example_branch_datetime_operator to 2023-05-25T00:00:00+00:00, run_after=2023-05-26T00:00:00+00:00
+[2023-05-26T21:07:16.779+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:07:16.778+0400] {dag.py:3486} INFO - Setting next_dagrun for example_branch_datetime_operator_2 to 2023-05-25T00:00:00+00:00, run_after=2023-05-26T00:00:00+00:00
+[2023-05-26T21:07:16.782+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:07:16.782+0400] {dag.py:3486} INFO - Setting next_dagrun for example_branch_datetime_operator_3 to 2023-05-25T00:00:00+00:00, run_after=2023-05-26T00:00:00+00:00
+[2023-05-26T21:07:16.823+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py took 0.199 seconds
+[2023-05-26T21:11:13.170+0400] {processor.py:157} INFO - Started process (PID=1946) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py
+[2023-05-26T21:11:13.173+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py for tasks to queue
+[2023-05-26T21:11:13.175+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:11:13.174+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py
+[2023-05-26T21:11:13.200+0400] {processor.py:836} INFO - DAG(s) dict_keys(['example_branch_datetime_operator_3', 'example_branch_datetime_operator', 'example_branch_datetime_operator_2']) retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py
+[2023-05-26T21:11:13.257+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:11:13.257+0400] {dag.py:2726} INFO - Sync 3 DAGs
+[2023-05-26T21:11:13.674+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:11:13.673+0400] {dag.py:3486} INFO - Setting next_dagrun for example_branch_datetime_operator to 2023-05-25T00:00:00+00:00, run_after=2023-05-26T00:00:00+00:00
+[2023-05-26T21:11:13.688+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:11:13.688+0400] {dag.py:3486} INFO - Setting next_dagrun for example_branch_datetime_operator_2 to 2023-05-25T00:00:00+00:00, run_after=2023-05-26T00:00:00+00:00
+[2023-05-26T21:11:13.695+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:11:13.695+0400] {dag.py:3486} INFO - Setting next_dagrun for example_branch_datetime_operator_3 to 2023-05-25T00:00:00+00:00, run_after=2023-05-26T00:00:00+00:00
+[2023-05-26T21:11:13.762+0400] {processor.py:182} ERROR - Got an exception! Propagating...
+Traceback (most recent call last):
+  File "/home/chinnu/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1094, in _commit_impl
+    self.engine.dialect.do_commit(self.connection)
+  File "/home/chinnu/.local/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 686, in do_commit
+    dbapi_connection.commit()
+sqlite3.OperationalError: disk I/O error
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/chinnu/.local/lib/python3.10/site-packages/airflow/dag_processing/processor.py", line 178, in _run_file_processor
+    _handle_dag_file_processing()
+  File "/home/chinnu/.local/lib/python3.10/site-packages/airflow/dag_processing/processor.py", line 159, in _handle_dag_file_processing
+    result: tuple[int, int] = dag_file_processor.process_file(
+  File "/home/chinnu/.local/lib/python3.10/site-packages/airflow/utils/session.py", line 76, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/chinnu/.local/lib/python3.10/site-packages/airflow/dag_processing/processor.py", line 854, in process_file
+    serialize_errors = DagFileProcessor.save_dag_to_db(
+  File "/home/chinnu/.local/lib/python3.10/site-packages/airflow/api_internal/internal_api_call.py", line 112, in wrapper
+    return func(*args, **kwargs)
+  File "/home/chinnu/.local/lib/python3.10/site-packages/airflow/utils/session.py", line 76, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/chinnu/.local/lib/python3.10/site-packages/airflow/dag_processing/processor.py", line 891, in save_dag_to_db
+    session.commit()
+  File "/home/chinnu/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 1454, in commit
+    self._transaction.commit(_to_root=self.future)
+  File "/home/chinnu/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 839, in commit
+    trans.commit()
+  File "/home/chinnu/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 2464, in commit
+    self._do_commit()
+  File "/home/chinnu/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 2654, in _do_commit
+    self._connection_commit_impl()
+  File "/home/chinnu/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 2625, in _connection_commit_impl
+    self.connection._commit_impl()
+  File "/home/chinnu/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1096, in _commit_impl
+    self._handle_dbapi_exception(e, None, None, None, None)
+  File "/home/chinnu/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 2129, in _handle_dbapi_exception
+    util.raise_(
+  File "/home/chinnu/.local/lib/python3.10/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/chinnu/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1094, in _commit_impl
+    self.engine.dialect.do_commit(self.connection)
+  File "/home/chinnu/.local/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 686, in do_commit
+    dbapi_connection.commit()
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) disk I/O error
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2023-05-26T21:13:04.389+0400] {processor.py:157} INFO - Started process (PID=2051) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py
+[2023-05-26T21:13:04.391+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py for tasks to queue
+[2023-05-26T21:13:04.392+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:13:04.392+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py
+[2023-05-26T21:13:04.420+0400] {processor.py:836} INFO - DAG(s) dict_keys(['example_branch_datetime_operator', 'example_branch_datetime_operator_3', 'example_branch_datetime_operator_2']) retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py
+[2023-05-26T21:13:04.492+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:13:04.492+0400] {dag.py:2726} INFO - Sync 3 DAGs
+[2023-05-26T21:13:04.529+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:13:04.529+0400] {dag.py:3486} INFO - Setting next_dagrun for example_branch_datetime_operator to 2023-05-25T00:00:00+00:00, run_after=2023-05-26T00:00:00+00:00
+[2023-05-26T21:13:04.536+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:13:04.536+0400] {dag.py:3486} INFO - Setting next_dagrun for example_branch_datetime_operator_2 to 2023-05-25T00:00:00+00:00, run_after=2023-05-26T00:00:00+00:00
+[2023-05-26T21:13:04.541+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:13:04.541+0400] {dag.py:3486} INFO - Setting next_dagrun for example_branch_datetime_operator_3 to 2023-05-25T00:00:00+00:00, run_after=2023-05-26T00:00:00+00:00
+[2023-05-26T21:13:04.579+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py took 0.200 seconds
+[2023-05-26T21:14:03.854+0400] {processor.py:157} INFO - Started process (PID=2122) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py
+[2023-05-26T21:14:03.859+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py for tasks to queue
+[2023-05-26T21:14:03.862+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:14:03.862+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py
+[2023-05-26T21:14:03.905+0400] {processor.py:836} INFO - DAG(s) dict_keys(['example_branch_datetime_operator_3', 'example_branch_datetime_operator_2', 'example_branch_datetime_operator']) retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py
+[2023-05-26T21:14:04.021+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:14:04.021+0400] {dag.py:2726} INFO - Sync 3 DAGs
+[2023-05-26T21:14:04.110+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:14:04.110+0400] {dag.py:3486} INFO - Setting next_dagrun for example_branch_datetime_operator to 2023-05-25T00:00:00+00:00, run_after=2023-05-26T00:00:00+00:00
+[2023-05-26T21:14:04.130+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:14:04.130+0400] {dag.py:3486} INFO - Setting next_dagrun for example_branch_datetime_operator_2 to 2023-05-25T00:00:00+00:00, run_after=2023-05-26T00:00:00+00:00
+[2023-05-26T21:14:04.141+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:14:04.141+0400] {dag.py:3486} INFO - Setting next_dagrun for example_branch_datetime_operator_3 to 2023-05-25T00:00:00+00:00, run_after=2023-05-26T00:00:00+00:00
+[2023-05-26T21:14:04.239+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py took 0.403 seconds
+[2023-05-26T21:14:45.826+0400] {processor.py:157} INFO - Started process (PID=2173) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py
+[2023-05-26T21:14:45.828+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py for tasks to queue
+[2023-05-26T21:14:45.829+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:14:45.829+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py
+[2023-05-26T21:14:45.865+0400] {processor.py:836} INFO - DAG(s) dict_keys(['example_branch_datetime_operator_2', 'example_branch_datetime_operator', 'example_branch_datetime_operator_3']) retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py
+[2023-05-26T21:14:45.951+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:14:45.951+0400] {dag.py:2726} INFO - Sync 3 DAGs
+[2023-05-26T21:14:45.995+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:14:45.994+0400] {dag.py:3486} INFO - Setting next_dagrun for example_branch_datetime_operator to 2023-05-25T00:00:00+00:00, run_after=2023-05-26T00:00:00+00:00
+[2023-05-26T21:14:46.001+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:14:46.000+0400] {dag.py:3486} INFO - Setting next_dagrun for example_branch_datetime_operator_2 to 2023-05-25T00:00:00+00:00, run_after=2023-05-26T00:00:00+00:00
+[2023-05-26T21:14:46.003+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:14:46.003+0400] {dag.py:3486} INFO - Setting next_dagrun for example_branch_datetime_operator_3 to 2023-05-25T00:00:00+00:00, run_after=2023-05-26T00:00:00+00:00
+[2023-05-26T21:14:46.035+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py took 0.220 seconds
+[2023-05-26T21:15:34.878+0400] {processor.py:157} INFO - Started process (PID=9431) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py
+[2023-05-26T21:15:34.881+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py for tasks to queue
+[2023-05-26T21:15:34.883+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:15:34.882+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py
+[2023-05-26T21:15:34.912+0400] {processor.py:836} INFO - DAG(s) dict_keys(['example_branch_datetime_operator_2', 'example_branch_datetime_operator_3', 'example_branch_datetime_operator']) retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py
+[2023-05-26T21:15:34.963+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:15:34.963+0400] {dag.py:2726} INFO - Sync 3 DAGs
+[2023-05-26T21:15:34.992+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:15:34.992+0400] {dag.py:3486} INFO - Setting next_dagrun for example_branch_datetime_operator to 2023-05-25T00:00:00+00:00, run_after=2023-05-26T00:00:00+00:00
+[2023-05-26T21:15:34.998+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:15:34.998+0400] {dag.py:3486} INFO - Setting next_dagrun for example_branch_datetime_operator_2 to 2023-05-25T00:00:00+00:00, run_after=2023-05-26T00:00:00+00:00
+[2023-05-26T21:15:35.002+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:15:35.002+0400] {dag.py:3486} INFO - Setting next_dagrun for example_branch_datetime_operator_3 to 2023-05-25T00:00:00+00:00, run_after=2023-05-26T00:00:00+00:00
+[2023-05-26T21:15:35.042+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py took 0.181 seconds
+[2023-05-26T21:16:25.581+0400] {processor.py:157} INFO - Started process (PID=16689) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py
+[2023-05-26T21:16:25.583+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py for tasks to queue
+[2023-05-26T21:16:25.584+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:16:25.584+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py
+[2023-05-26T21:16:25.614+0400] {processor.py:836} INFO - DAG(s) dict_keys(['example_branch_datetime_operator_2', 'example_branch_datetime_operator', 'example_branch_datetime_operator_3']) retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py
+[2023-05-26T21:16:25.682+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:16:25.682+0400] {dag.py:2726} INFO - Sync 3 DAGs
+[2023-05-26T21:16:25.734+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:16:25.734+0400] {dag.py:3486} INFO - Setting next_dagrun for example_branch_datetime_operator to 2023-05-25T00:00:00+00:00, run_after=2023-05-26T00:00:00+00:00
+[2023-05-26T21:16:25.741+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:16:25.740+0400] {dag.py:3486} INFO - Setting next_dagrun for example_branch_datetime_operator_2 to 2023-05-25T00:00:00+00:00, run_after=2023-05-26T00:00:00+00:00
+[2023-05-26T21:16:25.748+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:16:25.748+0400] {dag.py:3486} INFO - Setting next_dagrun for example_branch_datetime_operator_3 to 2023-05-25T00:00:00+00:00, run_after=2023-05-26T00:00:00+00:00
+[2023-05-26T21:16:25.781+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py took 0.242 seconds
+[2023-05-26T21:17:42.528+0400] {processor.py:157} INFO - Started process (PID=16783) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py
+[2023-05-26T21:17:42.531+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py for tasks to queue
+[2023-05-26T21:17:42.533+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:17:42.533+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py
+[2023-05-26T21:17:42.563+0400] {processor.py:836} INFO - DAG(s) dict_keys(['example_branch_datetime_operator', 'example_branch_datetime_operator_2', 'example_branch_datetime_operator_3']) retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py
+[2023-05-26T21:17:42.642+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:17:42.642+0400] {dag.py:2726} INFO - Sync 3 DAGs
+[2023-05-26T21:17:42.683+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:17:42.682+0400] {dag.py:3486} INFO - Setting next_dagrun for example_branch_datetime_operator to 2023-05-25T00:00:00+00:00, run_after=2023-05-26T00:00:00+00:00
+[2023-05-26T21:17:42.689+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:17:42.689+0400] {dag.py:3486} INFO - Setting next_dagrun for example_branch_datetime_operator_2 to 2023-05-25T00:00:00+00:00, run_after=2023-05-26T00:00:00+00:00
+[2023-05-26T21:17:42.692+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:17:42.692+0400] {dag.py:3486} INFO - Setting next_dagrun for example_branch_datetime_operator_3 to 2023-05-25T00:00:00+00:00, run_after=2023-05-26T00:00:00+00:00
+[2023-05-26T21:17:42.734+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py took 0.217 seconds
+[2023-05-26T21:19:25.571+0400] {processor.py:157} INFO - Started process (PID=16876) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py
+[2023-05-26T21:19:25.573+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py for tasks to queue
+[2023-05-26T21:19:25.575+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:19:25.575+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py
+[2023-05-26T21:19:25.620+0400] {processor.py:836} INFO - DAG(s) dict_keys(['example_branch_datetime_operator_2', 'example_branch_datetime_operator', 'example_branch_datetime_operator_3']) retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py
+[2023-05-26T21:19:25.721+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:19:25.720+0400] {dag.py:2726} INFO - Sync 3 DAGs
+[2023-05-26T21:19:26.059+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:19:26.059+0400] {dag.py:3486} INFO - Setting next_dagrun for example_branch_datetime_operator to 2023-05-25T00:00:00+00:00, run_after=2023-05-26T00:00:00+00:00
+[2023-05-26T21:19:26.069+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:19:26.068+0400] {dag.py:3486} INFO - Setting next_dagrun for example_branch_datetime_operator_2 to 2023-05-25T00:00:00+00:00, run_after=2023-05-26T00:00:00+00:00
+[2023-05-26T21:19:26.073+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:19:26.072+0400] {dag.py:3486} INFO - Setting next_dagrun for example_branch_datetime_operator_3 to 2023-05-25T00:00:00+00:00, run_after=2023-05-26T00:00:00+00:00
+[2023-05-26T21:19:26.116+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py took 0.558 seconds
+[2023-05-26T21:20:38.513+0400] {processor.py:157} INFO - Started process (PID=16959) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py
+[2023-05-26T21:20:38.517+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py for tasks to queue
+[2023-05-26T21:20:38.519+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:20:38.518+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py
+[2023-05-26T21:20:38.543+0400] {processor.py:836} INFO - DAG(s) dict_keys(['example_branch_datetime_operator_3', 'example_branch_datetime_operator', 'example_branch_datetime_operator_2']) retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py
+[2023-05-26T21:20:38.595+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:20:38.595+0400] {dag.py:2726} INFO - Sync 3 DAGs
+[2023-05-26T21:20:38.622+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:20:38.622+0400] {dag.py:3486} INFO - Setting next_dagrun for example_branch_datetime_operator to 2023-05-25T00:00:00+00:00, run_after=2023-05-26T00:00:00+00:00
+[2023-05-26T21:20:38.627+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:20:38.627+0400] {dag.py:3486} INFO - Setting next_dagrun for example_branch_datetime_operator_2 to 2023-05-25T00:00:00+00:00, run_after=2023-05-26T00:00:00+00:00
+[2023-05-26T21:20:38.629+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:20:38.629+0400] {dag.py:3486} INFO - Setting next_dagrun for example_branch_datetime_operator_3 to 2023-05-25T00:00:00+00:00, run_after=2023-05-26T00:00:00+00:00
+[2023-05-26T21:20:38.654+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py took 0.155 seconds
+[2023-05-26T21:21:21.738+0400] {processor.py:157} INFO - Started process (PID=17009) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py
+[2023-05-26T21:21:21.740+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py for tasks to queue
+[2023-05-26T21:21:21.741+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:21:21.741+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py
+[2023-05-26T21:21:21.768+0400] {processor.py:836} INFO - DAG(s) dict_keys(['example_branch_datetime_operator_3', 'example_branch_datetime_operator', 'example_branch_datetime_operator_2']) retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py
+[2023-05-26T21:21:21.848+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:21:21.847+0400] {dag.py:2726} INFO - Sync 3 DAGs
+[2023-05-26T21:21:21.922+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:21:21.922+0400] {dag.py:3486} INFO - Setting next_dagrun for example_branch_datetime_operator to 2023-05-25T00:00:00+00:00, run_after=2023-05-26T00:00:00+00:00
+[2023-05-26T21:21:21.937+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:21:21.937+0400] {dag.py:3486} INFO - Setting next_dagrun for example_branch_datetime_operator_2 to 2023-05-25T00:00:00+00:00, run_after=2023-05-26T00:00:00+00:00
+[2023-05-26T21:21:21.941+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:21:21.941+0400] {dag.py:3486} INFO - Setting next_dagrun for example_branch_datetime_operator_3 to 2023-05-25T00:00:00+00:00, run_after=2023-05-26T00:00:00+00:00
+[2023-05-26T21:21:21.990+0400] {processor.py:182} ERROR - Got an exception! Propagating...
+Traceback (most recent call last):
+  File "/home/chinnu/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1094, in _commit_impl
+    self.engine.dialect.do_commit(self.connection)
+  File "/home/chinnu/.local/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 686, in do_commit
+    dbapi_connection.commit()
+sqlite3.OperationalError: disk I/O error
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/chinnu/.local/lib/python3.10/site-packages/airflow/dag_processing/processor.py", line 178, in _run_file_processor
+    _handle_dag_file_processing()
+  File "/home/chinnu/.local/lib/python3.10/site-packages/airflow/dag_processing/processor.py", line 159, in _handle_dag_file_processing
+    result: tuple[int, int] = dag_file_processor.process_file(
+  File "/home/chinnu/.local/lib/python3.10/site-packages/airflow/utils/session.py", line 76, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/chinnu/.local/lib/python3.10/site-packages/airflow/dag_processing/processor.py", line 854, in process_file
+    serialize_errors = DagFileProcessor.save_dag_to_db(
+  File "/home/chinnu/.local/lib/python3.10/site-packages/airflow/api_internal/internal_api_call.py", line 112, in wrapper
+    return func(*args, **kwargs)
+  File "/home/chinnu/.local/lib/python3.10/site-packages/airflow/utils/session.py", line 76, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/chinnu/.local/lib/python3.10/site-packages/airflow/dag_processing/processor.py", line 891, in save_dag_to_db
+    session.commit()
+  File "/home/chinnu/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 1454, in commit
+    self._transaction.commit(_to_root=self.future)
+  File "/home/chinnu/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 839, in commit
+    trans.commit()
+  File "/home/chinnu/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 2464, in commit
+    self._do_commit()
+  File "/home/chinnu/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 2654, in _do_commit
+    self._connection_commit_impl()
+  File "/home/chinnu/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 2625, in _connection_commit_impl
+    self.connection._commit_impl()
+  File "/home/chinnu/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1096, in _commit_impl
+    self._handle_dbapi_exception(e, None, None, None, None)
+  File "/home/chinnu/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 2129, in _handle_dbapi_exception
+    util.raise_(
+  File "/home/chinnu/.local/lib/python3.10/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/chinnu/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1094, in _commit_impl
+    self.engine.dialect.do_commit(self.connection)
+  File "/home/chinnu/.local/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 686, in do_commit
+    dbapi_connection.commit()
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) disk I/O error
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2023-05-26T21:22:15.515+0400] {processor.py:157} INFO - Started process (PID=17074) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py
+[2023-05-26T21:22:15.516+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py for tasks to queue
+[2023-05-26T21:22:15.520+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:22:15.518+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py
+[2023-05-26T21:22:15.547+0400] {processor.py:836} INFO - DAG(s) dict_keys(['example_branch_datetime_operator_2', 'example_branch_datetime_operator', 'example_branch_datetime_operator_3']) retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py
+[2023-05-26T21:22:15.604+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:22:15.604+0400] {dag.py:2726} INFO - Sync 3 DAGs
+[2023-05-26T21:22:15.635+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:22:15.635+0400] {dag.py:3486} INFO - Setting next_dagrun for example_branch_datetime_operator to 2023-05-25T00:00:00+00:00, run_after=2023-05-26T00:00:00+00:00
+[2023-05-26T21:22:15.641+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:22:15.641+0400] {dag.py:3486} INFO - Setting next_dagrun for example_branch_datetime_operator_2 to 2023-05-25T00:00:00+00:00, run_after=2023-05-26T00:00:00+00:00
+[2023-05-26T21:22:15.643+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:22:15.643+0400] {dag.py:3486} INFO - Setting next_dagrun for example_branch_datetime_operator_3 to 2023-05-25T00:00:00+00:00, run_after=2023-05-26T00:00:00+00:00
+[2023-05-26T21:22:15.676+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py took 0.174 seconds
+[2023-05-26T21:23:02.736+0400] {processor.py:157} INFO - Started process (PID=17130) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py
+[2023-05-26T21:23:02.738+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py for tasks to queue
+[2023-05-26T21:23:02.739+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:23:02.739+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py
+[2023-05-26T21:23:02.762+0400] {processor.py:836} INFO - DAG(s) dict_keys(['example_branch_datetime_operator_2', 'example_branch_datetime_operator_3', 'example_branch_datetime_operator']) retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py
+[2023-05-26T21:23:02.824+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:23:02.823+0400] {dag.py:2726} INFO - Sync 3 DAGs
+[2023-05-26T21:23:02.860+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:23:02.860+0400] {dag.py:3486} INFO - Setting next_dagrun for example_branch_datetime_operator to 2023-05-25T00:00:00+00:00, run_after=2023-05-26T00:00:00+00:00
+[2023-05-26T21:23:02.865+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:23:02.865+0400] {dag.py:3486} INFO - Setting next_dagrun for example_branch_datetime_operator_2 to 2023-05-25T00:00:00+00:00, run_after=2023-05-26T00:00:00+00:00
+[2023-05-26T21:23:02.868+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:23:02.867+0400] {dag.py:3486} INFO - Setting next_dagrun for example_branch_datetime_operator_3 to 2023-05-25T00:00:00+00:00, run_after=2023-05-26T00:00:00+00:00
+[2023-05-26T21:23:02.896+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py took 0.169 seconds
+[2023-05-26T21:23:53.957+0400] {processor.py:157} INFO - Started process (PID=17192) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py
+[2023-05-26T21:23:53.959+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py for tasks to queue
+[2023-05-26T21:23:53.959+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:23:53.959+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py
+[2023-05-26T21:23:53.974+0400] {processor.py:836} INFO - DAG(s) dict_keys(['example_branch_datetime_operator_3', 'example_branch_datetime_operator_2', 'example_branch_datetime_operator']) retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py
+[2023-05-26T21:23:54.015+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:23:54.015+0400] {dag.py:2726} INFO - Sync 3 DAGs
+[2023-05-26T21:23:54.045+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:23:54.045+0400] {dag.py:3486} INFO - Setting next_dagrun for example_branch_datetime_operator to 2023-05-25T00:00:00+00:00, run_after=2023-05-26T00:00:00+00:00
+[2023-05-26T21:23:54.050+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:23:54.050+0400] {dag.py:3486} INFO - Setting next_dagrun for example_branch_datetime_operator_2 to 2023-05-25T00:00:00+00:00, run_after=2023-05-26T00:00:00+00:00
+[2023-05-26T21:23:54.053+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:23:54.053+0400] {dag.py:3486} INFO - Setting next_dagrun for example_branch_datetime_operator_3 to 2023-05-25T00:00:00+00:00, run_after=2023-05-26T00:00:00+00:00
+[2023-05-26T21:23:54.080+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py took 0.129 seconds
+[2023-05-26T21:24:40.162+0400] {processor.py:157} INFO - Started process (PID=17253) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py
+[2023-05-26T21:24:40.164+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py for tasks to queue
+[2023-05-26T21:24:40.164+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:24:40.164+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py
+[2023-05-26T21:24:40.180+0400] {processor.py:836} INFO - DAG(s) dict_keys(['example_branch_datetime_operator_2', 'example_branch_datetime_operator_3', 'example_branch_datetime_operator']) retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py
+[2023-05-26T21:24:40.218+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:24:40.218+0400] {dag.py:2726} INFO - Sync 3 DAGs
+[2023-05-26T21:24:40.243+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:24:40.242+0400] {dag.py:3486} INFO - Setting next_dagrun for example_branch_datetime_operator to 2023-05-25T00:00:00+00:00, run_after=2023-05-26T00:00:00+00:00
+[2023-05-26T21:24:40.247+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:24:40.247+0400] {dag.py:3486} INFO - Setting next_dagrun for example_branch_datetime_operator_2 to 2023-05-25T00:00:00+00:00, run_after=2023-05-26T00:00:00+00:00
+[2023-05-26T21:24:40.249+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:24:40.249+0400] {dag.py:3486} INFO - Setting next_dagrun for example_branch_datetime_operator_3 to 2023-05-25T00:00:00+00:00, run_after=2023-05-26T00:00:00+00:00
+[2023-05-26T21:24:40.273+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py took 0.117 seconds
+[2023-05-26T21:48:55.128+0400] {processor.py:157} INFO - Started process (PID=108) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py
+[2023-05-26T21:48:55.131+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py for tasks to queue
+[2023-05-26T21:48:55.131+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:48:55.131+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py
+[2023-05-26T21:48:55.146+0400] {processor.py:836} INFO - DAG(s) dict_keys(['example_branch_datetime_operator_3', 'example_branch_datetime_operator', 'example_branch_datetime_operator_2']) retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py
+[2023-05-26T21:48:55.187+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:48:55.187+0400] {dag.py:2726} INFO - Sync 3 DAGs
+[2023-05-26T21:48:55.218+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:48:55.218+0400] {dag.py:3486} INFO - Setting next_dagrun for example_branch_datetime_operator to 2023-05-25T00:00:00+00:00, run_after=2023-05-26T00:00:00+00:00
+[2023-05-26T21:48:55.222+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:48:55.222+0400] {dag.py:3486} INFO - Setting next_dagrun for example_branch_datetime_operator_2 to 2023-05-25T00:00:00+00:00, run_after=2023-05-26T00:00:00+00:00
+[2023-05-26T21:48:55.225+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:48:55.224+0400] {dag.py:3486} INFO - Setting next_dagrun for example_branch_datetime_operator_3 to 2023-05-25T00:00:00+00:00, run_after=2023-05-26T00:00:00+00:00
+[2023-05-26T21:48:55.379+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py took 0.257 seconds
+[2023-05-26T21:53:01.015+0400] {processor.py:157} INFO - Started process (PID=89) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py
+[2023-05-26T21:53:01.024+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py for tasks to queue
+[2023-05-26T21:53:01.026+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:53:01.025+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py
+[2023-05-26T21:53:01.050+0400] {processor.py:836} INFO - DAG(s) dict_keys(['example_branch_datetime_operator_2', 'example_branch_datetime_operator_3', 'example_branch_datetime_operator']) retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py
+[2023-05-26T21:53:01.130+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:53:01.130+0400] {dag.py:2726} INFO - Sync 3 DAGs
+[2023-05-26T21:53:01.322+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:53:01.322+0400] {dag.py:3486} INFO - Setting next_dagrun for example_branch_datetime_operator to 2023-05-25T00:00:00+00:00, run_after=2023-05-26T00:00:00+00:00
+[2023-05-26T21:53:01.327+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:53:01.327+0400] {dag.py:3486} INFO - Setting next_dagrun for example_branch_datetime_operator_2 to 2023-05-25T00:00:00+00:00, run_after=2023-05-26T00:00:00+00:00
+[2023-05-26T21:53:01.329+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:53:01.329+0400] {dag.py:3486} INFO - Setting next_dagrun for example_branch_datetime_operator_3 to 2023-05-25T00:00:00+00:00, run_after=2023-05-26T00:00:00+00:00
+[2023-05-26T21:53:01.351+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py took 0.349 seconds
+[2023-05-26T21:53:59.825+0400] {processor.py:157} INFO - Started process (PID=159) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py
+[2023-05-26T21:53:59.827+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py for tasks to queue
+[2023-05-26T21:53:59.828+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:53:59.827+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py
+[2023-05-26T21:53:59.842+0400] {processor.py:836} INFO - DAG(s) dict_keys(['example_branch_datetime_operator', 'example_branch_datetime_operator_2', 'example_branch_datetime_operator_3']) retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py
+[2023-05-26T21:53:59.884+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:53:59.884+0400] {dag.py:2726} INFO - Sync 3 DAGs
+[2023-05-26T21:53:59.912+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:53:59.911+0400] {dag.py:3486} INFO - Setting next_dagrun for example_branch_datetime_operator to 2023-05-25T00:00:00+00:00, run_after=2023-05-26T00:00:00+00:00
+[2023-05-26T21:53:59.917+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:53:59.917+0400] {dag.py:3486} INFO - Setting next_dagrun for example_branch_datetime_operator_2 to 2023-05-25T00:00:00+00:00, run_after=2023-05-26T00:00:00+00:00
+[2023-05-26T21:53:59.920+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:53:59.920+0400] {dag.py:3486} INFO - Setting next_dagrun for example_branch_datetime_operator_3 to 2023-05-25T00:00:00+00:00, run_after=2023-05-26T00:00:00+00:00
+[2023-05-26T21:53:59.951+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py took 0.132 seconds
+[2023-05-26T22:06:51.941+0400] {processor.py:157} INFO - Started process (PID=2558) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py
+[2023-05-26T22:06:51.949+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py for tasks to queue
+[2023-05-26T22:06:51.952+0400] {logging_mixin.py:149} INFO - [2023-05-26T22:06:51.952+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py
+[2023-05-26T22:06:51.973+0400] {processor.py:836} INFO - DAG(s) dict_keys(['example_branch_datetime_operator', 'example_branch_datetime_operator_3', 'example_branch_datetime_operator_2']) retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py
+[2023-05-26T22:06:52.043+0400] {logging_mixin.py:149} INFO - [2023-05-26T22:06:52.043+0400] {dag.py:2726} INFO - Sync 3 DAGs
+[2023-05-26T22:06:52.278+0400] {logging_mixin.py:149} INFO - [2023-05-26T22:06:52.278+0400] {dag.py:3486} INFO - Setting next_dagrun for example_branch_datetime_operator to 2023-05-25T00:00:00+00:00, run_after=2023-05-26T00:00:00+00:00
+[2023-05-26T22:06:52.286+0400] {logging_mixin.py:149} INFO - [2023-05-26T22:06:52.286+0400] {dag.py:3486} INFO - Setting next_dagrun for example_branch_datetime_operator_2 to 2023-05-25T00:00:00+00:00, run_after=2023-05-26T00:00:00+00:00
+[2023-05-26T22:06:52.289+0400] {logging_mixin.py:149} INFO - [2023-05-26T22:06:52.289+0400] {dag.py:3486} INFO - Setting next_dagrun for example_branch_datetime_operator_3 to 2023-05-25T00:00:00+00:00, run_after=2023-05-26T00:00:00+00:00
+[2023-05-26T22:06:52.325+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py took 0.395 seconds
+[2023-05-26T22:08:33.855+0400] {processor.py:157} INFO - Started process (PID=2625) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py
+[2023-05-26T22:08:33.860+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py for tasks to queue
+[2023-05-26T22:08:33.861+0400] {logging_mixin.py:149} INFO - [2023-05-26T22:08:33.861+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py
+[2023-05-26T22:08:33.889+0400] {processor.py:836} INFO - DAG(s) dict_keys(['example_branch_datetime_operator', 'example_branch_datetime_operator_2', 'example_branch_datetime_operator_3']) retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py
+[2023-05-26T22:08:33.957+0400] {logging_mixin.py:149} INFO - [2023-05-26T22:08:33.956+0400] {dag.py:2726} INFO - Sync 3 DAGs
+[2023-05-26T22:08:34.001+0400] {logging_mixin.py:149} INFO - [2023-05-26T22:08:34.000+0400] {dag.py:3486} INFO - Setting next_dagrun for example_branch_datetime_operator to 2023-05-25T00:00:00+00:00, run_after=2023-05-26T00:00:00+00:00
+[2023-05-26T22:08:34.016+0400] {logging_mixin.py:149} INFO - [2023-05-26T22:08:34.016+0400] {dag.py:3486} INFO - Setting next_dagrun for example_branch_datetime_operator_2 to 2023-05-25T00:00:00+00:00, run_after=2023-05-26T00:00:00+00:00
+[2023-05-26T22:08:34.021+0400] {logging_mixin.py:149} INFO - [2023-05-26T22:08:34.021+0400] {dag.py:3486} INFO - Setting next_dagrun for example_branch_datetime_operator_3 to 2023-05-25T00:00:00+00:00, run_after=2023-05-26T00:00:00+00:00
+[2023-05-26T22:08:34.063+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py took 0.224 seconds

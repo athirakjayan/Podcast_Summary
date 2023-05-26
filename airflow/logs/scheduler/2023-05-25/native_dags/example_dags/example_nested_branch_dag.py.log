@@ -1,0 +1,42 @@
+[2023-05-25T19:37:02.135+0400] {processor.py:157} INFO - Started process (PID=314) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_nested_branch_dag.py
+[2023-05-25T19:37:02.140+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_nested_branch_dag.py for tasks to queue
+[2023-05-25T19:37:02.142+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:37:02.141+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_nested_branch_dag.py
+[2023-05-25T19:37:02.184+0400] {processor.py:836} INFO - DAG(s) dict_keys(['example_nested_branch_dag']) retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_nested_branch_dag.py
+[2023-05-25T19:37:02.242+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:37:02.241+0400] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-25T19:37:02.267+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:37:02.267+0400] {dag.py:3486} INFO - Setting next_dagrun for example_nested_branch_dag to 2023-05-24T00:00:00+00:00, run_after=2023-05-25T00:00:00+00:00
+[2023-05-25T19:37:02.300+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_nested_branch_dag.py took 0.179 seconds
+[2023-05-25T19:38:17.989+0400] {processor.py:157} INFO - Started process (PID=396) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_nested_branch_dag.py
+[2023-05-25T19:38:17.994+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_nested_branch_dag.py for tasks to queue
+[2023-05-25T19:38:17.996+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:38:17.995+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_nested_branch_dag.py
+[2023-05-25T19:38:18.028+0400] {processor.py:836} INFO - DAG(s) dict_keys(['example_nested_branch_dag']) retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_nested_branch_dag.py
+[2023-05-25T19:38:18.250+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:38:18.250+0400] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-25T19:38:18.270+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:38:18.270+0400] {dag.py:3486} INFO - Setting next_dagrun for example_nested_branch_dag to 2023-05-24T00:00:00+00:00, run_after=2023-05-25T00:00:00+00:00
+[2023-05-25T19:38:18.299+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_nested_branch_dag.py took 0.328 seconds
+[2023-05-25T19:39:36.273+0400] {processor.py:157} INFO - Started process (PID=457) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_nested_branch_dag.py
+[2023-05-25T19:39:36.276+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_nested_branch_dag.py for tasks to queue
+[2023-05-25T19:39:36.278+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:39:36.278+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_nested_branch_dag.py
+[2023-05-25T19:39:36.305+0400] {processor.py:836} INFO - DAG(s) dict_keys(['example_nested_branch_dag']) retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_nested_branch_dag.py
+[2023-05-25T19:39:36.356+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:39:36.355+0400] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-25T19:39:36.395+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:39:36.395+0400] {dag.py:3486} INFO - Setting next_dagrun for example_nested_branch_dag to 2023-05-24T00:00:00+00:00, run_after=2023-05-25T00:00:00+00:00
+[2023-05-25T19:39:36.442+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_nested_branch_dag.py took 0.179 seconds
+[2023-05-25T19:40:38.496+0400] {processor.py:157} INFO - Started process (PID=508) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_nested_branch_dag.py
+[2023-05-25T19:40:38.499+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_nested_branch_dag.py for tasks to queue
+[2023-05-25T19:40:38.501+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:40:38.501+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_nested_branch_dag.py
+[2023-05-25T19:40:38.545+0400] {processor.py:836} INFO - DAG(s) dict_keys(['example_nested_branch_dag']) retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_nested_branch_dag.py
+[2023-05-25T19:40:38.639+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:40:38.638+0400] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-25T19:40:38.708+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:40:38.707+0400] {dag.py:3486} INFO - Setting next_dagrun for example_nested_branch_dag to 2023-05-24T00:00:00+00:00, run_after=2023-05-25T00:00:00+00:00
+[2023-05-25T19:40:38.788+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_nested_branch_dag.py took 0.307 seconds
+[2023-05-25T19:41:39.093+0400] {processor.py:157} INFO - Started process (PID=558) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_nested_branch_dag.py
+[2023-05-25T19:41:39.095+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_nested_branch_dag.py for tasks to queue
+[2023-05-25T19:41:39.097+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:41:39.096+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_nested_branch_dag.py
+[2023-05-25T19:41:39.124+0400] {processor.py:836} INFO - DAG(s) dict_keys(['example_nested_branch_dag']) retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_nested_branch_dag.py
+[2023-05-25T19:41:39.173+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:41:39.173+0400] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-25T19:41:39.210+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:41:39.209+0400] {dag.py:3486} INFO - Setting next_dagrun for example_nested_branch_dag to 2023-05-24T00:00:00+00:00, run_after=2023-05-25T00:00:00+00:00
+[2023-05-25T19:41:39.255+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_nested_branch_dag.py took 0.170 seconds
+[2023-05-25T19:42:40.046+0400] {processor.py:157} INFO - Started process (PID=609) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_nested_branch_dag.py
+[2023-05-25T19:42:40.050+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_nested_branch_dag.py for tasks to queue
+[2023-05-25T19:42:40.052+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:42:40.051+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_nested_branch_dag.py
+[2023-05-25T19:42:40.085+0400] {processor.py:836} INFO - DAG(s) dict_keys(['example_nested_branch_dag']) retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_nested_branch_dag.py
+[2023-05-25T19:42:40.134+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:42:40.133+0400] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-25T19:42:40.165+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:42:40.165+0400] {dag.py:3486} INFO - Setting next_dagrun for example_nested_branch_dag to 2023-05-24T00:00:00+00:00, run_after=2023-05-25T00:00:00+00:00
+[2023-05-25T19:42:40.205+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_nested_branch_dag.py took 0.171 seconds

@@ -1,0 +1,42 @@
+[2023-05-25T19:36:37.878+0400] {processor.py:157} INFO - Started process (PID=290) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py
+[2023-05-25T19:36:37.880+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py for tasks to queue
+[2023-05-25T19:36:37.881+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:36:37.881+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py
+[2023-05-25T19:36:37.909+0400] {processor.py:836} INFO - DAG(s) dict_keys(['example_sensors']) retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py
+[2023-05-25T19:36:37.967+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:36:37.967+0400] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-25T19:36:38.005+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:36:38.005+0400] {dag.py:3486} INFO - Setting next_dagrun for example_sensors to None, run_after=None
+[2023-05-25T19:36:38.047+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py took 0.177 seconds
+[2023-05-25T19:38:00.614+0400] {processor.py:157} INFO - Started process (PID=358) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py
+[2023-05-25T19:38:00.622+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py for tasks to queue
+[2023-05-25T19:38:00.629+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:38:00.629+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py
+[2023-05-25T19:38:00.676+0400] {processor.py:836} INFO - DAG(s) dict_keys(['example_sensors']) retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py
+[2023-05-25T19:38:00.753+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:38:00.752+0400] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-25T19:38:01.042+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:38:01.042+0400] {dag.py:3486} INFO - Setting next_dagrun for example_sensors to None, run_after=None
+[2023-05-25T19:38:01.087+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py took 0.493 seconds
+[2023-05-25T19:39:20.600+0400] {processor.py:157} INFO - Started process (PID=441) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py
+[2023-05-25T19:39:20.604+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py for tasks to queue
+[2023-05-25T19:39:20.606+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:39:20.606+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py
+[2023-05-25T19:39:20.641+0400] {processor.py:836} INFO - DAG(s) dict_keys(['example_sensors']) retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py
+[2023-05-25T19:39:20.700+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:39:20.700+0400] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-25T19:39:20.728+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:39:20.728+0400] {dag.py:3486} INFO - Setting next_dagrun for example_sensors to None, run_after=None
+[2023-05-25T19:39:20.778+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py took 0.194 seconds
+[2023-05-25T19:40:22.848+0400] {processor.py:157} INFO - Started process (PID=492) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py
+[2023-05-25T19:40:22.852+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py for tasks to queue
+[2023-05-25T19:40:22.854+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:40:22.854+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py
+[2023-05-25T19:40:22.906+0400] {processor.py:836} INFO - DAG(s) dict_keys(['example_sensors']) retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py
+[2023-05-25T19:40:23.007+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:40:23.007+0400] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-25T19:40:23.043+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:40:23.043+0400] {dag.py:3486} INFO - Setting next_dagrun for example_sensors to None, run_after=None
+[2023-05-25T19:40:23.094+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py took 0.261 seconds
+[2023-05-25T19:41:23.334+0400] {processor.py:157} INFO - Started process (PID=543) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py
+[2023-05-25T19:41:23.340+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py for tasks to queue
+[2023-05-25T19:41:23.344+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:41:23.344+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py
+[2023-05-25T19:41:23.416+0400] {processor.py:836} INFO - DAG(s) dict_keys(['example_sensors']) retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py
+[2023-05-25T19:41:23.509+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:41:23.509+0400] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-25T19:41:23.544+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:41:23.543+0400] {dag.py:3486} INFO - Setting next_dagrun for example_sensors to None, run_after=None
+[2023-05-25T19:41:23.579+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py took 0.269 seconds
+[2023-05-25T19:42:24.283+0400] {processor.py:157} INFO - Started process (PID=593) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py
+[2023-05-25T19:42:24.285+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py for tasks to queue
+[2023-05-25T19:42:24.287+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:42:24.287+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py
+[2023-05-25T19:42:24.315+0400] {processor.py:836} INFO - DAG(s) dict_keys(['example_sensors']) retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py
+[2023-05-25T19:42:24.375+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:42:24.374+0400] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-25T19:42:24.421+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:42:24.421+0400] {dag.py:3486} INFO - Setting next_dagrun for example_sensors to None, run_after=None
+[2023-05-25T19:42:24.467+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py took 0.194 seconds

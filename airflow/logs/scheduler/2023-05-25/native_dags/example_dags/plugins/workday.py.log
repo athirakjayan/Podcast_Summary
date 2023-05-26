@@ -1,0 +1,50 @@
+[2023-05-25T19:32:56.311+0400] {processor.py:157} INFO - Started process (PID=97) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/workday.py
+[2023-05-25T19:32:56.314+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/workday.py for tasks to queue
+[2023-05-25T19:32:56.321+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:32:56.320+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/workday.py
+[2023-05-25T19:32:59.424+0400] {processor.py:838} WARNING - No viable dags retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/workday.py
+[2023-05-25T19:32:59.463+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/workday.py took 3.174 seconds
+[2023-05-25T19:34:13.980+0400] {processor.py:157} INFO - Started process (PID=136) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/workday.py
+[2023-05-25T19:34:13.983+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/workday.py for tasks to queue
+[2023-05-25T19:34:13.985+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:34:13.984+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/workday.py
+[2023-05-25T19:34:15.047+0400] {processor.py:838} WARNING - No viable dags retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/workday.py
+[2023-05-25T19:34:15.066+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/workday.py took 1.100 seconds
+[2023-05-25T19:36:00.873+0400] {processor.py:157} INFO - Started process (PID=259) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/workday.py
+[2023-05-25T19:36:00.880+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/workday.py for tasks to queue
+[2023-05-25T19:36:00.883+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:36:00.882+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/workday.py
+[2023-05-25T19:36:02.306+0400] {processor.py:838} WARNING - No viable dags retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/workday.py
+[2023-05-25T19:36:02.333+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/workday.py took 1.473 seconds
+[2023-05-25T19:37:28.159+0400] {processor.py:157} INFO - Started process (PID=333) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/workday.py
+[2023-05-25T19:37:28.162+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/workday.py for tasks to queue
+[2023-05-25T19:37:28.164+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:37:28.163+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/workday.py
+[2023-05-25T19:37:29.306+0400] {processor.py:838} WARNING - No viable dags retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/workday.py
+[2023-05-25T19:37:29.333+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/workday.py took 1.185 seconds
+[2023-05-25T19:38:06.700+0400] {processor.py:157} INFO - Started process (PID=366) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/workday.py
+[2023-05-25T19:38:06.704+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/workday.py for tasks to queue
+[2023-05-25T19:38:06.708+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:38:06.707+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/workday.py
+[2023-05-25T19:38:08.079+0400] {processor.py:838} WARNING - No viable dags retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/workday.py
+[2023-05-25T19:38:08.097+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/workday.py took 1.410 seconds
+[2023-05-25T19:38:50.453+0400] {processor.py:157} INFO - Started process (PID=416) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/workday.py
+[2023-05-25T19:38:50.456+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/workday.py for tasks to queue
+[2023-05-25T19:38:50.457+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:38:50.457+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/workday.py
+[2023-05-25T19:38:52.264+0400] {processor.py:838} WARNING - No viable dags retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/workday.py
+[2023-05-25T19:38:52.308+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/workday.py took 1.869 seconds
+[2023-05-25T19:39:29.432+0400] {processor.py:157} INFO - Started process (PID=448) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/workday.py
+[2023-05-25T19:39:29.434+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/workday.py for tasks to queue
+[2023-05-25T19:39:29.435+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:39:29.435+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/workday.py
+[2023-05-25T19:39:30.117+0400] {processor.py:838} WARNING - No viable dags retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/workday.py
+[2023-05-25T19:39:30.131+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/workday.py took 0.705 seconds
+[2023-05-25T19:40:32.219+0400] {processor.py:157} INFO - Started process (PID=499) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/workday.py
+[2023-05-25T19:40:32.222+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/workday.py for tasks to queue
+[2023-05-25T19:40:32.226+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:40:32.225+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/workday.py
+[2023-05-25T19:40:32.928+0400] {processor.py:838} WARNING - No viable dags retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/workday.py
+[2023-05-25T19:40:32.942+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/workday.py took 0.742 seconds
+[2023-05-25T19:41:32.170+0400] {processor.py:157} INFO - Started process (PID=549) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/workday.py
+[2023-05-25T19:41:32.174+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/workday.py for tasks to queue
+[2023-05-25T19:41:32.176+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:41:32.176+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/workday.py
+[2023-05-25T19:41:32.790+0400] {processor.py:838} WARNING - No viable dags retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/workday.py
+[2023-05-25T19:41:32.804+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/workday.py took 0.648 seconds
+[2023-05-25T19:42:34.093+0400] {processor.py:157} INFO - Started process (PID=600) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/workday.py
+[2023-05-25T19:42:34.098+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/workday.py for tasks to queue
+[2023-05-25T19:42:34.100+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:42:34.100+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/workday.py
+[2023-05-25T19:42:34.769+0400] {processor.py:838} WARNING - No viable dags retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/workday.py
+[2023-05-25T19:42:34.784+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/workday.py took 0.706 seconds

@@ -1,0 +1,95 @@
+[2023-05-25T19:34:44.573+0400] {processor.py:157} INFO - Started process (PID=165) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2023-05-25T19:34:44.576+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py for tasks to queue
+[2023-05-25T19:34:44.578+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:34:44.578+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2023-05-25T19:34:44.613+0400] {processor.py:836} INFO - DAG(s) dict_keys(['example_task_group']) retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2023-05-25T19:34:44.663+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:34:44.663+0400] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-25T19:34:44.705+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:34:44.704+0400] {dag.py:3486} INFO - Setting next_dagrun for example_task_group to 2023-05-24T15:34:44.704583+00:00, run_after=2023-05-25T15:34:44.704583+00:00
+[2023-05-25T19:34:44.746+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py took 0.198 seconds
+[2023-05-25T19:36:21.459+0400] {processor.py:157} INFO - Started process (PID=276) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2023-05-25T19:36:21.461+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py for tasks to queue
+[2023-05-25T19:36:21.462+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:36:21.462+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2023-05-25T19:36:21.493+0400] {processor.py:836} INFO - DAG(s) dict_keys(['example_task_group']) retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2023-05-25T19:36:21.550+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:36:21.550+0400] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-25T19:36:21.599+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:36:21.598+0400] {dag.py:3486} INFO - Setting next_dagrun for example_task_group to 2023-05-24T15:36:21.598504+00:00, run_after=2023-05-25T15:36:21.598504+00:00
+[2023-05-25T19:36:21.632+0400] {processor.py:182} ERROR - Got an exception! Propagating...
+Traceback (most recent call last):
+  File "/home/chinnu/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1094, in _commit_impl
+    self.engine.dialect.do_commit(self.connection)
+  File "/home/chinnu/.local/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 686, in do_commit
+    dbapi_connection.commit()
+sqlite3.OperationalError: disk I/O error
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/chinnu/.local/lib/python3.10/site-packages/airflow/dag_processing/processor.py", line 178, in _run_file_processor
+    _handle_dag_file_processing()
+  File "/home/chinnu/.local/lib/python3.10/site-packages/airflow/dag_processing/processor.py", line 159, in _handle_dag_file_processing
+    result: tuple[int, int] = dag_file_processor.process_file(
+  File "/home/chinnu/.local/lib/python3.10/site-packages/airflow/utils/session.py", line 76, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/chinnu/.local/lib/python3.10/site-packages/airflow/dag_processing/processor.py", line 854, in process_file
+    serialize_errors = DagFileProcessor.save_dag_to_db(
+  File "/home/chinnu/.local/lib/python3.10/site-packages/airflow/api_internal/internal_api_call.py", line 112, in wrapper
+    return func(*args, **kwargs)
+  File "/home/chinnu/.local/lib/python3.10/site-packages/airflow/utils/session.py", line 76, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/chinnu/.local/lib/python3.10/site-packages/airflow/dag_processing/processor.py", line 891, in save_dag_to_db
+    session.commit()
+  File "/home/chinnu/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 1454, in commit
+    self._transaction.commit(_to_root=self.future)
+  File "/home/chinnu/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 839, in commit
+    trans.commit()
+  File "/home/chinnu/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 2464, in commit
+    self._do_commit()
+  File "/home/chinnu/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 2654, in _do_commit
+    self._connection_commit_impl()
+  File "/home/chinnu/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 2625, in _connection_commit_impl
+    self.connection._commit_impl()
+  File "/home/chinnu/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1096, in _commit_impl
+    self._handle_dbapi_exception(e, None, None, None, None)
+  File "/home/chinnu/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 2129, in _handle_dbapi_exception
+    util.raise_(
+  File "/home/chinnu/.local/lib/python3.10/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/chinnu/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1094, in _commit_impl
+    self.engine.dialect.do_commit(self.connection)
+  File "/home/chinnu/.local/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 686, in do_commit
+    dbapi_connection.commit()
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) disk I/O error
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2023-05-25T19:37:47.732+0400] {processor.py:157} INFO - Started process (PID=350) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2023-05-25T19:37:47.735+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py for tasks to queue
+[2023-05-25T19:37:47.737+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:37:47.737+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2023-05-25T19:37:47.769+0400] {processor.py:836} INFO - DAG(s) dict_keys(['example_task_group']) retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2023-05-25T19:37:47.820+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:37:47.819+0400] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-25T19:37:48.025+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:37:48.025+0400] {dag.py:3486} INFO - Setting next_dagrun for example_task_group to 2023-05-24T15:37:48.024923+00:00, run_after=2023-05-25T15:37:48.024923+00:00
+[2023-05-25T19:37:48.059+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py took 0.343 seconds
+[2023-05-25T19:39:09.899+0400] {processor.py:157} INFO - Started process (PID=433) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2023-05-25T19:39:09.903+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py for tasks to queue
+[2023-05-25T19:39:09.905+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:39:09.904+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2023-05-25T19:39:09.929+0400] {processor.py:836} INFO - DAG(s) dict_keys(['example_task_group']) retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2023-05-25T19:39:09.975+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:39:09.975+0400] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-25T19:39:10.010+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:39:10.010+0400] {dag.py:3486} INFO - Setting next_dagrun for example_task_group to 2023-05-24T15:39:10.009727+00:00, run_after=2023-05-25T15:39:10.009727+00:00
+[2023-05-25T19:39:10.038+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py took 0.154 seconds
+[2023-05-25T19:40:12.657+0400] {processor.py:157} INFO - Started process (PID=484) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2023-05-25T19:40:12.662+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py for tasks to queue
+[2023-05-25T19:40:12.665+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:40:12.664+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2023-05-25T19:40:12.703+0400] {processor.py:836} INFO - DAG(s) dict_keys(['example_task_group']) retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2023-05-25T19:40:12.776+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:40:12.776+0400] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-25T19:40:12.815+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:40:12.814+0400] {dag.py:3486} INFO - Setting next_dagrun for example_task_group to 2023-05-24T15:40:12.814302+00:00, run_after=2023-05-25T15:40:12.814302+00:00
+[2023-05-25T19:40:12.865+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py took 0.227 seconds
+[2023-05-25T19:41:13.792+0400] {processor.py:157} INFO - Started process (PID=535) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2023-05-25T19:41:13.797+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py for tasks to queue
+[2023-05-25T19:41:13.799+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:41:13.799+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2023-05-25T19:41:13.838+0400] {processor.py:836} INFO - DAG(s) dict_keys(['example_task_group']) retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2023-05-25T19:41:13.929+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:41:13.929+0400] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-25T19:41:13.999+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:41:13.998+0400] {dag.py:3486} INFO - Setting next_dagrun for example_task_group to 2023-05-24T15:41:13.998080+00:00, run_after=2023-05-25T15:41:13.998080+00:00
+[2023-05-25T19:41:14.069+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py took 0.304 seconds
+[2023-05-25T19:42:14.624+0400] {processor.py:157} INFO - Started process (PID=585) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2023-05-25T19:42:14.629+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py for tasks to queue
+[2023-05-25T19:42:14.632+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:42:14.632+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2023-05-25T19:42:14.655+0400] {processor.py:836} INFO - DAG(s) dict_keys(['example_task_group']) retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2023-05-25T19:42:14.705+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:42:14.705+0400] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-25T19:42:14.746+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:42:14.746+0400] {dag.py:3486} INFO - Setting next_dagrun for example_task_group to 2023-05-24T15:42:14.745638+00:00, run_after=2023-05-25T15:42:14.745638+00:00
+[2023-05-25T19:42:14.782+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py took 0.175 seconds

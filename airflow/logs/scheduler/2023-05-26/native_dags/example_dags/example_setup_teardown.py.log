@@ -1,0 +1,165 @@
+[2023-05-26T19:38:50.227+0400] {processor.py:157} INFO - Started process (PID=218) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2023-05-26T19:38:50.233+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-05-26T19:38:50.237+0400] {logging_mixin.py:149} INFO - [2023-05-26T19:38:50.236+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2023-05-26T19:38:50.250+0400] {processor.py:838} WARNING - No viable dags retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2023-05-26T19:38:50.312+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py took 0.105 seconds
+[2023-05-26T19:39:45.759+0400] {processor.py:157} INFO - Started process (PID=268) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2023-05-26T19:39:45.762+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-05-26T19:39:45.764+0400] {logging_mixin.py:149} INFO - [2023-05-26T19:39:45.764+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2023-05-26T19:39:45.770+0400] {processor.py:838} WARNING - No viable dags retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2023-05-26T19:39:45.797+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py took 0.051 seconds
+[2023-05-26T19:40:39.761+0400] {processor.py:157} INFO - Started process (PID=831) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2023-05-26T19:40:39.764+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-05-26T19:40:39.766+0400] {logging_mixin.py:149} INFO - [2023-05-26T19:40:39.765+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2023-05-26T19:40:39.771+0400] {processor.py:838} WARNING - No viable dags retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2023-05-26T19:40:39.795+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py took 0.046 seconds
+[2023-05-26T19:41:47.959+0400] {processor.py:157} INFO - Started process (PID=890) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2023-05-26T19:41:47.961+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-05-26T19:41:47.963+0400] {logging_mixin.py:149} INFO - [2023-05-26T19:41:47.962+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2023-05-26T19:41:47.968+0400] {processor.py:838} WARNING - No viable dags retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2023-05-26T19:41:48.000+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py took 0.053 seconds
+[2023-05-26T19:43:18.525+0400] {processor.py:157} INFO - Started process (PID=1483) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2023-05-26T19:43:18.529+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-05-26T19:43:18.531+0400] {logging_mixin.py:149} INFO - [2023-05-26T19:43:18.530+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2023-05-26T19:43:18.542+0400] {processor.py:838} WARNING - No viable dags retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2023-05-26T19:43:18.629+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py took 0.121 seconds
+[2023-05-26T19:44:30.074+0400] {processor.py:157} INFO - Started process (PID=1543) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2023-05-26T19:44:30.079+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-05-26T19:44:30.081+0400] {logging_mixin.py:149} INFO - [2023-05-26T19:44:30.081+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2023-05-26T19:44:30.088+0400] {processor.py:838} WARNING - No viable dags retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2023-05-26T19:44:30.124+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py took 0.063 seconds
+[2023-05-26T19:45:33.663+0400] {processor.py:157} INFO - Started process (PID=1596) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2023-05-26T19:45:33.669+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-05-26T19:45:33.676+0400] {logging_mixin.py:149} INFO - [2023-05-26T19:45:33.674+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2023-05-26T19:45:33.692+0400] {processor.py:838} WARNING - No viable dags retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2023-05-26T19:45:33.862+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py took 0.228 seconds
+[2023-05-26T19:48:15.808+0400] {processor.py:157} INFO - Started process (PID=1697) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2023-05-26T19:48:15.811+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-05-26T19:48:15.813+0400] {logging_mixin.py:149} INFO - [2023-05-26T19:48:15.813+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2023-05-26T19:48:15.819+0400] {processor.py:838} WARNING - No viable dags retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2023-05-26T19:48:15.841+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py took 0.044 seconds
+[2023-05-26T21:05:38.985+0400] {processor.py:157} INFO - Started process (PID=81) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2023-05-26T21:05:38.989+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-05-26T21:05:38.990+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:05:38.990+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2023-05-26T21:05:38.994+0400] {processor.py:838} WARNING - No viable dags retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2023-05-26T21:05:39.017+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py took 0.045 seconds
+[2023-05-26T21:06:43.416+0400] {processor.py:157} INFO - Started process (PID=154) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2023-05-26T21:06:43.419+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-05-26T21:06:43.420+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:06:43.420+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2023-05-26T21:06:43.425+0400] {processor.py:838} WARNING - No viable dags retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2023-05-26T21:06:43.454+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py took 0.046 seconds
+[2023-05-26T21:10:45.859+0400] {processor.py:157} INFO - Started process (PID=1917) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2023-05-26T21:10:45.861+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-05-26T21:10:45.862+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:10:45.862+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2023-05-26T21:10:45.866+0400] {processor.py:838} WARNING - No viable dags retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2023-05-26T21:10:45.885+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py took 0.032 seconds
+[2023-05-26T21:12:16.637+0400] {processor.py:157} INFO - Started process (PID=1998) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2023-05-26T21:12:16.641+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-05-26T21:12:16.643+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:12:16.642+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2023-05-26T21:12:16.650+0400] {processor.py:838} WARNING - No viable dags retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2023-05-26T21:12:16.691+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py took 0.067 seconds
+[2023-05-26T21:13:18.900+0400] {processor.py:157} INFO - Started process (PID=2070) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2023-05-26T21:13:18.902+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-05-26T21:13:18.903+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:13:18.903+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2023-05-26T21:13:18.907+0400] {processor.py:838} WARNING - No viable dags retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2023-05-26T21:13:18.926+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py took 0.034 seconds
+[2023-05-26T21:14:02.713+0400] {processor.py:157} INFO - Started process (PID=2121) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2023-05-26T21:14:02.718+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-05-26T21:14:02.719+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:14:02.719+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2023-05-26T21:14:02.727+0400] {processor.py:838} WARNING - No viable dags retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2023-05-26T21:14:02.775+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py took 0.074 seconds
+[2023-05-26T21:14:44.698+0400] {processor.py:157} INFO - Started process (PID=2172) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2023-05-26T21:14:44.701+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-05-26T21:14:44.702+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:14:44.702+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2023-05-26T21:14:44.709+0400] {processor.py:838} WARNING - No viable dags retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2023-05-26T21:14:44.747+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py took 0.061 seconds
+[2023-05-26T21:15:33.781+0400] {processor.py:157} INFO - Started process (PID=9430) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2023-05-26T21:15:33.785+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-05-26T21:15:33.787+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:15:33.787+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2023-05-26T21:15:33.807+0400] {processor.py:838} WARNING - No viable dags retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2023-05-26T21:15:33.909+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py took 0.149 seconds
+[2023-05-26T21:16:19.948+0400] {processor.py:157} INFO - Started process (PID=16682) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2023-05-26T21:16:19.950+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-05-26T21:16:19.951+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:16:19.951+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2023-05-26T21:16:19.956+0400] {processor.py:838} WARNING - No viable dags retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2023-05-26T21:16:19.975+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py took 0.035 seconds
+[2023-05-26T21:17:26.847+0400] {processor.py:157} INFO - Started process (PID=16765) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2023-05-26T21:17:26.851+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-05-26T21:17:26.852+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:17:26.852+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2023-05-26T21:17:26.860+0400] {processor.py:838} WARNING - No viable dags retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2023-05-26T21:17:26.894+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py took 0.060 seconds
+[2023-05-26T21:19:02.946+0400] {processor.py:157} INFO - Started process (PID=16853) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2023-05-26T21:19:02.947+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-05-26T21:19:02.949+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:19:02.949+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2023-05-26T21:19:02.953+0400] {processor.py:838} WARNING - No viable dags retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2023-05-26T21:19:02.976+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py took 0.038 seconds
+[2023-05-26T21:19:48.960+0400] {processor.py:157} INFO - Started process (PID=16904) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2023-05-26T21:19:48.965+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-05-26T21:19:48.967+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:19:48.967+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2023-05-26T21:19:48.974+0400] {processor.py:838} WARNING - No viable dags retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2023-05-26T21:19:49.008+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py took 0.070 seconds
+[2023-05-26T21:21:01.298+0400] {processor.py:157} INFO - Started process (PID=16986) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2023-05-26T21:21:01.301+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-05-26T21:21:01.338+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:21:01.338+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2023-05-26T21:21:01.346+0400] {processor.py:838} WARNING - No viable dags retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2023-05-26T21:21:01.383+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py took 0.094 seconds
+[2023-05-26T21:21:43.074+0400] {processor.py:157} INFO - Started process (PID=17036) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2023-05-26T21:21:43.076+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-05-26T21:21:43.077+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:21:43.077+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2023-05-26T21:21:43.081+0400] {processor.py:838} WARNING - No viable dags retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2023-05-26T21:21:43.101+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py took 0.033 seconds
+[2023-05-26T21:22:25.643+0400] {processor.py:157} INFO - Started process (PID=17085) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2023-05-26T21:22:25.646+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-05-26T21:22:25.648+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:22:25.648+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2023-05-26T21:22:25.658+0400] {processor.py:838} WARNING - No viable dags retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2023-05-26T21:22:25.705+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py took 0.078 seconds
+[2023-05-26T21:23:08.187+0400] {processor.py:157} INFO - Started process (PID=17136) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2023-05-26T21:23:08.191+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-05-26T21:23:08.193+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:23:08.192+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2023-05-26T21:23:08.201+0400] {processor.py:838} WARNING - No viable dags retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2023-05-26T21:23:08.239+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py took 0.064 seconds
+[2023-05-26T21:23:48.044+0400] {processor.py:157} INFO - Started process (PID=17185) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2023-05-26T21:23:48.048+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-05-26T21:23:48.049+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:23:48.049+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2023-05-26T21:23:48.055+0400] {processor.py:838} WARNING - No viable dags retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2023-05-26T21:23:48.106+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py took 0.083 seconds
+[2023-05-26T21:24:25.165+0400] {processor.py:157} INFO - Started process (PID=17230) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2023-05-26T21:24:25.166+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-05-26T21:24:25.167+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:24:25.167+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2023-05-26T21:24:25.171+0400] {processor.py:838} WARNING - No viable dags retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2023-05-26T21:24:25.190+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py took 0.032 seconds
+[2023-05-26T21:25:03.476+0400] {processor.py:157} INFO - Started process (PID=17279) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2023-05-26T21:25:03.478+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-05-26T21:25:03.479+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:25:03.479+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2023-05-26T21:25:03.482+0400] {processor.py:838} WARNING - No viable dags retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2023-05-26T21:25:03.514+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py took 0.049 seconds
+[2023-05-26T21:48:29.220+0400] {processor.py:157} INFO - Started process (PID=84) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2023-05-26T21:48:29.221+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-05-26T21:48:29.222+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:48:29.222+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2023-05-26T21:48:29.226+0400] {processor.py:838} WARNING - No viable dags retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2023-05-26T21:48:29.248+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py took 0.034 seconds
+[2023-05-26T21:52:31.488+0400] {processor.py:157} INFO - Started process (PID=67) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2023-05-26T21:52:31.492+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-05-26T21:52:31.494+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:52:31.494+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2023-05-26T21:52:31.501+0400] {processor.py:838} WARNING - No viable dags retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2023-05-26T21:52:31.541+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py took 0.066 seconds
+[2023-05-26T21:53:31.600+0400] {processor.py:157} INFO - Started process (PID=117) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2023-05-26T21:53:31.602+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-05-26T21:53:31.603+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:53:31.603+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2023-05-26T21:53:31.606+0400] {processor.py:838} WARNING - No viable dags retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2023-05-26T21:53:31.625+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py took 0.030 seconds
+[2023-05-26T21:54:29.121+0400] {processor.py:157} INFO - Started process (PID=195) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2023-05-26T21:54:29.123+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-05-26T21:54:29.124+0400] {logging_mixin.py:149} INFO - [2023-05-26T21:54:29.124+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2023-05-26T21:54:29.130+0400] {processor.py:838} WARNING - No viable dags retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2023-05-26T21:54:29.153+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py took 0.038 seconds
+[2023-05-26T22:06:17.326+0400] {processor.py:157} INFO - Started process (PID=2536) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2023-05-26T22:06:17.332+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-05-26T22:06:17.334+0400] {logging_mixin.py:149} INFO - [2023-05-26T22:06:17.334+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2023-05-26T22:06:17.343+0400] {processor.py:838} WARNING - No viable dags retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2023-05-26T22:06:17.428+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py took 0.129 seconds
+[2023-05-26T22:07:35.178+0400] {processor.py:157} INFO - Started process (PID=2586) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2023-05-26T22:07:35.183+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-05-26T22:07:35.184+0400] {logging_mixin.py:149} INFO - [2023-05-26T22:07:35.184+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2023-05-26T22:07:35.193+0400] {processor.py:838} WARNING - No viable dags retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2023-05-26T22:07:35.277+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py took 0.120 seconds

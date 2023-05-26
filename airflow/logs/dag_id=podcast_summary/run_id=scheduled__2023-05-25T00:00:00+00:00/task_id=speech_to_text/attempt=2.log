@@ -1,0 +1,1041 @@
+[2023-05-26T19:36:20.200+0400] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: podcast_summary.speech_to_text scheduled__2023-05-25T00:00:00+00:00 [queued]>
+[2023-05-26T19:36:20.209+0400] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: podcast_summary.speech_to_text scheduled__2023-05-25T00:00:00+00:00 [queued]>
+[2023-05-26T19:36:20.209+0400] {taskinstance.py:1308} INFO - Starting attempt 2 of 1
+[2023-05-26T19:36:20.229+0400] {taskinstance.py:1327} INFO - Executing <Task(_PythonDecoratedOperator): speech_to_text> on 2023-05-25 00:00:00+00:00
+[2023-05-26T19:36:20.280+0400] {standard_task_runner.py:57} INFO - Started process 173 to run task
+[2023-05-26T19:36:20.300+0400] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'podcast_summary', 'speech_to_text', 'scheduled__2023-05-25T00:00:00+00:00', '--job-id', '94', '--raw', '--subdir', 'DAGS_FOLDER/podcast_summary.py', '--cfg-path', '/tmp/tmpalcfhlhg']
+[2023-05-26T19:36:20.309+0400] {standard_task_runner.py:85} INFO - Job 94: Subtask speech_to_text
+[2023-05-26T19:36:20.458+0400] {task_command.py:410} INFO - Running <TaskInstance: podcast_summary.speech_to_text scheduled__2023-05-25T00:00:00+00:00 [running]> on host DESKTOP-V010GL9.localdomain
+[2023-05-26T19:36:20.641+0400] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='podcast_summary' AIRFLOW_CTX_TASK_ID='speech_to_text' AIRFLOW_CTX_EXECUTION_DATE='2023-05-25T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-05-25T00:00:00+00:00'
+[2023-05-26T19:36:20.652+0400] {base.py:73} INFO - Using connection ID 'podcasts' for task execution.
+[2023-05-26T19:36:25.490+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip: 0.00B [00:00, ?B/s]
+[2023-05-26T19:36:29.081+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   0%|          | 8.00k/125M [00:03<15:53:21, 2.28kB/s]
+[2023-05-26T19:36:29.252+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   0%|          | 320k/125M [00:03<17:54, 121kB/s]     
+[2023-05-26T19:36:29.681+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   0%|          | 400k/125M [00:04<16:10, 134kB/s]
+[2023-05-26T19:36:29.807+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   0%|          | 512k/125M [00:04<11:23, 190kB/s]
+[2023-05-26T19:36:30.128+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   1%|          | 800k/125M [00:04<06:19, 342kB/s]
+[2023-05-26T19:36:30.410+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   1%|          | 1.12M/125M [00:04<04:01, 536kB/s]
+[2023-05-26T19:36:30.533+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   1%|1         | 1.31M/125M [00:05<03:16, 658kB/s]
+[2023-05-26T19:36:30.739+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   1%|1         | 1.39M/125M [00:05<03:34, 602kB/s]
+[2023-05-26T19:36:30.947+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   1%|1         | 1.50M/125M [00:05<03:38, 591kB/s]
+[2023-05-26T19:36:31.358+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   1%|1         | 1.59M/125M [00:05<04:46, 449kB/s]
+[2023-05-26T19:36:31.558+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   1%|1         | 1.70M/125M [00:06<04:30, 476kB/s]
+[2023-05-26T19:36:31.682+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   1%|1         | 1.81M/125M [00:06<03:54, 549kB/s]
+[2023-05-26T19:36:31.920+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   2%|1         | 1.89M/125M [00:06<04:24, 486kB/s]
+[2023-05-26T19:36:32.121+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   2%|1         | 1.97M/125M [00:06<04:36, 465kB/s]
+[2023-05-26T19:36:32.345+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   2%|1         | 2.06M/125M [00:06<04:40, 457kB/s]
+[2023-05-26T19:36:32.582+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   2%|1         | 2.16M/125M [00:07<04:49, 444kB/s]
+[2023-05-26T19:36:32.704+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   2%|1         | 2.25M/125M [00:07<04:10, 512kB/s]
+[2023-05-26T19:36:32.892+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   2%|1         | 2.34M/125M [00:07<04:08, 515kB/s]
+[2023-05-26T19:36:33.096+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   2%|1         | 2.44M/125M [00:07<04:13, 504kB/s]
+[2023-05-26T19:36:33.384+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   2%|2         | 2.53M/125M [00:07<04:49, 441kB/s]
+[2023-05-26T19:36:33.623+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   2%|2         | 2.62M/125M [00:08<04:55, 432kB/s]
+[2023-05-26T19:36:34.278+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   2%|2         | 2.73M/125M [00:08<07:19, 290kB/s]
+[2023-05-26T19:36:46.413+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   2%|2         | 2.75M/125M [00:20<1:46:58, 19.9kB/s]
+[2023-05-26T19:36:46.539+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   2%|2         | 2.84M/125M [00:21<1:10:10, 30.3kB/s]
+[2023-05-26T19:36:47.038+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   2%|2         | 2.89M/125M [00:21<1:00:22, 35.2kB/s]
+[2023-05-26T19:36:47.159+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   2%|2         | 2.91M/125M [00:21<56:27, 37.6kB/s]  
+[2023-05-26T19:36:47.373+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   2%|2         | 2.92M/125M [00:21<53:14, 39.9kB/s]
+[2023-05-26T19:36:47.577+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   2%|2         | 2.94M/125M [00:22<49:35, 42.8kB/s]
+[2023-05-26T19:36:47.725+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   2%|2         | 2.97M/125M [00:22<38:19, 55.4kB/s]
+[2023-05-26T19:36:48.172+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   2%|2         | 2.98M/125M [00:22<41:37, 51.0kB/s]
+[2023-05-26T19:36:48.720+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   2%|2         | 3.05M/125M [00:23<29:56, 70.9kB/s]
+[2023-05-26T19:36:50.771+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   2%|2         | 3.08M/125M [00:25<56:32, 37.5kB/s]
+[2023-05-26T19:36:51.495+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   3%|2         | 3.36M/125M [00:26<17:02, 124kB/s] 
+[2023-05-26T19:36:55.070+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   3%|2         | 3.38M/125M [00:29<42:37, 49.7kB/s]
+[2023-05-26T19:37:06.144+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   3%|2         | 3.39M/125M [00:40<2:28:00, 14.3kB/s]
+[2023-05-26T19:37:06.328+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   3%|2         | 3.53M/125M [00:40<1:16:06, 27.8kB/s]
+[2023-05-26T19:37:06.492+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   3%|2         | 3.56M/125M [00:41<1:07:12, 31.4kB/s]
+[2023-05-26T19:37:07.144+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   3%|2         | 3.58M/125M [00:41<1:08:41, 30.8kB/s]
+[2023-05-26T19:37:07.354+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   3%|2         | 3.59M/125M [00:41<1:04:01, 33.0kB/s]
+[2023-05-26T19:37:07.664+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   3%|2         | 3.61M/125M [00:42<1:00:41, 34.8kB/s]
+[2023-05-26T19:37:07.765+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   3%|2         | 3.64M/125M [00:42<45:21, 46.6kB/s]  
+[2023-05-26T19:37:07.870+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   3%|2         | 3.72M/125M [00:42<23:55, 88.3kB/s]
+[2023-05-26T19:37:07.982+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   3%|3         | 3.86M/125M [00:42<11:19, 186kB/s] 
+[2023-05-26T19:37:08.355+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   3%|3         | 3.88M/125M [00:42<14:20, 147kB/s]
+[2023-05-26T19:37:08.468+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   4%|3         | 4.48M/125M [00:42<02:51, 733kB/s]
+[2023-05-26T19:37:08.580+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   4%|3         | 4.61M/125M [00:43<02:39, 790kB/s]
+[2023-05-26T19:37:08.681+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   4%|3         | 4.75M/125M [00:43<02:21, 887kB/s]
+[2023-05-26T19:37:08.794+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   4%|3         | 4.78M/125M [00:43<02:42, 774kB/s]
+[2023-05-26T19:37:08.927+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   4%|3         | 4.89M/125M [00:43<02:37, 795kB/s]
+[2023-05-26T19:37:09.027+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   4%|3         | 4.97M/125M [00:43<02:36, 800kB/s]
+[2023-05-26T19:37:09.152+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   4%|4         | 5.08M/125M [00:43<02:30, 832kB/s]
+[2023-05-26T19:37:09.259+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   4%|4         | 5.16M/125M [00:43<02:33, 815kB/s]
+[2023-05-26T19:37:09.566+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   4%|4         | 5.41M/125M [00:44<02:29, 835kB/s]
+[2023-05-26T19:37:09.694+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   5%|4         | 5.91M/125M [00:44<01:18, 1.59MB/s]
+[2023-05-26T19:37:09.795+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   5%|4         | 6.09M/125M [00:44<01:14, 1.66MB/s]
+[2023-05-26T19:37:09.900+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   5%|4         | 6.19M/125M [00:44<01:23, 1.49MB/s]
+[2023-05-26T19:37:10.047+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   5%|5         | 6.44M/125M [00:44<01:18, 1.59MB/s]
+[2023-05-26T19:37:10.150+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   5%|5         | 6.52M/125M [00:44<01:28, 1.39MB/s]
+[2023-05-26T19:37:10.473+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   5%|5         | 6.67M/125M [00:44<02:12, 932kB/s] 
+[2023-05-26T19:37:10.883+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   5%|5         | 6.75M/125M [00:45<03:34, 576kB/s]
+[2023-05-26T19:37:11.133+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   5%|5         | 6.80M/125M [00:45<04:26, 464kB/s]
+[2023-05-26T19:37:11.537+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   5%|5         | 6.80M/125M [00:46<07:15, 283kB/s]
+[2023-05-26T19:37:11.764+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   6%|5         | 7.03M/125M [00:46<04:21, 471kB/s]
+[2023-05-26T19:37:12.023+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   6%|5         | 7.06M/125M [00:46<05:30, 372kB/s]
+[2023-05-26T19:37:12.331+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   6%|5         | 7.17M/125M [00:46<05:30, 372kB/s]
+[2023-05-26T19:37:12.519+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   6%|5         | 7.22M/125M [00:47<05:53, 348kB/s]
+[2023-05-26T19:37:12.986+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   6%|5         | 7.27M/125M [00:47<08:30, 241kB/s]
+[2023-05-26T19:37:13.237+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   6%|5         | 7.30M/125M [00:47<09:36, 213kB/s]
+[2023-05-26T19:37:13.439+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   6%|5         | 7.39M/125M [00:47<07:27, 275kB/s]
+[2023-05-26T19:37:13.652+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   6%|6         | 7.48M/125M [00:48<06:21, 322kB/s]
+[2023-05-26T19:37:14.161+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   6%|6         | 7.55M/125M [00:48<08:47, 232kB/s]
+[2023-05-26T19:37:15.593+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   6%|6         | 7.56M/125M [00:50<23:04, 88.6kB/s]
+[2023-05-26T19:37:22.784+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   6%|6         | 7.64M/125M [00:57<1:21:39, 25.0kB/s]
+[2023-05-26T19:37:22.976+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   6%|6         | 7.72M/125M [00:57<54:48, 37.2kB/s]  
+[2023-05-26T19:37:23.145+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   6%|6         | 7.77M/125M [00:57<43:47, 46.6kB/s]
+[2023-05-26T19:37:23.258+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   6%|6         | 7.80M/125M [00:57<37:09, 54.9kB/s]
+[2023-05-26T19:37:23.390+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   6%|6         | 7.84M/125M [00:57<28:20, 71.9kB/s]
+[2023-05-26T19:37:23.502+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   6%|6         | 7.88M/125M [00:58<23:51, 85.4kB/s]
+[2023-05-26T19:37:23.630+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   6%|6         | 7.92M/125M [00:58<18:06, 113kB/s] 
+[2023-05-26T19:37:23.760+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   6%|6         | 7.97M/125M [00:58<14:11, 143kB/s]
+[2023-05-26T19:37:23.923+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   6%|6         | 8.02M/125M [00:58<11:55, 171kB/s]
+[2023-05-26T19:37:24.150+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   6%|6         | 8.06M/125M [00:58<11:09, 182kB/s]
+[2023-05-26T19:37:24.356+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   7%|6         | 8.11M/125M [00:58<10:21, 197kB/s]
+[2023-05-26T19:37:24.486+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   7%|6         | 8.16M/125M [00:58<08:50, 230kB/s]
+[2023-05-26T19:37:24.610+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   7%|6         | 8.20M/125M [00:59<07:44, 263kB/s]
+[2023-05-26T19:37:24.748+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   7%|6         | 8.27M/125M [00:59<06:28, 314kB/s]
+[2023-05-26T19:37:24.897+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   7%|6         | 8.31M/125M [00:59<06:22, 318kB/s]
+[2023-05-26T19:37:25.020+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   7%|6         | 8.36M/125M [00:59<05:59, 338kB/s]
+[2023-05-26T19:37:25.153+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   7%|6         | 8.42M/125M [00:59<05:20, 380kB/s]
+[2023-05-26T19:37:25.276+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   7%|6         | 8.47M/125M [00:59<05:15, 385kB/s]
+[2023-05-26T19:37:25.422+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   7%|6         | 8.52M/125M [00:59<05:28, 370kB/s]
+[2023-05-26T19:37:25.560+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   7%|6         | 8.58M/125M [01:00<05:02, 401kB/s]
+[2023-05-26T19:37:25.676+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   7%|6         | 8.62M/125M [01:00<04:58, 406kB/s]
+[2023-05-26T19:37:25.794+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   7%|6         | 8.67M/125M [01:00<04:56, 410kB/s]
+[2023-05-26T19:37:25.967+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   7%|7         | 8.73M/125M [01:00<05:04, 398kB/s]
+[2023-05-26T19:37:26.092+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   7%|7         | 8.80M/125M [01:00<04:40, 433kB/s]
+[2023-05-26T19:37:26.212+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   7%|7         | 8.84M/125M [01:00<04:44, 426kB/s]
+[2023-05-26T19:37:26.335+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   7%|7         | 8.89M/125M [01:00<04:48, 420kB/s]
+[2023-05-26T19:37:26.463+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   7%|7         | 8.95M/125M [01:00<04:31, 446kB/s]
+[2023-05-26T19:37:26.578+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   7%|7         | 9.00M/125M [01:01<04:34, 441kB/s]
+[2023-05-26T19:37:26.707+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   7%|7         | 9.06M/125M [01:01<04:22, 461kB/s]
+[2023-05-26T19:37:26.822+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   7%|7         | 9.11M/125M [01:01<04:27, 452kB/s]
+[2023-05-26T19:37:26.961+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   7%|7         | 9.17M/125M [01:01<04:23, 459kB/s]
+[2023-05-26T19:37:27.066+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   7%|7         | 9.22M/125M [01:01<04:22, 461kB/s]
+[2023-05-26T19:37:27.206+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   7%|7         | 9.28M/125M [01:01<04:20, 463kB/s]
+[2023-05-26T19:37:27.322+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   7%|7         | 9.33M/125M [01:01<04:27, 452kB/s]
+[2023-05-26T19:37:27.451+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   8%|7         | 9.39M/125M [01:01<04:16, 470kB/s]
+[2023-05-26T19:37:27.577+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   8%|7         | 9.45M/125M [01:02<04:08, 485kB/s]
+[2023-05-26T19:37:27.719+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   8%|7         | 9.52M/125M [01:02<04:12, 478kB/s]
+[2023-05-26T19:37:27.823+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   8%|7         | 9.56M/125M [01:02<04:13, 476kB/s]
+[2023-05-26T19:37:27.945+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   8%|7         | 9.62M/125M [01:02<04:03, 494kB/s]
+[2023-05-26T19:37:28.045+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   8%|7         | 9.67M/125M [01:02<04:04, 493kB/s]
+[2023-05-26T19:37:28.169+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   8%|7         | 9.73M/125M [01:02<03:58, 504kB/s]
+[2023-05-26T19:37:28.292+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   8%|7         | 9.80M/125M [01:02<03:54, 513kB/s]
+[2023-05-26T19:37:28.415+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   8%|7         | 9.86M/125M [01:02<03:51, 520kB/s]
+[2023-05-26T19:37:28.538+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   8%|7         | 9.92M/125M [01:03<03:49, 523kB/s]
+[2023-05-26T19:37:28.661+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   8%|8         | 9.98M/125M [01:03<03:47, 527kB/s]
+[2023-05-26T19:37:28.773+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   8%|8         | 10.0M/125M [01:03<03:40, 544kB/s]
+[2023-05-26T19:37:28.880+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   8%|8         | 10.1M/125M [01:03<03:33, 562kB/s]
+[2023-05-26T19:37:28.989+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   8%|8         | 10.2M/125M [01:03<03:45, 531kB/s]
+[2023-05-26T19:37:29.105+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   8%|8         | 10.2M/125M [01:03<03:41, 542kB/s]
+[2023-05-26T19:37:29.219+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   8%|8         | 10.3M/125M [01:03<03:37, 551kB/s]
+[2023-05-26T19:37:29.342+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   8%|8         | 10.3M/125M [01:03<03:39, 545kB/s]
+[2023-05-26T19:37:29.467+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   8%|8         | 10.4M/125M [01:03<03:25, 581kB/s]
+[2023-05-26T19:37:29.592+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   8%|8         | 10.5M/125M [01:04<03:18, 602kB/s]
+[2023-05-26T19:37:29.722+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   8%|8         | 10.6M/125M [01:04<03:15, 611kB/s]
+[2023-05-26T19:37:29.848+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   9%|8         | 10.7M/125M [01:04<03:11, 623kB/s]
+[2023-05-26T19:37:29.969+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   9%|8         | 10.7M/125M [01:04<03:06, 638kB/s]
+[2023-05-26T19:37:30.583+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   9%|8         | 10.8M/125M [01:05<07:11, 277kB/s]
+[2023-05-26T19:37:30.765+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   9%|8         | 11.0M/125M [01:05<03:59, 497kB/s]
+[2023-05-26T19:37:30.889+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   9%|8         | 11.1M/125M [01:05<03:56, 503kB/s]
+[2023-05-26T19:37:31.017+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   9%|8         | 11.2M/125M [01:05<03:43, 531kB/s]
+[2023-05-26T19:37:31.140+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   9%|9         | 11.2M/125M [01:05<03:43, 531kB/s]
+[2023-05-26T19:37:31.266+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   9%|9         | 11.3M/125M [01:05<03:31, 561kB/s]
+[2023-05-26T19:37:31.559+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   9%|9         | 11.4M/125M [01:06<04:33, 434kB/s]
+[2023-05-26T19:37:31.788+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   9%|9         | 11.4M/125M [01:06<05:08, 385kB/s]
+[2023-05-26T19:37:31.932+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   9%|9         | 11.5M/125M [01:06<06:07, 322kB/s]
+[2023-05-26T19:37:32.143+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   9%|9         | 11.5M/125M [01:06<06:11, 319kB/s]
+[2023-05-26T19:37:32.275+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   9%|9         | 11.5M/125M [01:06<07:11, 274kB/s]
+[2023-05-26T19:37:33.259+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   9%|9         | 11.6M/125M [01:07<15:26, 128kB/s]
+[2023-05-26T19:37:34.071+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   9%|9         | 11.6M/125M [01:08<22:24, 88.0kB/s]
+[2023-05-26T19:37:34.175+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   9%|9         | 11.7M/125M [01:08<18:41, 105kB/s] 
+[2023-05-26T19:37:34.362+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   9%|9         | 11.7M/125M [01:08<16:51, 117kB/s]
+[2023-05-26T19:37:34.526+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   9%|9         | 11.7M/125M [01:09<13:17, 148kB/s]
+[2023-05-26T19:37:34.638+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   9%|9         | 11.8M/125M [01:09<09:21, 211kB/s]
+[2023-05-26T19:37:34.761+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:   9%|9         | 11.8M/125M [01:09<08:55, 221kB/s]
+[2023-05-26T19:37:34.888+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  10%|9         | 11.9M/125M [01:09<06:55, 284kB/s]
+[2023-05-26T19:37:35.006+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  10%|9         | 11.9M/125M [01:09<06:58, 282kB/s]
+[2023-05-26T19:37:35.107+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  10%|9         | 12.0M/125M [01:09<06:01, 326kB/s]
+[2023-05-26T19:37:35.269+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  10%|9         | 12.0M/125M [01:09<06:10, 319kB/s]
+[2023-05-26T19:37:35.396+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  10%|9         | 12.1M/125M [01:09<05:17, 372kB/s]
+[2023-05-26T19:37:35.499+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  10%|9         | 12.1M/125M [01:10<05:28, 359kB/s]
+[2023-05-26T19:37:35.629+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  10%|9         | 12.2M/125M [01:10<04:53, 402kB/s]
+[2023-05-26T19:37:35.730+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  10%|9         | 12.2M/125M [01:10<05:07, 383kB/s]
+[2023-05-26T19:37:35.858+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  10%|9         | 12.3M/125M [01:10<04:38, 423kB/s]
+[2023-05-26T19:37:36.000+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  10%|9         | 12.4M/125M [01:10<03:49, 512kB/s]
+[2023-05-26T19:37:36.139+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  10%|9         | 12.4M/125M [01:10<05:03, 387kB/s]
+[2023-05-26T19:37:36.571+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  10%|#         | 12.5M/125M [01:11<06:39, 294kB/s]
+[2023-05-26T19:37:36.704+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  10%|#         | 12.6M/125M [01:11<04:45, 411kB/s]
+[2023-05-26T19:37:37.337+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  10%|#         | 12.7M/125M [01:11<07:27, 262kB/s]
+[2023-05-26T19:37:37.518+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  10%|#         | 12.8M/125M [01:12<05:04, 385kB/s]
+[2023-05-26T19:37:37.619+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  10%|#         | 12.9M/125M [01:12<04:53, 399kB/s]
+[2023-05-26T19:37:37.740+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  10%|#         | 12.9M/125M [01:12<04:35, 425kB/s]
+[2023-05-26T19:37:37.876+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  10%|#         | 13.0M/125M [01:12<04:10, 466kB/s]
+[2023-05-26T19:37:37.994+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  11%|#         | 13.1M/125M [01:12<04:00, 486kB/s]
+[2023-05-26T19:37:38.124+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  11%|#         | 13.2M/125M [01:12<03:43, 523kB/s]
+[2023-05-26T19:37:38.253+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  11%|#         | 13.2M/125M [01:12<03:31, 553kB/s]
+[2023-05-26T19:37:38.387+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  11%|#         | 13.3M/125M [01:12<03:24, 570kB/s]
+[2023-05-26T19:37:38.512+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  11%|#         | 13.4M/125M [01:13<03:05, 630kB/s]
+[2023-05-26T19:37:38.642+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  11%|#         | 13.5M/125M [01:13<02:54, 666kB/s]
+[2023-05-26T19:37:38.757+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  11%|#         | 13.6M/125M [01:13<02:51, 679kB/s]
+[2023-05-26T19:37:38.882+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  11%|#         | 13.7M/125M [01:13<02:43, 711kB/s]
+[2023-05-26T19:37:39.012+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  11%|#1        | 13.8M/125M [01:13<02:40, 724kB/s]
+[2023-05-26T19:37:39.404+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  11%|#1        | 13.8M/125M [01:13<04:44, 408kB/s]
+[2023-05-26T19:37:39.536+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  11%|#1        | 14.1M/125M [01:14<02:34, 747kB/s]
+[2023-05-26T19:37:39.659+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  11%|#1        | 14.1M/125M [01:14<02:45, 699kB/s]
+[2023-05-26T19:37:39.796+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  11%|#1        | 14.2M/125M [01:14<03:00, 641kB/s]
+[2023-05-26T19:37:39.923+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  11%|#1        | 14.3M/125M [01:14<02:59, 643kB/s]
+[2023-05-26T19:37:40.073+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  12%|#1        | 14.3M/125M [01:14<03:19, 580kB/s]
+[2023-05-26T19:37:40.177+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  12%|#1        | 14.4M/125M [01:14<03:27, 556kB/s]
+[2023-05-26T19:37:40.302+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  12%|#1        | 14.5M/125M [01:14<03:31, 546kB/s]
+[2023-05-26T19:37:40.429+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  12%|#1        | 14.5M/125M [01:14<03:20, 576kB/s]
+[2023-05-26T19:37:40.557+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  12%|#1        | 14.6M/125M [01:15<03:13, 594kB/s]
+[2023-05-26T19:37:40.681+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  12%|#1        | 14.7M/125M [01:15<03:07, 613kB/s]
+[2023-05-26T19:37:40.807+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  12%|#1        | 14.8M/125M [01:15<03:04, 625kB/s]
+[2023-05-26T19:37:40.930+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  12%|#1        | 14.8M/125M [01:15<03:00, 636kB/s]
+[2023-05-26T19:37:41.055+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  12%|#1        | 14.9M/125M [01:15<02:59, 642kB/s]
+[2023-05-26T19:37:41.181+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  12%|#2        | 15.0M/125M [01:15<02:57, 645kB/s]
+[2023-05-26T19:37:41.304+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  12%|#2        | 15.1M/125M [01:15<02:56, 651kB/s]
+[2023-05-26T19:37:41.439+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  12%|#2        | 15.2M/125M [01:15<02:49, 675kB/s]
+[2023-05-26T19:37:41.602+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  12%|#2        | 15.2M/125M [01:16<03:06, 614kB/s]
+[2023-05-26T19:37:41.734+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  12%|#2        | 15.3M/125M [01:16<03:05, 617kB/s]
+[2023-05-26T19:37:41.857+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  12%|#2        | 15.4M/125M [01:16<03:01, 629kB/s]
+[2023-05-26T19:37:41.996+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  12%|#2        | 15.5M/125M [01:16<03:16, 581kB/s]
+[2023-05-26T19:37:42.146+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  12%|#2        | 15.5M/125M [01:16<03:33, 534kB/s]
+[2023-05-26T19:37:42.270+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  13%|#2        | 15.6M/125M [01:16<03:20, 569kB/s]
+[2023-05-26T19:37:42.421+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  13%|#2        | 15.7M/125M [01:16<03:23, 561kB/s]
+[2023-05-26T19:37:42.549+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  13%|#2        | 15.8M/125M [01:17<03:15, 584kB/s]
+[2023-05-26T19:37:42.678+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  13%|#2        | 15.9M/125M [01:17<02:59, 635kB/s]
+[2023-05-26T19:37:42.802+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  13%|#2        | 15.9M/125M [01:17<02:57, 642kB/s]
+[2023-05-26T19:37:42.929+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  13%|#2        | 16.0M/125M [01:17<02:56, 643kB/s]
+[2023-05-26T19:37:43.052+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  13%|#2        | 16.1M/125M [01:17<02:54, 650kB/s]
+[2023-05-26T19:37:43.200+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  13%|#3        | 16.2M/125M [01:17<02:53, 654kB/s]
+[2023-05-26T19:37:43.326+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  13%|#3        | 16.3M/125M [01:17<02:53, 653kB/s]
+[2023-05-26T19:37:43.453+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  13%|#3        | 16.4M/125M [01:17<02:44, 688kB/s]
+[2023-05-26T19:37:43.588+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  13%|#3        | 16.4M/125M [01:18<02:50, 664kB/s]
+[2023-05-26T19:37:43.735+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  13%|#3        | 16.5M/125M [01:18<02:50, 664kB/s]
+[2023-05-26T19:37:43.859+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  13%|#3        | 16.6M/125M [01:18<02:50, 664kB/s]
+[2023-05-26T19:37:43.986+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  13%|#3        | 16.7M/125M [01:18<02:42, 697kB/s]
+[2023-05-26T19:37:44.114+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  13%|#3        | 16.8M/125M [01:18<02:37, 718kB/s]
+[2023-05-26T19:37:44.222+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  14%|#3        | 16.9M/125M [01:18<02:35, 727kB/s]
+[2023-05-26T19:37:44.376+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  14%|#3        | 17.0M/125M [01:18<02:41, 698kB/s]
+[2023-05-26T19:37:44.492+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  14%|#3        | 17.1M/125M [01:19<02:32, 738kB/s]
+[2023-05-26T19:37:44.619+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  14%|#3        | 17.2M/125M [01:19<02:30, 748kB/s]
+[2023-05-26T19:37:44.743+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  14%|#3        | 17.2M/125M [01:19<02:27, 761kB/s]
+[2023-05-26T19:37:44.869+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  14%|#3        | 17.3M/125M [01:19<02:26, 766kB/s]
+[2023-05-26T19:37:44.996+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  14%|#4        | 17.4M/125M [01:19<02:25, 769kB/s]
+[2023-05-26T19:37:45.140+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  14%|#4        | 17.5M/125M [01:19<02:31, 742kB/s]
+[2023-05-26T19:37:45.267+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  14%|#4        | 17.6M/125M [01:19<02:29, 750kB/s]
+[2023-05-26T19:37:45.393+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  14%|#4        | 17.7M/125M [01:19<02:27, 759kB/s]
+[2023-05-26T19:37:45.524+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  14%|#4        | 17.8M/125M [01:20<02:20, 795kB/s]
+[2023-05-26T19:37:45.647+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  14%|#4        | 17.9M/125M [01:20<02:20, 795kB/s]
+[2023-05-26T19:37:45.776+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  14%|#4        | 18.0M/125M [01:20<02:22, 785kB/s]
+[2023-05-26T19:37:46.467+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  15%|#4        | 18.1M/125M [01:20<06:29, 287kB/s]
+[2023-05-26T19:37:48.265+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  15%|#4        | 18.3M/125M [01:22<10:01, 185kB/s]
+[2023-05-26T19:37:48.614+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  15%|#4        | 18.4M/125M [01:23<09:35, 193kB/s]
+[2023-05-26T19:37:48.888+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  15%|#4        | 18.4M/125M [01:23<09:42, 191kB/s]
+[2023-05-26T19:37:49.022+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  15%|#4        | 18.5M/125M [01:23<07:57, 233kB/s]
+[2023-05-26T19:37:49.162+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  15%|#4        | 18.6M/125M [01:23<07:27, 248kB/s]
+[2023-05-26T19:37:49.290+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  15%|#4        | 18.6M/125M [01:23<06:28, 286kB/s]
+[2023-05-26T19:37:49.474+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  15%|#4        | 18.7M/125M [01:23<06:34, 282kB/s]
+[2023-05-26T19:37:49.613+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  15%|#5        | 18.7M/125M [01:24<05:47, 319kB/s]
+[2023-05-26T19:37:49.793+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  15%|#5        | 18.8M/125M [01:24<05:34, 331kB/s]
+[2023-05-26T19:37:50.389+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  15%|#5        | 18.9M/125M [01:24<08:53, 207kB/s]
+[2023-05-26T19:37:50.771+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  15%|#5        | 19.0M/125M [01:25<06:52, 268kB/s]
+[2023-05-26T19:37:50.944+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  15%|#5        | 19.1M/125M [01:25<05:10, 356kB/s]
+[2023-05-26T19:37:51.082+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  15%|#5        | 19.2M/125M [01:25<05:28, 336kB/s]
+[2023-05-26T19:37:51.224+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  15%|#5        | 19.2M/125M [01:25<05:50, 315kB/s]
+[2023-05-26T19:37:51.636+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  15%|#5        | 19.2M/125M [01:26<09:40, 190kB/s]
+[2023-05-26T19:37:52.140+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  15%|#5        | 19.2M/125M [01:26<12:19, 149kB/s]
+[2023-05-26T19:37:52.262+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  16%|#5        | 19.3M/125M [01:26<07:46, 236kB/s]
+[2023-05-26T19:37:52.556+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  16%|#5        | 19.4M/125M [01:27<10:13, 180kB/s]
+[2023-05-26T19:37:52.760+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  16%|#5        | 19.4M/125M [01:27<10:29, 175kB/s]
+[2023-05-26T19:37:52.964+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  16%|#5        | 19.4M/125M [01:27<10:42, 171kB/s]
+[2023-05-26T19:37:53.169+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  16%|#5        | 19.5M/125M [01:27<09:40, 190kB/s]
+[2023-05-26T19:37:53.384+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  16%|#5        | 19.5M/125M [01:27<10:14, 179kB/s]
+[2023-05-26T19:37:53.600+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  16%|#5        | 19.5M/125M [01:28<10:43, 171kB/s]
+[2023-05-26T19:37:53.724+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  16%|#5        | 19.6M/125M [01:28<09:41, 189kB/s]
+[2023-05-26T19:37:53.845+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  16%|#5        | 19.6M/125M [01:28<08:52, 206kB/s]
+[2023-05-26T19:37:53.972+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  16%|#5        | 19.6M/125M [01:28<08:23, 219kB/s]
+[2023-05-26T19:37:54.090+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  16%|#5        | 19.7M/125M [01:28<07:51, 233kB/s]
+[2023-05-26T19:37:54.218+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  16%|#5        | 19.7M/125M [01:28<06:41, 274kB/s]
+[2023-05-26T19:37:56.108+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  16%|#5        | 19.7M/125M [01:30<33:04, 55.4kB/s]
+[2023-05-26T19:37:56.406+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  16%|#5        | 19.8M/125M [01:30<28:31, 64.2kB/s]
+[2023-05-26T19:37:56.533+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  16%|#5        | 19.8M/125M [01:31<19:40, 93.0kB/s]
+[2023-05-26T19:37:59.637+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  16%|#5        | 19.8M/125M [01:34<59:49, 30.6kB/s]
+[2023-05-26T19:37:59.778+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  16%|#5        | 19.9M/125M [01:34<35:54, 50.9kB/s]
+[2023-05-26T19:37:59.919+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  16%|#6        | 19.9M/125M [01:34<29:19, 62.3kB/s]
+[2023-05-26T19:38:00.048+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  16%|#6        | 20.0M/125M [01:34<23:46, 76.8kB/s]
+[2023-05-26T19:38:00.186+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  16%|#6        | 20.0M/125M [01:34<17:15, 106kB/s] 
+[2023-05-26T19:38:00.322+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  16%|#6        | 20.0M/125M [01:34<14:50, 123kB/s]
+[2023-05-26T19:38:00.477+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  16%|#6        | 20.1M/125M [01:34<13:12, 138kB/s]
+[2023-05-26T19:38:00.607+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  16%|#6        | 20.1M/125M [01:35<10:11, 179kB/s]
+[2023-05-26T19:38:01.195+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  16%|#6        | 20.2M/125M [01:35<15:55, 114kB/s]
+[2023-05-26T19:38:02.454+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  16%|#6        | 20.2M/125M [01:36<35:05, 52.0kB/s]
+[2023-05-26T19:38:02.679+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  16%|#6        | 20.2M/125M [01:37<28:10, 64.7kB/s]
+[2023-05-26T19:38:02.835+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  16%|#6        | 20.3M/125M [01:37<17:02, 107kB/s] 
+[2023-05-26T19:38:02.959+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  16%|#6        | 20.3M/125M [01:37<14:30, 126kB/s]
+[2023-05-26T19:38:03.090+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  16%|#6        | 20.3M/125M [01:37<12:36, 144kB/s]
+[2023-05-26T19:38:03.238+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  16%|#6        | 20.4M/125M [01:37<11:24, 160kB/s]
+[2023-05-26T19:38:03.361+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  16%|#6        | 20.4M/125M [01:37<10:07, 180kB/s]
+[2023-05-26T19:38:03.530+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  16%|#6        | 20.4M/125M [01:38<08:39, 210kB/s]
+[2023-05-26T19:38:03.789+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  16%|#6        | 20.5M/125M [01:38<10:09, 179kB/s]
+[2023-05-26T19:38:03.903+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  16%|#6        | 20.5M/125M [01:38<09:06, 199kB/s]
+[2023-05-26T19:38:04.106+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  17%|#6        | 20.5M/125M [01:38<08:30, 213kB/s]
+[2023-05-26T19:38:04.218+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  17%|#6        | 20.6M/125M [01:38<07:54, 230kB/s]
+[2023-05-26T19:38:04.524+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  17%|#6        | 20.6M/125M [01:39<10:21, 175kB/s]
+[2023-05-26T19:38:04.711+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  17%|#6        | 20.7M/125M [01:39<06:38, 273kB/s]
+[2023-05-26T19:38:04.940+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  17%|#6        | 20.7M/125M [01:39<07:51, 231kB/s]
+[2023-05-26T19:38:05.057+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  17%|#6        | 20.8M/125M [01:39<07:33, 240kB/s]
+[2023-05-26T19:38:05.196+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  17%|#6        | 20.8M/125M [01:39<06:45, 268kB/s]
+[2023-05-26T19:38:05.306+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  17%|#6        | 20.8M/125M [01:39<06:36, 274kB/s]
+[2023-05-26T19:38:05.421+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  17%|#6        | 20.9M/125M [01:39<06:32, 277kB/s]
+[2023-05-26T19:38:05.601+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  17%|#6        | 20.9M/125M [01:40<06:34, 276kB/s]
+[2023-05-26T19:38:05.733+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  17%|#6        | 21.0M/125M [01:40<05:59, 302kB/s]
+[2023-05-26T19:38:05.853+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  17%|#6        | 21.0M/125M [01:40<06:08, 295kB/s]
+[2023-05-26T19:38:05.978+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  17%|#6        | 21.0M/125M [01:40<05:37, 322kB/s]
+[2023-05-26T19:38:06.088+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  17%|#6        | 21.1M/125M [01:40<05:43, 316kB/s]
+[2023-05-26T19:38:06.232+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  17%|#6        | 21.1M/125M [01:40<05:34, 324kB/s]
+[2023-05-26T19:38:06.346+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  17%|#6        | 21.2M/125M [01:40<05:44, 314kB/s]
+[2023-05-26T19:38:06.493+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  17%|#7        | 21.2M/125M [01:41<05:37, 321kB/s]
+[2023-05-26T19:38:06.618+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  17%|#7        | 21.2M/125M [01:41<05:17, 341kB/s]
+[2023-05-26T19:38:06.719+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  17%|#7        | 21.3M/125M [01:41<05:20, 338kB/s]
+[2023-05-26T19:38:06.898+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  17%|#7        | 21.3M/125M [01:41<05:45, 313kB/s]
+[2023-05-26T19:38:07.018+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  17%|#7        | 21.4M/125M [01:41<05:58, 302kB/s]
+[2023-05-26T19:38:07.158+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  17%|#7        | 21.4M/125M [01:41<05:40, 318kB/s]
+[2023-05-26T19:38:07.267+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  17%|#7        | 21.4M/125M [01:41<05:45, 313kB/s]
+[2023-05-26T19:38:07.416+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  17%|#7        | 21.5M/125M [01:41<05:38, 319kB/s]
+[2023-05-26T19:38:07.543+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  17%|#7        | 21.5M/125M [01:42<05:18, 339kB/s]
+[2023-05-26T19:38:07.680+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  17%|#7        | 21.6M/125M [01:42<05:50, 308kB/s]
+[2023-05-26T19:38:07.828+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  17%|#7        | 21.6M/125M [01:42<05:41, 316kB/s]
+[2023-05-26T19:38:07.975+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  17%|#7        | 21.7M/125M [01:42<05:35, 321kB/s]
+[2023-05-26T19:38:08.103+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  17%|#7        | 21.7M/125M [01:42<05:17, 339kB/s]
+[2023-05-26T19:38:08.205+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  17%|#7        | 21.7M/125M [01:42<05:22, 334kB/s]
+[2023-05-26T19:38:08.339+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  17%|#7        | 21.8M/125M [01:42<05:12, 345kB/s]
+[2023-05-26T19:38:08.468+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  18%|#7        | 21.8M/125M [01:42<05:03, 355kB/s]
+[2023-05-26T19:38:08.614+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  18%|#7        | 21.9M/125M [01:43<05:43, 313kB/s]
+[2023-05-26T19:38:08.745+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  18%|#7        | 21.9M/125M [01:43<05:24, 332kB/s]
+[2023-05-26T19:38:08.868+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  18%|#7        | 22.0M/125M [01:43<05:07, 350kB/s]
+[2023-05-26T19:38:08.972+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  18%|#7        | 22.0M/125M [01:43<04:41, 381kB/s]
+[2023-05-26T19:38:09.105+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  18%|#7        | 22.0M/125M [01:43<05:17, 339kB/s]
+[2023-05-26T19:38:09.225+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  18%|#7        | 22.1M/125M [01:43<05:36, 320kB/s]
+[2023-05-26T19:38:09.416+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  18%|#7        | 22.1M/125M [01:43<06:03, 295kB/s]
+[2023-05-26T19:38:09.538+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  18%|#7        | 22.2M/125M [01:44<05:31, 324kB/s]
+[2023-05-26T19:38:09.693+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  18%|#7        | 22.2M/125M [01:44<05:00, 357kB/s]
+[2023-05-26T19:38:10.320+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  18%|#7        | 22.3M/125M [01:44<10:14, 174kB/s]
+[2023-05-26T19:38:10.543+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  18%|#7        | 22.4M/125M [01:45<06:01, 296kB/s]
+[2023-05-26T19:38:10.678+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  18%|#8        | 22.5M/125M [01:45<05:47, 308kB/s]
+[2023-05-26T19:38:11.078+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  18%|#8        | 22.5M/125M [01:45<08:26, 211kB/s]
+[2023-05-26T19:38:11.209+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  18%|#8        | 22.6M/125M [01:45<05:32, 322kB/s]
+[2023-05-26T19:38:11.345+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  18%|#8        | 22.6M/125M [01:45<05:48, 306kB/s]
+[2023-05-26T19:38:11.468+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  18%|#8        | 22.7M/125M [01:45<05:58, 298kB/s]
+[2023-05-26T19:38:11.643+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  18%|#8        | 22.7M/125M [01:46<06:04, 293kB/s]
+[2023-05-26T19:38:11.770+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  18%|#8        | 22.7M/125M [01:46<06:14, 285kB/s]
+[2023-05-26T19:38:12.116+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  18%|#8        | 22.8M/125M [01:46<09:09, 194kB/s]
+[2023-05-26T19:38:12.239+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  18%|#8        | 22.8M/125M [01:46<08:31, 208kB/s]
+[2023-05-26T19:38:12.383+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  18%|#8        | 22.8M/125M [01:46<07:22, 241kB/s]
+[2023-05-26T19:38:12.506+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  18%|#8        | 22.9M/125M [01:47<07:11, 247kB/s]
+[2023-05-26T19:38:12.613+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  18%|#8        | 22.9M/125M [01:47<06:49, 260kB/s]
+[2023-05-26T19:38:12.756+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  18%|#8        | 23.0M/125M [01:47<06:13, 285kB/s]
+[2023-05-26T19:38:12.871+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  18%|#8        | 23.0M/125M [01:47<06:13, 285kB/s]
+[2023-05-26T19:38:13.011+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  18%|#8        | 23.0M/125M [01:47<05:48, 305kB/s]
+[2023-05-26T19:38:13.125+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  19%|#8        | 23.1M/125M [01:47<05:53, 301kB/s]
+[2023-05-26T19:38:13.260+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  19%|#8        | 23.1M/125M [01:47<05:32, 320kB/s]
+[2023-05-26T19:38:13.384+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  19%|#8        | 23.1M/125M [01:47<05:49, 304kB/s]
+[2023-05-26T19:38:13.530+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  19%|#8        | 23.2M/125M [01:48<05:36, 315kB/s]
+[2023-05-26T19:38:14.116+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  19%|#8        | 23.2M/125M [01:48<12:06, 146kB/s]
+[2023-05-26T19:38:14.238+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  19%|#8        | 23.3M/125M [01:48<06:26, 275kB/s]
+[2023-05-26T19:38:14.369+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  19%|#8        | 23.4M/125M [01:48<06:32, 270kB/s]
+[2023-05-26T19:38:14.495+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  19%|#8        | 23.4M/125M [01:49<06:35, 268kB/s]
+[2023-05-26T19:38:14.621+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  19%|#8        | 23.4M/125M [01:49<06:38, 266kB/s]
+[2023-05-26T19:38:14.750+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  19%|#8        | 23.5M/125M [01:49<05:58, 295kB/s]
+[2023-05-26T19:38:14.884+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  19%|#8        | 23.5M/125M [01:49<06:16, 281kB/s]
+[2023-05-26T19:38:14.997+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  19%|#8        | 23.5M/125M [01:49<06:13, 284kB/s]
+[2023-05-26T19:38:15.195+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  19%|#8        | 23.6M/125M [01:49<06:30, 271kB/s]
+[2023-05-26T19:38:15.314+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  19%|#8        | 23.6M/125M [01:49<06:30, 271kB/s]
+[2023-05-26T19:38:15.563+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  19%|#8        | 23.7M/125M [01:50<07:20, 240kB/s]
+[2023-05-26T19:38:15.811+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  19%|#9        | 23.7M/125M [01:50<08:50, 199kB/s]
+[2023-05-26T19:38:15.934+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  19%|#9        | 23.7M/125M [01:50<07:17, 241kB/s]
+[2023-05-26T19:38:16.110+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  19%|#9        | 23.8M/125M [01:50<06:57, 253kB/s]
+[2023-05-26T19:38:16.255+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  19%|#9        | 23.8M/125M [01:50<06:23, 275kB/s]
+[2023-05-26T19:38:16.381+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  19%|#9        | 23.9M/125M [01:50<06:28, 272kB/s]
+[2023-05-26T19:38:16.526+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  19%|#9        | 23.9M/125M [01:51<06:02, 291kB/s]
+[2023-05-26T19:38:16.656+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  19%|#9        | 24.0M/125M [01:51<05:35, 314kB/s]
+[2023-05-26T19:38:16.780+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  19%|#9        | 24.0M/125M [01:51<05:13, 336kB/s]
+[2023-05-26T19:38:16.905+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  19%|#9        | 24.0M/125M [01:51<04:59, 352kB/s]
+[2023-05-26T19:38:17.027+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  19%|#9        | 24.1M/125M [01:51<05:20, 329kB/s]
+[2023-05-26T19:38:17.149+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  19%|#9        | 24.1M/125M [01:51<05:00, 351kB/s]
+[2023-05-26T19:38:17.272+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  19%|#9        | 24.2M/125M [01:51<04:48, 365kB/s]
+[2023-05-26T19:38:17.395+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  19%|#9        | 24.2M/125M [01:51<04:40, 375kB/s]
+[2023-05-26T19:38:17.516+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  19%|#9        | 24.2M/125M [01:52<05:05, 344kB/s]
+[2023-05-26T19:38:17.641+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  20%|#9        | 24.3M/125M [01:52<04:53, 358kB/s]
+[2023-05-26T19:38:17.770+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  20%|#9        | 24.3M/125M [01:52<04:47, 366kB/s]
+[2023-05-26T19:38:17.894+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  20%|#9        | 24.4M/125M [01:52<04:39, 375kB/s]
+[2023-05-26T19:38:18.021+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  20%|#9        | 24.4M/125M [01:52<04:37, 379kB/s]
+[2023-05-26T19:38:18.161+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  20%|#9        | 24.5M/125M [01:52<04:43, 370kB/s]
+[2023-05-26T19:38:18.286+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  20%|#9        | 24.5M/125M [01:52<04:38, 376kB/s]
+[2023-05-26T19:38:18.407+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  20%|#9        | 24.6M/125M [01:52<04:32, 385kB/s]
+[2023-05-26T19:38:18.531+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  20%|#9        | 24.6M/125M [01:53<04:29, 389kB/s]
+[2023-05-26T19:38:19.046+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  20%|#9        | 24.7M/125M [01:53<08:39, 202kB/s]
+[2023-05-26T19:38:19.170+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  20%|#9        | 24.8M/125M [01:53<05:39, 308kB/s]
+[2023-05-26T19:38:19.385+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  20%|#9        | 24.8M/125M [01:53<06:41, 260kB/s]
+[2023-05-26T19:38:19.600+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  20%|#9        | 24.8M/125M [01:54<06:57, 250kB/s]
+[2023-05-26T19:38:19.816+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  20%|#9        | 24.9M/125M [01:54<07:54, 220kB/s]
+[2023-05-26T19:38:20.021+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  20%|##        | 24.9M/125M [01:54<07:41, 226kB/s]
+[2023-05-26T19:38:20.227+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  20%|##        | 25.0M/125M [01:54<07:34, 230kB/s]
+[2023-05-26T19:38:20.348+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  20%|##        | 25.0M/125M [01:54<06:34, 265kB/s]
+[2023-05-26T19:38:20.535+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  20%|##        | 25.1M/125M [01:55<05:58, 291kB/s]
+[2023-05-26T19:38:20.818+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  20%|##        | 25.1M/125M [01:55<07:06, 244kB/s]
+[2023-05-26T19:38:21.021+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  20%|##        | 25.2M/125M [01:55<07:07, 244kB/s]
+[2023-05-26T19:38:21.228+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  20%|##        | 25.2M/125M [01:55<06:31, 266kB/s]
+[2023-05-26T19:38:21.432+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  20%|##        | 25.3M/125M [01:55<06:42, 258kB/s]
+[2023-05-26T19:38:21.636+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  20%|##        | 25.3M/125M [01:56<06:51, 253kB/s]
+[2023-05-26T19:38:21.841+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  20%|##        | 25.4M/125M [01:56<06:20, 273kB/s]
+[2023-05-26T19:38:22.047+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  20%|##        | 25.4M/125M [01:56<06:35, 263kB/s]
+[2023-05-26T19:38:22.252+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  20%|##        | 25.5M/125M [01:56<06:10, 280kB/s]
+[2023-05-26T19:38:22.439+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  21%|##        | 25.5M/125M [01:56<06:18, 274kB/s]
+[2023-05-26T19:38:22.661+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  21%|##        | 25.6M/125M [01:57<06:08, 281kB/s]
+[2023-05-26T19:38:22.872+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  21%|##        | 25.7M/125M [01:57<06:28, 267kB/s]
+[2023-05-26T19:38:23.070+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  21%|##        | 25.7M/125M [01:57<06:03, 285kB/s]
+[2023-05-26T19:38:23.193+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  21%|##        | 25.8M/125M [01:57<05:35, 309kB/s]
+[2023-05-26T19:38:23.377+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  21%|##        | 25.8M/125M [01:57<05:49, 296kB/s]
+[2023-05-26T19:38:23.501+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  21%|##        | 25.9M/125M [01:58<04:56, 349kB/s]
+[2023-05-26T19:38:23.787+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  21%|##        | 25.9M/125M [01:58<06:18, 273kB/s]
+[2023-05-26T19:38:23.992+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  21%|##        | 26.0M/125M [01:58<05:59, 287kB/s]
+[2023-05-26T19:38:24.197+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  21%|##        | 26.0M/125M [01:58<06:18, 273kB/s]
+[2023-05-26T19:38:24.403+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  21%|##        | 26.1M/125M [01:58<06:00, 287kB/s]
+[2023-05-26T19:38:24.606+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  21%|##1       | 26.2M/125M [01:59<05:46, 298kB/s]
+[2023-05-26T19:38:24.811+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  21%|##1       | 26.2M/125M [01:59<06:08, 280kB/s]
+[2023-05-26T19:38:25.016+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  21%|##1       | 26.3M/125M [01:59<05:52, 292kB/s]
+[2023-05-26T19:38:25.220+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  21%|##1       | 26.3M/125M [01:59<05:42, 300kB/s]
+[2023-05-26T19:38:25.425+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  21%|##1       | 26.4M/125M [01:59<05:11, 331kB/s]
+[2023-05-26T19:38:25.630+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  21%|##1       | 26.5M/125M [02:00<05:14, 327kB/s]
+[2023-05-26T19:38:25.754+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  21%|##1       | 26.5M/125M [02:00<04:19, 396kB/s]
+[2023-05-26T19:38:25.937+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  21%|##1       | 26.6M/125M [02:00<04:27, 384kB/s]
+[2023-05-26T19:38:26.246+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  21%|##1       | 26.7M/125M [02:00<05:06, 335kB/s]
+[2023-05-26T19:38:26.502+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  22%|##1       | 26.8M/125M [02:01<04:52, 351kB/s]
+[2023-05-26T19:38:26.700+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  22%|##1       | 26.9M/125M [02:01<04:22, 390kB/s]
+[2023-05-26T19:38:26.921+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  22%|##1       | 27.0M/125M [02:01<04:11, 407kB/s]
+[2023-05-26T19:38:27.124+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  22%|##1       | 27.1M/125M [02:01<03:58, 428kB/s]
+[2023-05-26T19:38:27.327+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  22%|##1       | 27.2M/125M [02:01<03:27, 491kB/s]
+[2023-05-26T19:38:27.532+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  22%|##1       | 27.3M/125M [02:02<03:19, 511kB/s]
+[2023-05-26T19:38:27.780+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  22%|##2       | 27.4M/125M [02:02<03:08, 539kB/s]
+[2023-05-26T19:38:27.985+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  22%|##2       | 27.6M/125M [02:02<02:52, 590kB/s]
+[2023-05-26T19:38:28.190+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  22%|##2       | 27.7M/125M [02:02<02:41, 628kB/s]
+[2023-05-26T19:38:28.395+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  22%|##2       | 27.9M/125M [02:02<02:24, 702kB/s]
+[2023-05-26T19:38:28.599+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  23%|##2       | 28.1M/125M [02:03<02:14, 754kB/s]
+[2023-05-26T19:38:29.428+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  23%|##2       | 28.2M/125M [02:03<04:02, 416kB/s]
+[2023-05-26T19:38:29.624+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  23%|##3       | 28.7M/125M [02:04<02:08, 783kB/s]
+[2023-05-26T19:38:29.828+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  23%|##3       | 28.7M/125M [02:04<02:33, 654kB/s]
+[2023-05-26T19:38:30.035+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  23%|##3       | 28.8M/125M [02:04<02:59, 558kB/s]
+[2023-05-26T19:38:30.241+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  23%|##3       | 28.8M/125M [02:04<03:21, 499kB/s]
+[2023-05-26T19:38:30.451+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  23%|##3       | 28.9M/125M [02:04<03:24, 491kB/s]
+[2023-05-26T19:38:30.648+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  23%|##3       | 29.0M/125M [02:05<03:32, 471kB/s]
+[2023-05-26T19:38:30.856+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  23%|##3       | 29.1M/125M [02:05<03:22, 494kB/s]
+[2023-05-26T19:38:31.057+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  23%|##3       | 29.2M/125M [02:05<03:13, 516kB/s]
+[2023-05-26T19:38:31.264+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  24%|##3       | 29.4M/125M [02:05<03:01, 550kB/s]
+[2023-05-26T19:38:31.468+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  24%|##3       | 29.5M/125M [02:05<02:52, 577kB/s]
+[2023-05-26T19:38:31.672+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  24%|##3       | 29.6M/125M [02:06<02:40, 620kB/s]
+[2023-05-26T19:38:31.877+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  24%|##3       | 29.8M/125M [02:06<02:27, 673kB/s]
+[2023-05-26T19:38:32.081+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  24%|##4       | 29.9M/125M [02:06<02:19, 711kB/s]
+[2023-05-26T19:38:32.363+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  24%|##4       | 30.1M/125M [02:06<02:29, 663kB/s]
+[2023-05-26T19:38:32.598+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  24%|##4       | 30.3M/125M [02:07<02:22, 695kB/s]
+[2023-05-26T19:38:33.096+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  24%|##4       | 30.4M/125M [02:07<03:04, 535kB/s]
+[2023-05-26T19:38:33.336+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  25%|##4       | 30.6M/125M [02:07<02:47, 588kB/s]
+[2023-05-26T19:38:33.514+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  25%|##4       | 30.8M/125M [02:08<02:10, 754kB/s]
+[2023-05-26T19:38:33.636+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  25%|##4       | 31.0M/125M [02:08<02:01, 808kB/s]
+[2023-05-26T19:38:33.822+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  25%|##4       | 31.1M/125M [02:08<02:05, 780kB/s]
+[2023-05-26T19:38:34.031+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  25%|##5       | 31.2M/125M [02:08<02:09, 758kB/s]
+[2023-05-26T19:38:34.154+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  25%|##5       | 31.4M/125M [02:08<01:55, 847kB/s]
+[2023-05-26T19:38:34.275+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  25%|##5       | 31.5M/125M [02:08<01:44, 930kB/s]
+[2023-05-26T19:38:34.395+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  25%|##5       | 31.7M/125M [02:08<01:37, 1.00MB/s]
+[2023-05-26T19:38:34.517+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  26%|##5       | 31.8M/125M [02:09<01:32, 1.06MB/s]
+[2023-05-26T19:38:34.648+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  26%|##5       | 32.0M/125M [02:09<01:27, 1.11MB/s]
+[2023-05-26T19:38:34.762+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  26%|##5       | 32.1M/125M [02:09<01:23, 1.16MB/s]
+[2023-05-26T19:38:34.891+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  26%|##5       | 32.2M/125M [02:09<01:21, 1.19MB/s]
+[2023-05-26T19:38:35.004+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  26%|##6       | 32.4M/125M [02:09<01:18, 1.22MB/s]
+[2023-05-26T19:38:35.132+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  26%|##6       | 32.5M/125M [02:09<01:17, 1.24MB/s]
+[2023-05-26T19:38:35.247+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  26%|##6       | 32.7M/125M [02:09<01:16, 1.25MB/s]
+[2023-05-26T19:38:35.368+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  26%|##6       | 32.8M/125M [02:09<01:14, 1.28MB/s]
+[2023-05-26T19:38:35.490+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  27%|##6       | 33.0M/125M [02:09<01:13, 1.30MB/s]
+[2023-05-26T19:38:35.616+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  27%|##6       | 33.2M/125M [02:10<01:13, 1.30MB/s]
+[2023-05-26T19:38:35.731+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  27%|##6       | 33.3M/125M [02:10<01:13, 1.29MB/s]
+[2023-05-26T19:38:35.854+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  27%|##6       | 33.5M/125M [02:10<01:13, 1.31MB/s]
+[2023-05-26T19:38:35.979+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  27%|##6       | 33.6M/125M [02:10<01:12, 1.31MB/s]
+[2023-05-26T19:38:36.101+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  27%|##7       | 33.8M/125M [02:10<01:12, 1.32MB/s]
+[2023-05-26T19:38:36.262+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  27%|##7       | 33.9M/125M [02:10<01:18, 1.21MB/s]
+[2023-05-26T19:38:36.383+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  27%|##7       | 34.1M/125M [02:10<01:15, 1.25MB/s]
+[2023-05-26T19:38:36.508+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  27%|##7       | 34.2M/125M [02:11<01:14, 1.27MB/s]
+[2023-05-26T19:38:36.631+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  28%|##7       | 34.4M/125M [02:11<01:13, 1.29MB/s]
+[2023-05-26T19:38:36.753+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  28%|##7       | 34.5M/125M [02:11<01:12, 1.30MB/s]
+[2023-05-26T19:38:36.875+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  28%|##7       | 34.7M/125M [02:11<01:13, 1.27MB/s]
+[2023-05-26T19:38:36.996+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  28%|##7       | 34.8M/125M [02:11<01:12, 1.30MB/s]
+[2023-05-26T19:38:37.126+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  28%|##8       | 35.0M/125M [02:11<01:12, 1.29MB/s]
+[2023-05-26T19:38:37.247+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  28%|##8       | 35.2M/125M [02:11<01:11, 1.31MB/s]
+[2023-05-26T19:38:37.374+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  28%|##8       | 35.3M/125M [02:11<01:11, 1.30MB/s]
+[2023-05-26T19:38:37.496+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  28%|##8       | 35.5M/125M [02:12<01:11, 1.31MB/s]
+[2023-05-26T19:38:37.624+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  29%|##8       | 35.6M/125M [02:12<01:11, 1.30MB/s]
+[2023-05-26T19:38:37.747+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  29%|##8       | 35.8M/125M [02:12<01:10, 1.31MB/s]
+[2023-05-26T19:38:37.870+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  29%|##8       | 35.9M/125M [02:12<01:12, 1.28MB/s]
+[2023-05-26T19:38:37.994+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  29%|##8       | 36.1M/125M [02:12<01:11, 1.29MB/s]
+[2023-05-26T19:38:38.115+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  29%|##9       | 36.2M/125M [02:12<01:10, 1.31MB/s]
+[2023-05-26T19:38:38.238+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  29%|##9       | 36.4M/125M [02:12<01:10, 1.32MB/s]
+[2023-05-26T19:38:38.364+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  29%|##9       | 36.5M/125M [02:12<01:10, 1.31MB/s]
+[2023-05-26T19:38:38.487+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  29%|##9       | 36.7M/125M [02:12<01:09, 1.32MB/s]
+[2023-05-26T19:38:38.609+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  30%|##9       | 36.9M/125M [02:13<01:09, 1.33MB/s]
+[2023-05-26T19:38:38.730+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  30%|##9       | 37.0M/125M [02:13<01:08, 1.33MB/s]
+[2023-05-26T19:38:38.851+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  30%|##9       | 37.2M/125M [02:13<01:08, 1.34MB/s]
+[2023-05-26T19:38:38.974+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  30%|##9       | 37.3M/125M [02:13<01:08, 1.34MB/s]
+[2023-05-26T19:38:39.095+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  30%|###       | 37.5M/125M [02:13<01:07, 1.34MB/s]
+[2023-05-26T19:38:39.217+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  30%|###       | 37.6M/125M [02:13<01:07, 1.34MB/s]
+[2023-05-26T19:38:39.337+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  30%|###       | 37.8M/125M [02:13<01:07, 1.35MB/s]
+[2023-05-26T19:38:39.456+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  30%|###       | 38.0M/125M [02:13<01:06, 1.36MB/s]
+[2023-05-26T19:38:39.582+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  31%|###       | 38.1M/125M [02:14<01:05, 1.38MB/s]
+[2023-05-26T19:38:39.704+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  31%|###       | 38.3M/125M [02:14<01:06, 1.37MB/s]
+[2023-05-26T19:38:39.825+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  31%|###       | 38.5M/125M [02:14<01:04, 1.40MB/s]
+[2023-05-26T19:38:39.941+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  31%|###1      | 38.6M/125M [02:14<01:03, 1.41MB/s]
+[2023-05-26T19:38:40.075+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  31%|###1      | 38.8M/125M [02:14<01:04, 1.39MB/s]
+[2023-05-26T19:38:40.198+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  31%|###1      | 39.0M/125M [02:14<01:03, 1.41MB/s]
+[2023-05-26T19:38:40.299+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  31%|###1      | 39.1M/125M [02:14<01:01, 1.46MB/s]
+[2023-05-26T19:38:40.407+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  32%|###1      | 39.3M/125M [02:14<01:00, 1.48MB/s]
+[2023-05-26T19:38:40.514+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  32%|###1      | 39.4M/125M [02:15<00:58, 1.54MB/s]
+[2023-05-26T19:38:40.618+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  32%|###1      | 39.6M/125M [02:15<01:01, 1.46MB/s]
+[2023-05-26T19:38:41.119+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  32%|###1      | 39.6M/125M [02:15<02:33, 580kB/s] 
+[2023-05-26T19:38:41.243+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  32%|###2      | 40.0M/125M [02:15<01:17, 1.15MB/s]
+[2023-05-26T19:38:41.355+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  32%|###2      | 40.2M/125M [02:15<01:18, 1.12MB/s]
+[2023-05-26T19:38:41.459+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  32%|###2      | 40.2M/125M [02:15<01:26, 1.02MB/s]
+[2023-05-26T19:38:41.583+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  32%|###2      | 40.4M/125M [02:16<01:22, 1.07MB/s]
+[2023-05-26T19:38:41.706+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  33%|###2      | 40.5M/125M [02:16<01:19, 1.10MB/s]
+[2023-05-26T19:38:41.828+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  33%|###2      | 40.6M/125M [02:16<01:17, 1.13MB/s]
+[2023-05-26T19:38:41.947+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  33%|###2      | 40.8M/125M [02:16<01:15, 1.16MB/s]
+[2023-05-26T19:38:42.068+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  33%|###2      | 40.9M/125M [02:16<01:12, 1.22MB/s]
+[2023-05-26T19:38:42.195+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  33%|###3      | 41.1M/125M [02:16<01:10, 1.24MB/s]
+[2023-05-26T19:38:42.329+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  33%|###3      | 41.2M/125M [02:16<01:10, 1.23MB/s]
+[2023-05-26T19:38:42.435+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  33%|###3      | 41.4M/125M [02:16<01:06, 1.31MB/s]
+[2023-05-26T19:38:42.549+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  33%|###3      | 41.5M/125M [02:17<01:10, 1.23MB/s]
+[2023-05-26T19:38:42.671+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  33%|###3      | 41.7M/125M [02:17<01:08, 1.26MB/s]
+[2023-05-26T19:38:42.794+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  34%|###3      | 41.8M/125M [02:17<01:05, 1.33MB/s]
+[2023-05-26T19:38:42.916+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  34%|###3      | 42.0M/125M [02:17<01:03, 1.37MB/s]
+[2023-05-26T19:38:43.069+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  34%|###3      | 42.2M/125M [02:17<01:08, 1.27MB/s]
+[2023-05-26T19:38:43.194+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  34%|###4      | 42.3M/125M [02:17<01:05, 1.32MB/s]
+[2023-05-26T19:38:43.320+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  34%|###4      | 42.5M/125M [02:17<01:03, 1.35MB/s]
+[2023-05-26T19:38:43.448+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  34%|###4      | 42.7M/125M [02:17<01:02, 1.37MB/s]
+[2023-05-26T19:38:43.568+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  34%|###4      | 42.9M/125M [02:18<01:00, 1.41MB/s]
+[2023-05-26T19:38:43.707+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  35%|###4      | 43.0M/125M [02:18<01:00, 1.41MB/s]
+[2023-05-26T19:38:43.830+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  35%|###4      | 43.2M/125M [02:18<00:59, 1.42MB/s]
+[2023-05-26T19:38:44.106+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  35%|###4      | 43.3M/125M [02:18<01:30, 940kB/s] 
+[2023-05-26T19:38:44.206+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  35%|###5      | 43.7M/125M [02:18<00:54, 1.57MB/s]
+[2023-05-26T19:38:44.338+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  35%|###5      | 43.8M/125M [02:18<01:02, 1.34MB/s]
+[2023-05-26T19:38:44.479+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  35%|###5      | 43.9M/125M [02:18<01:09, 1.22MB/s]
+[2023-05-26T19:38:44.610+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  35%|###5      | 44.1M/125M [02:19<01:10, 1.20MB/s]
+[2023-05-26T19:38:44.738+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  36%|###5      | 44.2M/125M [02:19<01:13, 1.15MB/s]
+[2023-05-26T19:38:44.871+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  36%|###5      | 44.3M/125M [02:19<01:14, 1.13MB/s]
+[2023-05-26T19:38:44.995+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  36%|###5      | 44.5M/125M [02:19<01:12, 1.15MB/s]
+[2023-05-26T19:38:45.118+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  36%|###5      | 44.6M/125M [02:19<01:11, 1.16MB/s]
+[2023-05-26T19:38:45.242+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  36%|###5      | 44.8M/125M [02:19<01:11, 1.17MB/s]
+[2023-05-26T19:38:45.367+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  36%|###6      | 44.9M/125M [02:19<01:11, 1.17MB/s]
+[2023-05-26T19:38:45.495+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  36%|###6      | 45.0M/125M [02:20<01:11, 1.17MB/s]
+[2023-05-26T19:38:45.616+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  36%|###6      | 45.2M/125M [02:20<01:10, 1.18MB/s]
+[2023-05-26T19:38:45.743+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  36%|###6      | 45.3M/125M [02:20<01:08, 1.22MB/s]
+[2023-05-26T19:38:45.859+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  37%|###6      | 45.5M/125M [02:20<01:07, 1.23MB/s]
+[2023-05-26T19:38:45.987+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  37%|###6      | 45.6M/125M [02:20<01:08, 1.21MB/s]
+[2023-05-26T19:38:46.112+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  37%|###6      | 45.8M/125M [02:20<01:06, 1.24MB/s]
+[2023-05-26T19:38:46.256+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  37%|###6      | 45.9M/125M [02:20<01:08, 1.20MB/s]
+[2023-05-26T19:38:46.379+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  37%|###7      | 46.1M/125M [02:20<01:06, 1.24MB/s]
+[2023-05-26T19:38:46.501+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  37%|###7      | 46.2M/125M [02:21<01:04, 1.27MB/s]
+[2023-05-26T19:38:46.619+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  37%|###7      | 46.4M/125M [02:21<01:04, 1.26MB/s]
+[2023-05-26T19:38:46.743+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  37%|###7      | 46.5M/125M [02:21<01:03, 1.28MB/s]
+[2023-05-26T19:38:46.865+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  38%|###7      | 46.7M/125M [02:21<01:02, 1.30MB/s]
+[2023-05-26T19:38:46.971+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  38%|###7      | 46.8M/125M [02:21<01:03, 1.28MB/s]
+[2023-05-26T19:38:47.075+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  38%|###7      | 46.9M/125M [02:21<01:10, 1.15MB/s]
+[2023-05-26T19:38:47.186+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  38%|###7      | 47.0M/125M [02:21<01:10, 1.16MB/s]
+[2023-05-26T19:38:47.297+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  38%|###7      | 47.1M/125M [02:21<01:12, 1.12MB/s]
+[2023-05-26T19:38:47.419+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  38%|###7      | 47.3M/125M [02:21<01:10, 1.15MB/s]
+[2023-05-26T19:38:47.544+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  38%|###8      | 47.4M/125M [02:22<01:07, 1.20MB/s]
+[2023-05-26T19:38:47.666+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  38%|###8      | 47.6M/125M [02:22<01:04, 1.24MB/s]
+[2023-05-26T19:38:47.788+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  38%|###8      | 47.8M/125M [02:22<01:03, 1.27MB/s]
+[2023-05-26T19:38:47.907+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  38%|###8      | 47.9M/125M [02:22<01:03, 1.26MB/s]
+[2023-05-26T19:38:48.030+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  39%|###8      | 48.0M/125M [02:22<01:02, 1.28MB/s]
+[2023-05-26T19:38:48.184+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  39%|###8      | 48.2M/125M [02:22<01:06, 1.21MB/s]
+[2023-05-26T19:38:48.304+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  39%|###8      | 48.3M/125M [02:22<01:05, 1.21MB/s]
+[2023-05-26T19:38:48.426+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  39%|###8      | 48.5M/125M [02:22<01:03, 1.25MB/s]
+[2023-05-26T19:38:48.550+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  39%|###9      | 48.7M/125M [02:23<01:02, 1.27MB/s]
+[2023-05-26T19:38:48.671+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  39%|###9      | 48.8M/125M [02:23<01:03, 1.26MB/s]
+[2023-05-26T19:38:48.794+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  39%|###9      | 49.0M/125M [02:23<01:01, 1.28MB/s]
+[2023-05-26T19:38:48.915+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  39%|###9      | 49.1M/125M [02:23<01:00, 1.30MB/s]
+[2023-05-26T19:38:49.033+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  40%|###9      | 49.2M/125M [02:23<01:01, 1.29MB/s]
+[2023-05-26T19:38:49.155+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  40%|###9      | 49.4M/125M [02:23<01:00, 1.30MB/s]
+[2023-05-26T19:38:49.277+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  40%|###9      | 49.6M/125M [02:23<00:59, 1.31MB/s]
+[2023-05-26T19:38:49.403+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  40%|###9      | 49.7M/125M [02:23<00:59, 1.31MB/s]
+[2023-05-26T19:38:49.538+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  40%|####      | 49.9M/125M [02:24<01:01, 1.28MB/s]
+[2023-05-26T19:38:49.645+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  40%|####      | 50.0M/125M [02:24<00:59, 1.31MB/s]
+[2023-05-26T19:38:49.770+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  40%|####      | 50.2M/125M [02:24<00:59, 1.31MB/s]
+[2023-05-26T19:38:49.901+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  40%|####      | 50.3M/125M [02:24<01:00, 1.29MB/s]
+[2023-05-26T19:38:50.023+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  41%|####      | 50.5M/125M [02:24<00:59, 1.31MB/s]
+[2023-05-26T19:38:50.144+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  41%|####      | 50.6M/125M [02:24<00:58, 1.32MB/s]
+[2023-05-26T19:38:50.323+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  41%|####      | 50.8M/125M [02:24<01:06, 1.16MB/s]
+[2023-05-26T19:38:50.862+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  41%|####      | 50.8M/125M [02:25<02:35, 495kB/s] 
+[2023-05-26T19:38:54.977+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  41%|####      | 51.0M/125M [02:29<13:03, 98.3kB/s]
+[2023-05-26T19:38:55.317+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  41%|####      | 51.0M/125M [02:29<12:30, 103kB/s] 
+[2023-05-26T19:39:02.097+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  41%|####1     | 51.1M/125M [02:36<43:03, 29.8kB/s]
+[2023-05-26T19:39:02.215+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  41%|####1     | 51.3M/125M [02:36<19:18, 66.2kB/s]
+[2023-05-26T19:39:02.342+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  41%|####1     | 51.5M/125M [02:36<11:42, 109kB/s] 
+[2023-05-26T19:39:02.461+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  41%|####1     | 51.6M/125M [02:36<09:53, 129kB/s]
+[2023-05-26T19:39:02.561+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  41%|####1     | 51.7M/125M [02:37<08:08, 156kB/s]
+[2023-05-26T19:39:02.678+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  42%|####1     | 51.7M/125M [02:37<07:01, 181kB/s]
+[2023-05-26T19:39:02.780+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  42%|####1     | 51.8M/125M [02:37<05:37, 226kB/s]
+[2023-05-26T19:39:02.905+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  42%|####1     | 51.9M/125M [02:37<04:23, 289kB/s]
+[2023-05-26T19:39:03.006+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  42%|####1     | 52.0M/125M [02:37<03:38, 348kB/s]
+[2023-05-26T19:39:03.147+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  42%|####1     | 52.1M/125M [02:37<02:54, 434kB/s]
+[2023-05-26T19:39:03.269+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  42%|####1     | 52.2M/125M [02:37<02:30, 503kB/s]
+[2023-05-26T19:39:03.376+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  42%|####1     | 52.3M/125M [02:37<02:10, 582kB/s]
+[2023-05-26T19:39:03.765+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  42%|####2     | 52.3M/125M [02:38<03:20, 377kB/s]
+[2023-05-26T19:39:03.867+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  42%|####2     | 52.5M/125M [02:38<01:56, 646kB/s]
+[2023-05-26T19:39:03.987+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  42%|####2     | 52.6M/125M [02:38<02:00, 625kB/s]
+[2023-05-26T19:39:04.106+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  42%|####2     | 52.7M/125M [02:38<02:04, 607kB/s]
+[2023-05-26T19:39:04.229+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  42%|####2     | 52.7M/125M [02:38<02:00, 622kB/s]
+[2023-05-26T19:39:04.912+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  42%|####2     | 52.8M/125M [02:39<04:54, 256kB/s]
+[2023-05-26T19:39:05.029+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  43%|####2     | 53.0M/125M [02:39<02:52, 436kB/s]
+[2023-05-26T19:39:05.161+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  43%|####2     | 53.0M/125M [02:39<02:47, 447kB/s]
+[2023-05-26T19:39:05.295+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  43%|####2     | 53.1M/125M [02:39<02:44, 456kB/s]
+[2023-05-26T19:39:05.406+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  43%|####2     | 53.1M/125M [02:39<02:45, 453kB/s]
+[2023-05-26T19:39:05.586+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  43%|####2     | 53.2M/125M [02:40<02:56, 425kB/s]
+[2023-05-26T19:39:05.710+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  43%|####2     | 53.2M/125M [02:40<02:46, 449kB/s]
+[2023-05-26T19:39:05.834+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  43%|####2     | 53.3M/125M [02:40<02:38, 470kB/s]
+[2023-05-26T19:39:05.959+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  43%|####2     | 53.4M/125M [02:40<02:34, 484kB/s]
+[2023-05-26T19:39:06.105+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  43%|####2     | 53.4M/125M [02:40<02:37, 474kB/s]
+[2023-05-26T19:39:06.228+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  43%|####2     | 53.5M/125M [02:40<02:32, 489kB/s]
+[2023-05-26T19:39:06.351+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  43%|####3     | 53.6M/125M [02:40<02:28, 501kB/s]
+[2023-05-26T19:39:06.466+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  43%|####3     | 53.6M/125M [02:40<02:22, 520kB/s]
+[2023-05-26T19:39:06.602+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  43%|####3     | 53.7M/125M [02:41<02:15, 546kB/s]
+[2023-05-26T19:39:06.721+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  43%|####3     | 53.8M/125M [02:41<02:15, 548kB/s]
+[2023-05-26T19:39:06.846+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  43%|####3     | 53.8M/125M [02:41<02:16, 541kB/s]
+[2023-05-26T19:39:06.975+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  43%|####3     | 53.9M/125M [02:41<02:19, 530kB/s]
+[2023-05-26T19:39:07.081+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  43%|####3     | 54.0M/125M [02:41<02:13, 554kB/s]
+[2023-05-26T19:39:07.188+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  43%|####3     | 54.0M/125M [02:41<02:09, 570kB/s]
+[2023-05-26T19:39:07.318+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  43%|####3     | 54.1M/125M [02:41<02:14, 548kB/s]
+[2023-05-26T19:39:07.429+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  43%|####3     | 54.1M/125M [02:41<02:11, 561kB/s]
+[2023-05-26T19:39:07.550+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  44%|####3     | 54.2M/125M [02:42<02:13, 554kB/s]
+[2023-05-26T19:39:07.690+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  44%|####3     | 54.3M/125M [02:42<02:10, 565kB/s]
+[2023-05-26T19:39:07.851+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  44%|####3     | 54.3M/125M [02:42<02:24, 508kB/s]
+[2023-05-26T19:39:08.331+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  44%|####3     | 54.4M/125M [02:42<04:18, 285kB/s]
+[2023-05-26T19:39:08.455+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  44%|####3     | 54.5M/125M [02:42<03:43, 329kB/s]
+[2023-05-26T19:39:08.578+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  44%|####3     | 54.5M/125M [02:43<03:04, 398kB/s]
+[2023-05-26T19:39:08.701+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  44%|####3     | 54.6M/125M [02:43<02:51, 429kB/s]
+[2023-05-26T19:39:09.292+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  44%|####3     | 54.7M/125M [02:43<04:50, 252kB/s]
+[2023-05-26T19:39:09.416+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  44%|####4     | 54.8M/125M [02:43<02:55, 417kB/s]
+[2023-05-26T19:39:09.539+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  44%|####4     | 54.9M/125M [02:44<02:56, 414kB/s]
+[2023-05-26T19:39:09.665+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  44%|####4     | 55.0M/125M [02:44<02:47, 436kB/s]
+[2023-05-26T19:39:09.785+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  44%|####4     | 55.0M/125M [02:44<02:49, 430kB/s]
+[2023-05-26T19:39:09.914+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  44%|####4     | 55.1M/125M [02:44<02:41, 450kB/s]
+[2023-05-26T19:39:10.039+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  44%|####4     | 55.1M/125M [02:44<02:34, 469kB/s]
+[2023-05-26T19:39:10.155+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  44%|####4     | 55.2M/125M [02:44<02:38, 458kB/s]
+[2023-05-26T19:39:10.280+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  44%|####4     | 55.2M/125M [02:44<02:32, 476kB/s]
+[2023-05-26T19:39:10.400+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  44%|####4     | 55.3M/125M [02:44<02:26, 495kB/s]
+[2023-05-26T19:39:10.525+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  44%|####4     | 55.4M/125M [02:45<02:13, 542kB/s]
+[2023-05-26T19:39:10.647+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  45%|####4     | 55.4M/125M [02:45<02:13, 541kB/s]
+[2023-05-26T19:39:10.771+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  45%|####4     | 55.5M/125M [02:45<02:14, 537kB/s]
+[2023-05-26T19:39:10.900+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  45%|####4     | 55.6M/125M [02:45<02:16, 529kB/s]
+[2023-05-26T19:39:11.025+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  45%|####4     | 55.6M/125M [02:45<02:07, 566kB/s]
+[2023-05-26T19:39:11.143+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  45%|####4     | 55.7M/125M [02:45<02:07, 564kB/s]
+[2023-05-26T19:39:11.267+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  45%|####4     | 55.8M/125M [02:45<02:01, 593kB/s]
+[2023-05-26T19:39:11.385+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  45%|####4     | 55.8M/125M [02:45<02:03, 581kB/s]
+[2023-05-26T19:39:11.511+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  45%|####4     | 55.9M/125M [02:46<01:59, 603kB/s]
+[2023-05-26T19:39:11.633+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  45%|####4     | 56.0M/125M [02:46<01:55, 623kB/s]
+[2023-05-26T19:39:11.754+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  45%|####5     | 56.1M/125M [02:46<01:59, 599kB/s]
+[2023-05-26T19:39:11.877+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  45%|####5     | 56.1M/125M [02:46<01:55, 619kB/s]
+[2023-05-26T19:39:12.000+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  45%|####5     | 56.2M/125M [02:46<01:53, 633kB/s]
+[2023-05-26T19:39:12.121+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  45%|####5     | 56.3M/125M [02:46<01:58, 606kB/s]
+[2023-05-26T19:39:12.221+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  45%|####5     | 56.3M/125M [02:46<02:04, 576kB/s]
+[2023-05-26T19:39:12.343+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  45%|####5     | 56.4M/125M [02:46<01:57, 606kB/s]
+[2023-05-26T19:39:12.465+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  45%|####5     | 56.5M/125M [02:46<01:54, 625kB/s]
+[2023-05-26T19:39:12.585+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  45%|####5     | 56.5M/125M [02:47<01:58, 603kB/s]
+[2023-05-26T19:39:12.707+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  45%|####5     | 56.6M/125M [02:47<01:54, 623kB/s]
+[2023-05-26T19:39:12.829+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  46%|####5     | 56.7M/125M [02:47<01:51, 637kB/s]
+[2023-05-26T19:39:12.948+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  46%|####5     | 56.8M/125M [02:47<01:56, 612kB/s]
+[2023-05-26T19:39:13.072+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  46%|####5     | 56.8M/125M [02:47<01:53, 627kB/s]
+[2023-05-26T19:39:13.195+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  46%|####5     | 56.9M/125M [02:47<01:50, 640kB/s]
+[2023-05-26T19:39:13.314+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  46%|####5     | 57.0M/125M [02:47<01:55, 613kB/s]
+[2023-05-26T19:39:13.439+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  46%|####5     | 57.1M/125M [02:47<01:53, 626kB/s]
+[2023-05-26T19:39:13.560+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  46%|####5     | 57.1M/125M [02:48<01:50, 640kB/s]
+[2023-05-26T19:39:13.682+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  46%|####5     | 57.2M/125M [02:48<01:55, 611kB/s]
+[2023-05-26T19:39:13.806+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  46%|####6     | 57.3M/125M [02:48<01:52, 626kB/s]
+[2023-05-26T19:39:13.927+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  46%|####6     | 57.4M/125M [02:48<01:49, 641kB/s]
+[2023-05-26T19:39:14.048+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  46%|####6     | 57.4M/125M [02:48<01:55, 611kB/s]
+[2023-05-26T19:39:14.187+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  46%|####6     | 57.5M/125M [02:48<01:56, 603kB/s]
+[2023-05-26T19:39:14.310+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  46%|####6     | 57.6M/125M [02:48<01:52, 623kB/s]
+[2023-05-26T19:39:14.433+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  46%|####6     | 57.7M/125M [02:48<01:50, 636kB/s]
+[2023-05-26T19:39:14.552+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  46%|####6     | 57.7M/125M [02:49<01:54, 610kB/s]
+[2023-05-26T19:39:14.677+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  46%|####6     | 57.8M/125M [02:49<01:52, 623kB/s]
+[2023-05-26T19:39:14.804+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  46%|####6     | 57.9M/125M [02:49<01:50, 630kB/s]
+[2023-05-26T19:39:14.927+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  47%|####6     | 58.0M/125M [02:49<01:48, 642kB/s]
+[2023-05-26T19:39:15.048+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  47%|####6     | 58.0M/125M [02:49<01:46, 652kB/s]
+[2023-05-26T19:39:15.174+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  47%|####6     | 58.1M/125M [02:49<01:40, 690kB/s]
+[2023-05-26T19:39:15.297+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  47%|####6     | 58.2M/125M [02:49<01:41, 684kB/s]
+[2023-05-26T19:39:15.417+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  47%|####6     | 58.3M/125M [02:49<01:41, 683kB/s]
+[2023-05-26T19:39:15.538+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  47%|####6     | 58.4M/125M [02:50<01:41, 682kB/s]
+[2023-05-26T19:39:15.666+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  47%|####6     | 58.5M/125M [02:50<01:37, 707kB/s]
+[2023-05-26T19:39:15.781+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  47%|####7     | 58.5M/125M [02:50<01:37, 710kB/s]
+[2023-05-26T19:39:15.915+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  47%|####7     | 58.6M/125M [02:50<01:36, 717kB/s]
+[2023-05-26T19:39:16.038+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  47%|####7     | 58.7M/125M [02:50<01:38, 703kB/s]
+[2023-05-26T19:39:16.158+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  47%|####7     | 58.8M/125M [02:50<01:33, 736kB/s]
+[2023-05-26T19:39:16.280+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  47%|####7     | 58.9M/125M [02:50<01:30, 757kB/s]
+[2023-05-26T19:39:16.403+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  47%|####7     | 59.0M/125M [02:50<01:29, 770kB/s]
+[2023-05-26T19:39:16.526+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  47%|####7     | 59.1M/125M [02:51<01:27, 781kB/s]
+[2023-05-26T19:39:16.647+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  48%|####7     | 59.2M/125M [02:51<01:26, 790kB/s]
+[2023-05-26T19:39:16.768+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  48%|####7     | 59.3M/125M [02:51<01:21, 835kB/s]
+[2023-05-26T19:39:16.890+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  48%|####7     | 59.4M/125M [02:51<01:18, 867kB/s]
+[2023-05-26T19:39:17.013+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  48%|####7     | 59.5M/125M [02:51<01:16, 886kB/s]
+[2023-05-26T19:39:17.135+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  48%|####7     | 59.6M/125M [02:51<01:15, 903kB/s]
+[2023-05-26T19:39:17.256+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  48%|####7     | 59.7M/125M [02:51<01:14, 916kB/s]
+[2023-05-26T19:39:17.378+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  48%|####8     | 59.8M/125M [02:51<01:10, 963kB/s]
+[2023-05-26T19:39:17.500+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  48%|####8     | 60.0M/125M [02:52<01:07, 998kB/s]
+[2023-05-26T19:39:17.622+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  48%|####8     | 60.1M/125M [02:52<01:06, 1.02MB/s]
+[2023-05-26T19:39:17.743+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  48%|####8     | 60.2M/125M [02:52<01:04, 1.04MB/s]
+[2023-05-26T19:39:17.844+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  48%|####8     | 60.3M/125M [02:52<01:03, 1.06MB/s]
+[2023-05-26T19:39:17.959+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  49%|####8     | 60.4M/125M [02:52<01:04, 1.05MB/s]
+[2023-05-26T19:39:18.077+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  49%|####8     | 60.6M/125M [02:52<01:00, 1.11MB/s]
+[2023-05-26T19:39:18.201+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  49%|####8     | 60.7M/125M [02:52<00:56, 1.18MB/s]
+[2023-05-26T19:39:18.321+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  49%|####8     | 60.9M/125M [02:52<00:54, 1.23MB/s]
+[2023-05-26T19:39:18.441+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  49%|####9     | 61.0M/125M [02:52<00:52, 1.27MB/s]
+[2023-05-26T19:39:18.571+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  49%|####9     | 61.2M/125M [02:53<00:50, 1.31MB/s]
+[2023-05-26T19:39:18.695+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  49%|####9     | 61.4M/125M [02:53<00:48, 1.35MB/s]
+[2023-05-26T19:39:18.816+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  49%|####9     | 61.6M/125M [02:53<00:47, 1.39MB/s]
+[2023-05-26T19:39:18.938+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  50%|####9     | 61.8M/125M [02:53<00:45, 1.46MB/s]
+[2023-05-26T19:39:19.062+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  50%|####9     | 62.0M/125M [02:53<00:42, 1.54MB/s]
+[2023-05-26T19:39:19.187+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  50%|####9     | 62.2M/125M [02:53<00:41, 1.59MB/s]
+[2023-05-26T19:39:19.307+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  50%|#####     | 62.4M/125M [02:53<00:39, 1.64MB/s]
+[2023-05-26T19:39:19.430+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  50%|#####     | 62.6M/125M [02:53<00:37, 1.71MB/s]
+[2023-05-26T19:39:19.552+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  50%|#####     | 62.8M/125M [02:54<00:35, 1.80MB/s]
+[2023-05-26T19:39:19.670+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  51%|#####     | 63.0M/125M [02:54<00:35, 1.84MB/s]
+[2023-05-26T19:39:19.799+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  51%|#####     | 63.3M/125M [02:54<00:33, 1.90MB/s]
+[2023-05-26T19:39:19.912+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  51%|#####1    | 63.5M/125M [02:54<00:31, 2.02MB/s]
+[2023-05-26T19:39:20.038+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  51%|#####1    | 63.8M/125M [02:54<00:30, 2.08MB/s]
+[2023-05-26T19:39:20.159+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  51%|#####1    | 64.1M/125M [02:54<00:29, 2.15MB/s]
+[2023-05-26T19:39:20.287+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  52%|#####1    | 64.4M/125M [02:54<00:28, 2.23MB/s]
+[2023-05-26T19:39:20.413+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  52%|#####1    | 64.7M/125M [02:54<00:27, 2.30MB/s]
+[2023-05-26T19:39:20.534+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  52%|#####2    | 65.0M/125M [02:55<00:26, 2.39MB/s]
+[2023-05-26T19:39:20.634+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  52%|#####2    | 65.2M/125M [02:55<00:24, 2.57MB/s]
+[2023-05-26T19:39:20.737+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  53%|#####2    | 65.5M/125M [02:55<00:24, 2.52MB/s]
+[2023-05-26T19:39:20.840+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  53%|#####2    | 65.8M/125M [02:55<00:23, 2.62MB/s]
+[2023-05-26T19:39:20.943+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  53%|#####3    | 66.0M/125M [02:55<00:22, 2.69MB/s]
+[2023-05-26T19:39:21.459+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  53%|#####3    | 66.1M/125M [02:55<01:04, 943kB/s] 
+[2023-05-26T19:39:21.647+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  54%|#####3    | 66.6M/125M [02:56<00:40, 1.49MB/s]
+[2023-05-26T19:39:21.770+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  54%|#####3    | 66.9M/125M [02:56<00:36, 1.64MB/s]
+[2023-05-26T19:39:21.891+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  54%|#####3    | 67.2M/125M [02:56<00:34, 1.75MB/s]
+[2023-05-26T19:39:21.992+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  54%|#####4    | 67.4M/125M [02:56<00:31, 1.93MB/s]
+[2023-05-26T19:39:22.093+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  54%|#####4    | 67.5M/125M [02:56<00:35, 1.68MB/s]
+[2023-05-26T19:39:22.213+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  54%|#####4    | 67.7M/125M [02:56<00:32, 1.81MB/s]
+[2023-05-26T19:39:22.360+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  55%|#####4    | 68.0M/125M [02:56<00:30, 1.91MB/s]
+[2023-05-26T19:39:22.480+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  55%|#####4    | 68.3M/125M [02:56<00:28, 2.07MB/s]
+[2023-05-26T19:39:22.872+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  55%|#####5    | 68.6M/125M [02:57<00:43, 1.35MB/s]
+[2023-05-26T19:39:22.975+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  56%|#####5    | 69.4M/125M [02:57<00:22, 2.53MB/s]
+[2023-05-26T19:39:23.099+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  56%|#####5    | 69.6M/125M [02:57<00:24, 2.34MB/s]
+[2023-05-26T19:39:23.222+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  56%|#####6    | 69.8M/125M [02:57<00:25, 2.26MB/s]
+[2023-05-26T19:39:23.342+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  56%|#####6    | 70.1M/125M [02:57<00:26, 2.17MB/s]
+[2023-05-26T19:39:23.463+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  56%|#####6    | 70.3M/125M [02:57<00:27, 2.10MB/s]
+[2023-05-26T19:39:23.586+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  57%|#####6    | 70.5M/125M [02:58<00:27, 2.07MB/s]
+[2023-05-26T19:39:23.707+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  57%|#####6    | 70.8M/125M [02:58<00:27, 2.06MB/s]
+[2023-05-26T19:39:23.828+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  57%|#####7    | 71.0M/125M [02:58<00:27, 2.05MB/s]
+[2023-05-26T19:39:23.952+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  57%|#####7    | 71.2M/125M [02:58<00:26, 2.07MB/s]
+[2023-05-26T19:39:24.073+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  57%|#####7    | 71.5M/125M [02:58<00:27, 2.06MB/s]
+[2023-05-26T19:39:24.201+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  58%|#####7    | 71.7M/125M [02:58<00:26, 2.05MB/s]
+[2023-05-26T19:39:24.322+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  58%|#####7    | 72.0M/125M [02:58<00:26, 2.05MB/s]
+[2023-05-26T19:39:24.444+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  58%|#####7    | 72.2M/125M [02:58<00:26, 2.08MB/s]
+[2023-05-26T19:39:24.567+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  58%|#####8    | 72.5M/125M [02:59<00:26, 2.09MB/s]
+[2023-05-26T19:39:24.668+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  58%|#####8    | 72.7M/125M [02:59<00:25, 2.14MB/s]
+[2023-05-26T19:39:24.770+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  58%|#####8    | 72.8M/125M [02:59<00:29, 1.86MB/s]
+[2023-05-26T19:39:24.893+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  59%|#####8    | 73.0M/125M [02:59<00:27, 1.95MB/s]
+[2023-05-26T19:39:25.014+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  59%|#####8    | 73.3M/125M [02:59<00:26, 2.02MB/s]
+[2023-05-26T19:39:25.136+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  59%|#####9    | 73.5M/125M [02:59<00:25, 2.10MB/s]
+[2023-05-26T19:39:25.262+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  59%|#####9    | 73.8M/125M [02:59<00:25, 2.09MB/s]
+[2023-05-26T19:39:25.384+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  59%|#####9    | 74.1M/125M [02:59<00:24, 2.15MB/s]
+[2023-05-26T19:39:25.510+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  60%|#####9    | 74.3M/125M [03:00<00:24, 2.13MB/s]
+[2023-05-26T19:39:25.654+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  60%|#####9    | 74.6M/125M [03:00<00:25, 2.06MB/s]
+[2023-05-26T19:39:25.780+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  60%|######    | 74.8M/125M [03:00<00:25, 2.07MB/s]
+[2023-05-26T19:39:25.904+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  60%|######    | 75.1M/125M [03:00<00:24, 2.12MB/s]
+[2023-05-26T19:39:26.027+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  61%|######    | 75.3M/125M [03:00<00:24, 2.12MB/s]
+[2023-05-26T19:39:26.450+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  61%|######    | 75.6M/125M [03:00<00:40, 1.26MB/s]
+[2023-05-26T19:39:26.553+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  61%|######1   | 76.2M/125M [03:01<00:24, 2.10MB/s]
+[2023-05-26T19:39:26.699+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  61%|######1   | 76.4M/125M [03:01<00:26, 1.88MB/s]
+[2023-05-26T19:39:26.821+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  62%|######1   | 76.6M/125M [03:01<00:27, 1.82MB/s]
+[2023-05-26T19:39:26.947+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  62%|######1   | 76.8M/125M [03:01<00:28, 1.75MB/s]
+[2023-05-26T19:39:27.069+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  62%|######1   | 77.0M/125M [03:01<00:28, 1.75MB/s]
+[2023-05-26T19:39:27.192+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  62%|######1   | 77.2M/125M [03:01<00:28, 1.75MB/s]
+[2023-05-26T19:39:27.314+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  62%|######2   | 77.4M/125M [03:01<00:27, 1.78MB/s]
+[2023-05-26T19:39:27.436+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  62%|######2   | 77.6M/125M [03:01<00:27, 1.77MB/s]
+[2023-05-26T19:39:27.560+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  62%|######2   | 77.8M/125M [03:02<00:27, 1.80MB/s]
+[2023-05-26T19:39:27.682+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  63%|######2   | 78.0M/125M [03:02<00:26, 1.82MB/s]
+[2023-05-26T19:39:27.805+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  63%|######2   | 78.3M/125M [03:02<00:25, 1.87MB/s]
+[2023-05-26T19:39:27.927+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  63%|######3   | 78.5M/125M [03:02<00:25, 1.88MB/s]
+[2023-05-26T19:39:28.049+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  63%|######3   | 78.7M/125M [03:02<00:25, 1.92MB/s]
+[2023-05-26T19:39:28.171+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  63%|######3   | 79.0M/125M [03:02<00:24, 1.95MB/s]
+[2023-05-26T19:39:28.293+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  64%|######3   | 79.2M/125M [03:02<00:24, 1.97MB/s]
+[2023-05-26T19:39:28.454+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  64%|######3   | 79.4M/125M [03:02<00:26, 1.81MB/s]
+[2023-05-26T19:39:28.578+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  64%|######3   | 79.7M/125M [03:03<00:24, 1.89MB/s]
+[2023-05-26T19:39:28.700+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  64%|######4   | 79.9M/125M [03:03<00:24, 1.93MB/s]
+[2023-05-26T19:39:28.824+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  64%|######4   | 80.2M/125M [03:03<00:23, 1.98MB/s]
+[2023-05-26T19:39:28.950+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  65%|######4   | 80.4M/125M [03:03<00:22, 2.01MB/s]
+[2023-05-26T19:39:29.070+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  65%|######4   | 80.7M/125M [03:03<00:22, 2.06MB/s]
+[2023-05-26T19:39:29.196+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  65%|######4   | 80.9M/125M [03:03<00:22, 2.07MB/s]
+[2023-05-26T19:39:29.318+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  65%|######5   | 81.2M/125M [03:03<00:21, 2.09MB/s]
+[2023-05-26T19:39:29.445+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  65%|######5   | 81.4M/125M [03:03<00:21, 2.09MB/s]
+[2023-05-26T19:39:29.567+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  66%|######5   | 81.7M/125M [03:04<00:20, 2.14MB/s]
+[2023-05-26T19:39:29.690+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  66%|######5   | 81.9M/125M [03:04<00:20, 2.14MB/s]
+[2023-05-26T19:39:29.794+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  66%|######5   | 82.2M/125M [03:04<00:19, 2.24MB/s]
+[2023-05-26T19:39:29.894+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  66%|######6   | 82.4M/125M [03:04<00:19, 2.25MB/s]
+[2023-05-26T19:39:30.010+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  66%|######6   | 82.6M/125M [03:04<00:21, 2.04MB/s]
+[2023-05-26T19:39:30.136+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  67%|######6   | 82.8M/125M [03:04<00:20, 2.09MB/s]
+[2023-05-26T19:39:30.263+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  67%|######6   | 83.1M/125M [03:04<00:20, 2.08MB/s]
+[2023-05-26T19:39:30.387+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  67%|######6   | 83.3M/125M [03:04<00:20, 2.13MB/s]
+[2023-05-26T19:39:30.508+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  67%|######7   | 83.6M/125M [03:05<00:19, 2.15MB/s]
+[2023-05-26T19:39:30.633+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  67%|######7   | 83.9M/125M [03:05<00:19, 2.17MB/s]
+[2023-05-26T19:39:30.755+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  68%|######7   | 84.1M/125M [03:05<00:19, 2.21MB/s]
+[2023-05-26T19:39:30.875+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  68%|######7   | 84.4M/125M [03:05<00:19, 2.20MB/s]
+[2023-05-26T19:39:30.997+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  68%|######7   | 84.6M/125M [03:05<00:18, 2.22MB/s]
+[2023-05-26T19:39:31.099+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  68%|######8   | 84.8M/125M [03:05<00:19, 2.19MB/s]
+[2023-05-26T19:39:31.209+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  68%|######8   | 85.1M/125M [03:05<00:18, 2.20MB/s]
+[2023-05-26T19:39:31.309+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  69%|######8   | 85.3M/125M [03:05<00:18, 2.22MB/s]
+[2023-05-26T19:39:31.411+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  69%|######8   | 85.5M/125M [03:05<00:19, 2.10MB/s]
+[2023-05-26T19:39:31.516+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  69%|######8   | 85.7M/125M [03:06<00:18, 2.17MB/s]
+[2023-05-26T19:39:31.639+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  69%|######9   | 86.0M/125M [03:06<00:18, 2.20MB/s]
+[2023-05-26T19:39:31.763+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  69%|######9   | 86.2M/125M [03:06<00:18, 2.17MB/s]
+[2023-05-26T19:39:31.884+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  69%|######9   | 86.5M/125M [03:06<00:18, 2.21MB/s]
+[2023-05-26T19:39:31.987+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  70%|######9   | 86.7M/125M [03:06<00:17, 2.31MB/s]
+[2023-05-26T19:39:32.095+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  70%|######9   | 86.9M/125M [03:06<00:19, 2.08MB/s]
+[2023-05-26T19:39:32.197+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  70%|######9   | 87.1M/125M [03:06<00:19, 2.03MB/s]
+[2023-05-26T19:39:32.325+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  70%|#######   | 87.3M/125M [03:06<00:18, 2.09MB/s]
+[2023-05-26T19:39:32.447+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  70%|#######   | 87.6M/125M [03:06<00:18, 2.14MB/s]
+[2023-05-26T19:39:32.568+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  71%|#######   | 87.9M/125M [03:07<00:17, 2.15MB/s]
+[2023-05-26T19:39:32.695+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  71%|#######   | 88.1M/125M [03:07<00:17, 2.17MB/s]
+[2023-05-26T19:39:32.820+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  71%|#######   | 88.4M/125M [03:07<00:17, 2.18MB/s]
+[2023-05-26T19:39:32.943+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  71%|#######1  | 88.6M/125M [03:07<00:17, 2.17MB/s]
+[2023-05-26T19:39:33.067+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  71%|#######1  | 88.9M/125M [03:07<00:17, 2.19MB/s]
+[2023-05-26T19:39:33.197+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  72%|#######1  | 89.2M/125M [03:07<00:17, 2.18MB/s]
+[2023-05-26T19:39:33.319+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  72%|#######1  | 89.4M/125M [03:07<00:16, 2.17MB/s]
+[2023-05-26T19:39:33.443+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  72%|#######2  | 89.7M/125M [03:07<00:16, 2.19MB/s]
+[2023-05-26T19:39:33.566+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  72%|#######2  | 90.0M/125M [03:08<00:16, 2.21MB/s]
+[2023-05-26T19:39:33.690+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  72%|#######2  | 90.2M/125M [03:08<00:16, 2.22MB/s]
+[2023-05-26T19:39:33.813+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  73%|#######2  | 90.5M/125M [03:08<00:15, 2.23MB/s]
+[2023-05-26T19:39:33.937+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  73%|#######2  | 90.8M/125M [03:08<00:15, 2.24MB/s]
+[2023-05-26T19:39:34.060+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  73%|#######3  | 91.0M/125M [03:08<00:15, 2.25MB/s]
+[2023-05-26T19:39:34.183+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  73%|#######3  | 91.3M/125M [03:08<00:15, 2.25MB/s]
+[2023-05-26T19:39:34.305+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  74%|#######3  | 91.5M/125M [03:08<00:15, 2.26MB/s]
+[2023-05-26T19:39:34.428+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  74%|#######3  | 91.8M/125M [03:08<00:15, 2.27MB/s]
+[2023-05-26T19:39:34.550+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  74%|#######3  | 92.1M/125M [03:09<00:15, 2.27MB/s]
+[2023-05-26T19:39:34.673+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  74%|#######4  | 92.4M/125M [03:09<00:14, 2.31MB/s]
+[2023-05-26T19:39:34.795+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  74%|#######4  | 92.6M/125M [03:09<00:14, 2.34MB/s]
+[2023-05-26T19:39:34.917+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  75%|#######4  | 92.9M/125M [03:09<00:14, 2.32MB/s]
+[2023-05-26T19:39:35.039+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  75%|#######4  | 93.2M/125M [03:09<00:13, 2.35MB/s]
+[2023-05-26T19:39:35.161+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  75%|#######5  | 93.5M/125M [03:09<00:13, 2.37MB/s]
+[2023-05-26T19:39:35.655+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  75%|#######5  | 93.5M/125M [03:10<00:36, 889kB/s] 
+[2023-05-26T19:39:35.777+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  76%|#######5  | 94.1M/125M [03:10<00:18, 1.71MB/s]
+[2023-05-26T19:39:35.904+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  76%|#######5  | 94.3M/125M [03:10<00:18, 1.70MB/s]
+[2023-05-26T19:39:36.025+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  76%|#######5  | 94.5M/125M [03:10<00:18, 1.72MB/s]
+[2023-05-26T19:39:36.146+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  76%|#######6  | 94.7M/125M [03:10<00:17, 1.76MB/s]
+[2023-05-26T19:39:36.268+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  76%|#######6  | 95.0M/125M [03:10<00:17, 1.79MB/s]
+[2023-05-26T19:39:36.399+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  76%|#######6  | 95.2M/125M [03:10<00:17, 1.78MB/s]
+[2023-05-26T19:39:36.528+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  77%|#######6  | 95.4M/125M [03:11<00:16, 1.81MB/s]
+[2023-05-26T19:39:36.646+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  77%|#######6  | 95.6M/125M [03:11<00:16, 1.81MB/s]
+[2023-05-26T19:39:36.750+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  77%|#######6  | 95.8M/125M [03:11<00:16, 1.79MB/s]
+[2023-05-26T19:39:36.927+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  77%|#######7  | 96.0M/125M [03:11<00:18, 1.64MB/s]
+[2023-05-26T19:39:37.202+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  77%|#######7  | 96.1M/125M [03:11<00:26, 1.10MB/s]
+[2023-05-26T19:39:37.316+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  78%|#######7  | 96.6M/125M [03:11<00:16, 1.73MB/s]
+[2023-05-26T19:39:37.445+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  78%|#######7  | 96.8M/125M [03:11<00:17, 1.67MB/s]
+[2023-05-26T19:39:37.568+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  78%|#######7  | 96.9M/125M [03:12<00:17, 1.62MB/s]
+[2023-05-26T19:39:37.692+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  78%|#######8  | 97.1M/125M [03:12<00:17, 1.61MB/s]
+[2023-05-26T19:39:37.815+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  78%|#######8  | 97.3M/125M [03:12<00:17, 1.61MB/s]
+[2023-05-26T19:39:37.938+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  78%|#######8  | 97.5M/125M [03:12<00:17, 1.61MB/s]
+[2023-05-26T19:39:38.060+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  78%|#######8  | 97.7M/125M [03:12<00:17, 1.61MB/s]
+[2023-05-26T19:39:38.181+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  79%|#######8  | 97.9M/125M [03:12<00:17, 1.61MB/s]
+[2023-05-26T19:39:38.303+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  79%|#######8  | 98.1M/125M [03:12<00:17, 1.61MB/s]
+[2023-05-26T19:39:38.444+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  79%|#######8  | 98.3M/125M [03:12<00:17, 1.58MB/s]
+[2023-05-26T19:39:38.572+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  79%|#######9  | 98.5M/125M [03:13<00:17, 1.57MB/s]
+[2023-05-26T19:39:38.694+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  79%|#######9  | 98.7M/125M [03:13<00:16, 1.62MB/s]
+[2023-05-26T19:39:38.818+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  79%|#######9  | 98.9M/125M [03:13<00:16, 1.65MB/s]
+[2023-05-26T19:39:38.941+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  80%|#######9  | 99.1M/125M [03:13<00:15, 1.67MB/s]
+[2023-05-26T19:39:39.066+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  80%|#######9  | 99.3M/125M [03:13<00:15, 1.68MB/s]
+[2023-05-26T19:39:39.189+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  80%|#######9  | 99.5M/125M [03:13<00:15, 1.69MB/s]
+[2023-05-26T19:39:39.312+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  80%|########  | 99.7M/125M [03:13<00:14, 1.75MB/s]
+[2023-05-26T19:39:39.439+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  80%|########  | 99.9M/125M [03:13<00:14, 1.73MB/s]
+[2023-05-26T19:39:39.562+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  80%|########  | 100M/125M [03:14<00:14, 1.73MB/s] 
+[2023-05-26T19:39:39.686+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  81%|########  | 100M/125M [03:14<00:14, 1.77MB/s]
+[2023-05-26T19:39:39.810+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  81%|########  | 101M/125M [03:14<00:14, 1.75MB/s]
+[2023-05-26T19:39:39.933+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  81%|########  | 101M/125M [03:14<00:14, 1.74MB/s]
+[2023-05-26T19:39:40.058+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  81%|########1 | 101M/125M [03:14<00:13, 1.77MB/s]
+[2023-05-26T19:39:40.179+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  81%|########1 | 101M/125M [03:14<00:13, 1.77MB/s]
+[2023-05-26T19:39:40.304+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  81%|########1 | 101M/125M [03:14<00:13, 1.79MB/s]
+[2023-05-26T19:39:40.427+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  82%|########1 | 102M/125M [03:14<00:13, 1.77MB/s]
+[2023-05-26T19:39:40.549+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  82%|########1 | 102M/125M [03:15<00:13, 1.80MB/s]
+[2023-05-26T19:39:40.673+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  82%|########1 | 102M/125M [03:15<00:13, 1.78MB/s]
+[2023-05-26T19:39:40.797+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  82%|########2 | 102M/125M [03:15<00:13, 1.76MB/s]
+[2023-05-26T19:39:40.921+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  82%|########2 | 102M/125M [03:15<00:12, 1.79MB/s]
+[2023-05-26T19:39:41.045+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  82%|########2 | 103M/125M [03:15<00:13, 1.76MB/s]
+[2023-05-26T19:39:41.169+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  83%|########2 | 103M/125M [03:15<00:12, 1.79MB/s]
+[2023-05-26T19:39:41.295+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  83%|########2 | 103M/125M [03:15<00:12, 1.76MB/s]
+[2023-05-26T19:39:41.419+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  83%|########2 | 103M/125M [03:15<00:12, 1.79MB/s]
+[2023-05-26T19:39:41.546+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  83%|########3 | 103M/125M [03:16<00:12, 1.75MB/s]
+[2023-05-26T19:39:41.918+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  83%|########3 | 104M/125M [03:16<00:22, 968kB/s] 
+[2023-05-26T19:39:42.075+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  83%|########3 | 104M/125M [03:16<00:20, 1.07MB/s]
+[2023-05-26T19:39:42.200+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  84%|########3 | 104M/125M [03:16<00:17, 1.21MB/s]
+[2023-05-26T19:39:43.778+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  84%|########3 | 104M/125M [03:18<00:59, 357kB/s] 
+[2023-05-26T19:39:44.081+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  84%|########3 | 104M/125M [03:18<01:05, 322kB/s]
+[2023-05-26T19:39:44.628+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  84%|########3 | 104M/125M [03:19<01:32, 229kB/s]
+[2023-05-26T19:39:44.741+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  84%|########3 | 104M/125M [03:19<01:21, 259kB/s]
+[2023-05-26T19:39:44.957+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  84%|########3 | 104M/125M [03:19<01:18, 268kB/s]
+[2023-05-26T19:39:45.057+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  84%|########3 | 104M/125M [03:19<01:07, 311kB/s]
+[2023-05-26T19:39:45.201+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  84%|########4 | 105M/125M [03:19<00:42, 486kB/s]
+[2023-05-26T19:39:45.304+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  84%|########4 | 105M/125M [03:19<00:42, 485kB/s]
+[2023-05-26T19:39:45.439+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  84%|########4 | 105M/125M [03:19<00:51, 401kB/s]
+[2023-05-26T19:39:45.562+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  84%|########4 | 105M/125M [03:20<00:25, 800kB/s]
+[2023-05-26T19:39:45.714+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  84%|########4 | 105M/125M [03:20<00:18, 1.07MB/s]
+[2023-05-26T19:39:45.836+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  85%|########4 | 105M/125M [03:20<00:14, 1.37MB/s]
+[2023-05-26T19:39:46.058+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  85%|########4 | 105M/125M [03:20<00:23, 861kB/s] 
+[2023-05-26T19:39:46.456+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  85%|########4 | 105M/125M [03:20<00:44, 450kB/s]
+[2023-05-26T19:39:46.570+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  85%|########4 | 106M/125M [03:21<00:47, 422kB/s]
+[2023-05-26T19:39:46.694+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  85%|########4 | 106M/125M [03:21<00:55, 361kB/s]
+[2023-05-26T19:39:46.895+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  85%|########4 | 106M/125M [03:21<01:06, 297kB/s]
+[2023-05-26T19:39:47.032+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  85%|########4 | 106M/125M [03:21<01:10, 282kB/s]
+[2023-05-26T19:39:47.150+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  85%|########4 | 106M/125M [03:21<01:19, 250kB/s]
+[2023-05-26T19:39:47.454+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  85%|########4 | 106M/125M [03:21<00:51, 382kB/s]
+[2023-05-26T19:39:47.689+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  85%|########4 | 106M/125M [03:22<01:05, 301kB/s]
+[2023-05-26T19:39:47.791+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  85%|########4 | 106M/125M [03:22<01:10, 277kB/s]
+[2023-05-26T19:39:47.903+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  85%|########4 | 106M/125M [03:22<01:18, 249kB/s]
+[2023-05-26T19:39:48.033+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  85%|########5 | 106M/125M [03:22<01:30, 217kB/s]
+[2023-05-26T19:39:48.255+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  85%|########5 | 106M/125M [03:22<01:42, 190kB/s]
+[2023-05-26T19:39:48.372+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  85%|########5 | 106M/125M [03:22<00:36, 527kB/s]
+[2023-05-26T19:39:48.520+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  85%|########5 | 106M/125M [03:23<00:32, 599kB/s]
+[2023-05-26T19:39:48.644+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  86%|########5 | 106M/125M [03:23<00:16, 1.16MB/s]
+[2023-05-26T19:39:48.766+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  86%|########5 | 107M/125M [03:23<00:11, 1.60MB/s]
+[2023-05-26T19:39:48.888+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  86%|########6 | 107M/125M [03:23<00:09, 2.01MB/s]
+[2023-05-26T19:39:49.009+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  86%|########6 | 108M/125M [03:23<00:07, 2.32MB/s]
+[2023-05-26T19:39:49.193+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  86%|########6 | 108M/125M [03:23<00:11, 1.58MB/s]
+[2023-05-26T19:39:49.643+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  87%|########6 | 108M/125M [03:24<00:14, 1.18MB/s]
+[2023-05-26T19:39:49.781+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  87%|########7 | 108M/125M [03:24<00:10, 1.63MB/s]
+[2023-05-26T19:39:49.889+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  87%|########7 | 109M/125M [03:24<00:10, 1.58MB/s]
+[2023-05-26T19:39:50.007+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  87%|########7 | 109M/125M [03:24<00:11, 1.45MB/s]
+[2023-05-26T19:39:50.141+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  87%|########7 | 109M/125M [03:24<00:12, 1.29MB/s]
+[2023-05-26T19:39:50.264+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  88%|########7 | 109M/125M [03:24<00:11, 1.37MB/s]
+[2023-05-26T19:39:50.723+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  88%|########7 | 109M/125M [03:25<00:21, 742kB/s] 
+[2023-05-26T19:39:50.853+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  88%|########7 | 109M/125M [03:25<00:15, 1.03MB/s]
+[2023-05-26T19:39:51.062+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  88%|########8 | 110M/125M [03:25<00:13, 1.19MB/s]
+[2023-05-26T19:39:51.474+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  88%|########8 | 110M/125M [03:25<00:18, 846kB/s] 
+[2023-05-26T19:39:51.679+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  88%|########8 | 110M/125M [03:26<00:19, 775kB/s]
+[2023-05-26T19:39:52.089+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  88%|########8 | 110M/125M [03:26<00:22, 669kB/s]
+[2023-05-26T19:39:52.292+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  89%|########8 | 110M/125M [03:26<00:19, 773kB/s]
+[2023-05-26T19:39:52.479+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  89%|########8 | 110M/125M [03:26<00:23, 616kB/s]
+[2023-05-26T19:39:52.668+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  89%|########8 | 111M/125M [03:27<00:21, 678kB/s]
+[2023-05-26T19:39:52.873+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  89%|########8 | 111M/125M [03:27<00:20, 712kB/s]
+[2023-05-26T19:39:53.078+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  89%|########9 | 111M/125M [03:27<00:18, 760kB/s]
+[2023-05-26T19:39:53.284+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  89%|########9 | 111M/125M [03:27<00:17, 793kB/s]
+[2023-05-26T19:39:53.501+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  89%|########9 | 111M/125M [03:28<00:17, 805kB/s]
+[2023-05-26T19:39:53.901+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  89%|########9 | 111M/125M [03:28<00:21, 648kB/s]
+[2023-05-26T19:39:54.106+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  90%|########9 | 112M/125M [03:28<00:19, 704kB/s]
+[2023-05-26T19:39:54.318+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  90%|########9 | 112M/125M [03:28<00:19, 681kB/s]
+[2023-05-26T19:39:54.513+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  90%|########9 | 112M/125M [03:29<00:19, 679kB/s]
+[2023-05-26T19:39:54.717+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  90%|########9 | 112M/125M [03:29<00:19, 668kB/s]
+[2023-05-26T19:39:54.922+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  90%|######### | 112M/125M [03:29<00:19, 660kB/s]
+[2023-05-26T19:39:55.126+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  90%|######### | 112M/125M [03:29<00:18, 678kB/s]
+[2023-05-26T19:39:55.331+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  90%|######### | 112M/125M [03:29<00:18, 690kB/s]
+[2023-05-26T19:39:55.536+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  90%|######### | 113M/125M [03:30<00:17, 699kB/s]
+[2023-05-26T19:39:55.742+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  90%|######### | 113M/125M [03:30<00:17, 705kB/s]
+[2023-05-26T19:39:55.946+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  91%|######### | 113M/125M [03:30<00:17, 709kB/s]
+[2023-05-26T19:39:56.068+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  91%|######### | 113M/125M [03:30<00:14, 837kB/s]
+[2023-05-26T19:39:56.189+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  91%|######### | 113M/125M [03:30<00:12, 922kB/s]
+[2023-05-26T19:39:56.311+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  91%|######### | 113M/125M [03:30<00:11, 1.02MB/s]
+[2023-05-26T19:39:56.431+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  91%|#########1| 113M/125M [03:30<00:10, 1.08MB/s]
+[2023-05-26T19:39:56.558+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  91%|#########1| 114M/125M [03:31<00:10, 1.14MB/s]
+[2023-05-26T19:39:56.673+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  91%|#########1| 114M/125M [03:31<00:09, 1.18MB/s]
+[2023-05-26T19:39:56.801+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  91%|#########1| 114M/125M [03:31<00:09, 1.21MB/s]
+[2023-05-26T19:39:56.944+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  92%|#########1| 114M/125M [03:31<00:09, 1.19MB/s]
+[2023-05-26T19:39:57.066+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  92%|#########1| 114M/125M [03:31<00:08, 1.23MB/s]
+[2023-05-26T19:39:57.188+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  92%|#########1| 114M/125M [03:31<00:08, 1.26MB/s]
+[2023-05-26T19:39:57.310+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  92%|#########1| 114M/125M [03:31<00:08, 1.28MB/s]
+[2023-05-26T19:39:57.430+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  92%|#########2| 115M/125M [03:31<00:08, 1.27MB/s]
+[2023-05-26T19:39:57.552+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  92%|#########2| 115M/125M [03:32<00:07, 1.29MB/s]
+[2023-05-26T19:39:57.674+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  92%|#########2| 115M/125M [03:32<00:07, 1.30MB/s]
+[2023-05-26T19:39:57.795+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  92%|#########2| 115M/125M [03:32<00:07, 1.28MB/s]
+[2023-05-26T19:39:57.915+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  93%|#########2| 115M/125M [03:32<00:07, 1.30MB/s]
+[2023-05-26T19:39:58.044+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  93%|#########2| 115M/125M [03:32<00:07, 1.30MB/s]
+[2023-05-26T19:39:58.156+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  93%|#########2| 116M/125M [03:32<00:07, 1.30MB/s]
+[2023-05-26T19:39:58.280+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  93%|#########2| 116M/125M [03:32<00:07, 1.31MB/s]
+[2023-05-26T19:39:58.406+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  93%|#########3| 116M/125M [03:32<00:06, 1.30MB/s]
+[2023-05-26T19:39:58.523+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  93%|#########3| 116M/125M [03:33<00:06, 1.29MB/s]
+[2023-05-26T19:39:58.625+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  93%|#########3| 116M/125M [03:33<00:06, 1.33MB/s]
+[2023-05-26T19:39:58.746+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  93%|#########3| 116M/125M [03:33<00:06, 1.34MB/s]
+[2023-05-26T19:39:58.863+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  93%|#########3| 116M/125M [03:33<00:06, 1.31MB/s]
+[2023-05-26T19:39:58.987+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  94%|#########3| 117M/125M [03:33<00:06, 1.32MB/s]
+[2023-05-26T19:39:59.095+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  94%|#########3| 117M/125M [03:33<00:06, 1.33MB/s]
+[2023-05-26T19:39:59.225+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  94%|#########3| 117M/125M [03:33<00:06, 1.31MB/s]
+[2023-05-26T19:39:59.353+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  94%|#########3| 117M/125M [03:33<00:06, 1.30MB/s]
+[2023-05-26T19:39:59.459+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  94%|#########4| 117M/125M [03:33<00:05, 1.33MB/s]
+[2023-05-26T19:39:59.589+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  94%|#########4| 117M/125M [03:34<00:05, 1.30MB/s]
+[2023-05-26T19:39:59.711+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  94%|#########4| 117M/125M [03:34<00:05, 1.32MB/s]
+[2023-05-26T19:39:59.838+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  94%|#########4| 118M/125M [03:34<00:05, 1.31MB/s]
+[2023-05-26T19:39:59.959+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  95%|#########4| 118M/125M [03:34<00:05, 1.32MB/s]
+[2023-05-26T19:40:00.080+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  95%|#########4| 118M/125M [03:34<00:05, 1.33MB/s]
+[2023-05-26T19:40:00.201+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  95%|#########4| 118M/125M [03:34<00:05, 1.34MB/s]
+[2023-05-26T19:40:00.322+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  95%|#########4| 118M/125M [03:34<00:04, 1.34MB/s]
+[2023-05-26T19:40:00.443+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  95%|#########5| 118M/125M [03:34<00:04, 1.35MB/s]
+[2023-05-26T19:40:00.565+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  95%|#########5| 119M/125M [03:35<00:04, 1.34MB/s]
+[2023-05-26T19:40:00.696+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  95%|#########5| 119M/125M [03:35<00:04, 1.32MB/s]
+[2023-05-26T19:40:00.820+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  95%|#########5| 119M/125M [03:35<00:04, 1.36MB/s]
+[2023-05-26T19:40:00.941+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  96%|#########5| 119M/125M [03:35<00:04, 1.36MB/s]
+[2023-05-26T19:40:01.066+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  96%|#########5| 119M/125M [03:35<00:04, 1.38MB/s]
+[2023-05-26T19:40:01.188+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  96%|#########5| 119M/125M [03:35<00:03, 1.37MB/s]
+[2023-05-26T19:40:01.311+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  96%|#########6| 120M/125M [03:35<00:03, 1.40MB/s]
+[2023-05-26T19:40:01.438+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  96%|#########6| 120M/125M [03:35<00:03, 1.40MB/s]
+[2023-05-26T19:40:01.565+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  96%|#########6| 120M/125M [03:36<00:03, 1.41MB/s]
+[2023-05-26T19:40:01.686+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  96%|#########6| 120M/125M [03:36<00:03, 1.43MB/s]
+[2023-05-26T19:40:01.809+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  97%|#########6| 120M/125M [03:36<00:03, 1.44MB/s]
+[2023-05-26T19:40:01.932+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  97%|#########6| 120M/125M [03:36<00:02, 1.49MB/s]
+[2023-05-26T19:40:02.054+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  97%|#########6| 121M/125M [03:36<00:02, 1.52MB/s]
+[2023-05-26T19:40:02.176+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  97%|#########7| 121M/125M [03:36<00:02, 1.55MB/s]
+[2023-05-26T19:40:02.297+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  97%|#########7| 121M/125M [03:36<00:02, 1.57MB/s]
+[2023-05-26T19:40:02.422+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  97%|#########7| 121M/125M [03:36<00:02, 1.57MB/s]
+[2023-05-26T19:40:02.555+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  97%|#########7| 121M/125M [03:37<00:02, 1.58MB/s]
+[2023-05-26T19:40:02.678+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  98%|#########7| 122M/125M [03:37<00:01, 1.63MB/s]
+[2023-05-26T19:40:02.800+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  98%|#########7| 122M/125M [03:37<00:01, 1.66MB/s]
+[2023-05-26T19:40:02.921+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  98%|#########7| 122M/125M [03:37<00:01, 1.69MB/s]
+[2023-05-26T19:40:03.043+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  98%|#########8| 122M/125M [03:37<00:01, 1.75MB/s]
+[2023-05-26T19:40:03.165+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  98%|#########8| 122M/125M [03:37<00:01, 1.79MB/s]
+[2023-05-26T19:40:03.285+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  98%|#########8| 123M/125M [03:37<00:01, 1.82MB/s]
+[2023-05-26T19:40:03.626+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  99%|#########8| 123M/125M [03:38<00:02, 855kB/s] 
+[2023-05-26T19:40:03.741+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  99%|#########9| 123M/125M [03:38<00:00, 1.83MB/s]
+[2023-05-26T19:40:03.849+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  99%|#########9| 123M/125M [03:38<00:00, 1.76MB/s]
+[2023-05-26T19:40:03.970+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  99%|#########9| 124M/125M [03:38<00:00, 1.69MB/s]
+[2023-05-26T19:40:04.111+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip:  99%|#########9| 124M/125M [03:38<00:00, 1.60MB/s]
+[2023-05-26T19:40:04.218+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip: 100%|#########9| 124M/125M [03:38<00:00, 1.62MB/s]
+[2023-05-26T19:40:04.351+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip: 100%|#########9| 124M/125M [03:38<00:00, 1.58MB/s]
+[2023-05-26T19:40:04.471+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip: 100%|#########9| 124M/125M [03:38<00:00, 1.59MB/s]
+[2023-05-26T19:40:06.037+0400] {logging_mixin.py:149} WARNING - vosk-model-en-us-0.22-lgraph.zip: 100%|##########| 125M/125M [03:40<00:00, 592kB/s] 
+[2023-05-26T19:40:08.709+0400] {logging_mixin.py:149} INFO - Transcribing what-you-miss-when-you-miss-watercooler-conversations.mp3
+[2023-05-26T19:40:08.774+0400] {logging_mixin.py:149} WARNING - /home/chinnu/.local/lib/python3.10/site-packages/pydub/utils.py:198 RuntimeWarning: Couldn't find ffprobe or avprobe - defaulting to ffprobe, but may not work
+[2023-05-26T19:40:08.784+0400] {taskinstance.py:1824} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/chinnu/.local/lib/python3.10/site-packages/airflow/decorators/base.py", line 220, in execute
+    return_value = super().execute(context)
+  File "/home/chinnu/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 181, in execute
+    return_value = self.execute_callable()
+  File "/home/chinnu/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 198, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/home/chinnu/airflow/dags/podcast_summary.py", line 98, in speech_to_text
+    mp3 = AudioSegment.from_mp3(filepath)
+  File "/home/chinnu/.local/lib/python3.10/site-packages/pydub/audio_segment.py", line 796, in from_mp3
+    return cls.from_file(file, 'mp3', parameters=parameters)
+  File "/home/chinnu/.local/lib/python3.10/site-packages/pydub/audio_segment.py", line 728, in from_file
+    info = mediainfo_json(orig_file, read_ahead_limit=read_ahead_limit)
+  File "/home/chinnu/.local/lib/python3.10/site-packages/pydub/utils.py", line 274, in mediainfo_json
+    res = Popen(command, stdin=stdin_parameter, stdout=PIPE, stderr=PIPE)
+  File "/usr/lib/python3.10/subprocess.py", line 969, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.10/subprocess.py", line 1845, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'ffprobe'
+[2023-05-26T19:40:08.899+0400] {taskinstance.py:1345} INFO - Marking task as FAILED. dag_id=podcast_summary, task_id=speech_to_text, execution_date=20230525T000000, start_date=20230526T153702, end_date=20230526T154008
+[2023-05-26T19:40:08.924+0400] {standard_task_runner.py:104} ERROR - Failed to execute job 94 for task speech_to_text ([Errno 2] No such file or directory: 'ffprobe'; 173)
+[2023-05-26T19:48:33.426+0400] {local_task_job_runner.py:115} ERROR - Received SIGTERM. Terminating subprocesses
+[2023-05-26T19:48:33.428+0400] {local_task_job_runner.py:225} INFO - Task exited with return code 143
+[2023-05-26T19:48:33.455+0400] {taskinstance.py:2651} INFO - 0 downstream tasks scheduled from follow-on schedule check

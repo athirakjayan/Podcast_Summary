@@ -1,0 +1,45 @@
+[2023-05-25T19:34:29.496+0400] {processor.py:157} INFO - Started process (PID=153) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/listener_plugin.py
+[2023-05-25T19:34:29.498+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/listener_plugin.py for tasks to queue
+[2023-05-25T19:34:29.499+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:34:29.499+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/listener_plugin.py
+[2023-05-25T19:34:29.512+0400] {processor.py:838} WARNING - No viable dags retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/listener_plugin.py
+[2023-05-25T19:34:29.542+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/listener_plugin.py took 0.055 seconds
+[2023-05-25T19:36:04.043+0400] {processor.py:157} INFO - Started process (PID=264) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/listener_plugin.py
+[2023-05-25T19:36:04.046+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/listener_plugin.py for tasks to queue
+[2023-05-25T19:36:04.048+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:36:04.048+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/listener_plugin.py
+[2023-05-25T19:36:04.054+0400] {processor.py:838} WARNING - No viable dags retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/listener_plugin.py
+[2023-05-25T19:36:04.123+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/listener_plugin.py took 0.100 seconds
+[2023-05-25T19:37:30.523+0400] {processor.py:157} INFO - Started process (PID=338) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/listener_plugin.py
+[2023-05-25T19:37:30.525+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/listener_plugin.py for tasks to queue
+[2023-05-25T19:37:30.525+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:37:30.525+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/listener_plugin.py
+[2023-05-25T19:37:30.530+0400] {processor.py:838} WARNING - No viable dags retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/listener_plugin.py
+[2023-05-25T19:37:30.556+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/listener_plugin.py took 0.045 seconds
+[2023-05-25T19:38:08.410+0400] {processor.py:157} INFO - Started process (PID=389) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/listener_plugin.py
+[2023-05-25T19:38:08.416+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/listener_plugin.py for tasks to queue
+[2023-05-25T19:38:08.419+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:38:08.418+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/listener_plugin.py
+[2023-05-25T19:38:08.429+0400] {processor.py:838} WARNING - No viable dags retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/listener_plugin.py
+[2023-05-25T19:38:08.468+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/listener_plugin.py took 0.079 seconds
+[2023-05-25T19:38:53.270+0400] {processor.py:157} INFO - Started process (PID=421) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/listener_plugin.py
+[2023-05-25T19:38:53.278+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/listener_plugin.py for tasks to queue
+[2023-05-25T19:38:53.283+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:38:53.282+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/listener_plugin.py
+[2023-05-25T19:38:53.300+0400] {processor.py:838} WARNING - No viable dags retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/listener_plugin.py
+[2023-05-25T19:38:53.349+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/listener_plugin.py took 0.102 seconds
+[2023-05-25T19:39:31.279+0400] {processor.py:157} INFO - Started process (PID=453) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/listener_plugin.py
+[2023-05-25T19:39:31.282+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/listener_plugin.py for tasks to queue
+[2023-05-25T19:39:31.283+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:39:31.283+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/listener_plugin.py
+[2023-05-25T19:39:31.290+0400] {processor.py:838} WARNING - No viable dags retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/listener_plugin.py
+[2023-05-25T19:39:31.315+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/listener_plugin.py took 0.049 seconds
+[2023-05-25T19:40:33.612+0400] {processor.py:157} INFO - Started process (PID=504) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/listener_plugin.py
+[2023-05-25T19:40:33.616+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/listener_plugin.py for tasks to queue
+[2023-05-25T19:40:33.618+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:40:33.618+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/listener_plugin.py
+[2023-05-25T19:40:33.632+0400] {processor.py:838} WARNING - No viable dags retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/listener_plugin.py
+[2023-05-25T19:40:33.678+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/listener_plugin.py took 0.081 seconds
+[2023-05-25T19:41:33.748+0400] {processor.py:157} INFO - Started process (PID=554) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/listener_plugin.py
+[2023-05-25T19:41:33.752+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/listener_plugin.py for tasks to queue
+[2023-05-25T19:41:33.754+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:41:33.753+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/listener_plugin.py
+[2023-05-25T19:41:33.765+0400] {processor.py:838} WARNING - No viable dags retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/listener_plugin.py
+[2023-05-25T19:41:33.809+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/listener_plugin.py took 0.075 seconds
+[2023-05-25T19:42:35.417+0400] {processor.py:157} INFO - Started process (PID=605) to work on /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/listener_plugin.py
+[2023-05-25T19:42:35.420+0400] {processor.py:826} INFO - Processing file /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/listener_plugin.py for tasks to queue
+[2023-05-25T19:42:35.423+0400] {logging_mixin.py:149} INFO - [2023-05-25T19:42:35.423+0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/listener_plugin.py
+[2023-05-25T19:42:35.435+0400] {processor.py:838} WARNING - No viable dags retrieved from /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/listener_plugin.py
+[2023-05-25T19:42:35.475+0400] {processor.py:179} INFO - Processing /home/chinnu/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/listener_plugin.py took 0.069 seconds
