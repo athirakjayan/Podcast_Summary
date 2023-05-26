@@ -12,7 +12,7 @@ We don't strictly need to use Airflow to do this project, but it helps us with a
 <li> We can easily parallelize tasks and run in the cloud if we want to</li></li>
 <li> We can extend this project more easily (add speech recognition, summaries, etc) using Airflow</li>
 </ul>
-By the end of this project, you'll have a good understanding of how to use Airflow, along with a practical project that you can continue to build on.
+By the end of this project, we'll have a good understanding of how to use Airflow, along with a practical project that you can continue to build on.
 
 ## Project Steps
 
@@ -30,7 +30,7 @@ File overview:
 
 <ul>
   <li>podcast_summary.py - the code to create a data pipeline</li>
-  <li>steps.md - a description of the steps you'll need to follow to complete the project. It's not perfectly organized.</li>
+  <li>steps.md - a description of the steps we'll need to follow to complete the project. It's not perfectly organized.</li>
  </ul>
  
 # Tools Required
